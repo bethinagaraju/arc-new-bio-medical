@@ -9,9 +9,9 @@
 // // //       <Header />
 // // //       <section className="py-16 px-4 md:px-16 max-w-4xl mx-auto">
 // // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Terms and Conditions</h1>
-// // //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Terms and Conditions - AI, ML & Robotics Conference</h2>
+// // //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Terms and Conditions - Biomedical Engineering Conference</h2>
 // // //         <p className="text-lg mb-6 text-gray-700">
-// // //           World Conference on Artificial Intelligence, Machine Learning, and Robotics
+// // //           World Conference on Biomedical Engineering
 // // //           <br />
 // // //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
 // // //         </p>
@@ -20,7 +20,7 @@
 // // //           <div>
 // // //             <h3 className="text-xl font-semibold mb-2">1. Acceptance of Terms</h3>
 // // //             <p>
-// // //               By registering for, attending, or submitting content to the World Conference on Artificial Intelligence, Machine Learning, and Robotics (ROBOTICS-2026), you agree to be bound by these Terms and Conditions. These terms apply to all participants, including attendees, speakers, sponsors, and exhibitors.
+// // //               By registering for, attending, or submitting content to the World Conference on Biomedical Engineering (ROBOTICS-2026), you agree to be bound by these Terms and Conditions. These terms apply to all participants, including attendees, speakers, sponsors, and exhibitors.
 // // //             </p>
 // // //           </div>
 
@@ -95,11 +95,11 @@
 // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Terms and Conditions</h1>
 
 // //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
-// //           Terms and Conditions – AI, ML & Robotics Conference
+// //           Terms and Conditions – Biomedical Engineering Conference
 // //         </h2>
 
 // //         <p className="mb-6 text-gray-700">
-// //           World Conference on Artificial Intelligence, Machine Learning, and Robotics
+// //           World Conference on Biomedical Engineering
 // //           <br />
 // //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
 // //         </p>
@@ -281,11 +281,11 @@
 //         {/* <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Terms and Conditions</h1> */}
 
 //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
-//           Terms and Conditions – AI, ML & Robotics Conference
+//           Terms and Conditions – Biomedical Engineering Conference
 //         </h2>
 
 //         <p className="mb-6 text-gray-700 text-sm">
-//           World Conference on Artificial Intelligence, Machine Learning, and Robotics  
+//           World Conference on Biomedical Engineering  
 //           <br />
 //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
 //         </p>
@@ -732,7 +732,7 @@ const TermsAndConditionsPage: React.FC = () => {
             Terms & Conditions
           </h1>
           <p className="text-lg text-gray-700 font-medium mt-2">
-            World Conference on Artificial Intelligence, Machine Learning, and Robotics
+            World Conference on Biomedical Engineering
           </p>
           <p className="text-sm text-gray-500 mt-1">
             July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
@@ -750,7 +750,7 @@ const TermsAndConditionsPage: React.FC = () => {
               Acceptance of Terms
             </h3>
             <p className="mb-4">
-              By accessing, registering for, or participating in the World Conference on Artificial Intelligence, Machine Learning, and Robotics (ROBOTICS-2026), you confirm that you have read, understood, and agree to be legally bound by these Terms and Conditions. These terms apply to all individuals and groups associated with the conference, including attendees, authors, speakers, exhibitors, sponsors, vendors, volunteers, organizing committee members, and media representatives.
+              By accessing, registering for, or participating in the World Conference on Biomedical Engineering (ROBOTICS-2026), you confirm that you have read, understood, and agree to be legally bound by these Terms and Conditions. These terms apply to all individuals and groups associated with the conference, including attendees, authors, speakers, exhibitors, sponsors, vendors, volunteers, organizing committee members, and media representatives.
             </p>
             <p className="mb-4">
               If you disagree with any part of these Terms, you must discontinue your participation immediately. Your continued participation in any capacity constitutes unconditional acceptance of these terms. The organizers reserve the right to update, modify, or replace these Terms at any time without prior notice.

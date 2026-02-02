@@ -677,10 +677,29 @@
 
 
 
-import React from "react";
+import { useState, useEffect } from "react";
 import { MapPin, Navigation, ExternalLink, Phone } from "lucide-react";
 
+interface Venue {
+  id: number;
+  venue: string;
+  conferencecode: string;
+  description: string;
+}
+
 function VenueComponent() {
+  const [venueData, setVenueData] = useState<Venue | null>(null);
+
+  useEffect(() => {
+    fetch('https://backendconf.roboticsaisummit.com/api/robotics/venues/by-conferencecode/biomedical')
+      .then(res => res.json())
+      .then((data: Venue[]) => {
+        if (data.length > 0) {
+          setVenueData(data[0]);
+        }
+      })
+      .catch(err => console.error('Error fetching venue:', err));
+  }, []);
   return (
     <section className="w-full py-6 font-sans">
       <div className="max-w-8xl">
@@ -696,7 +715,7 @@ function VenueComponent() {
 
             {/* Venue Title — SINGLE ROW */}
             <h3 className="text-lg md:text-xl font-semibold text-[#047857] leading-tight">
-              Crowne Plaza Rome – St. Peter’s, Rome, Italy
+              {venueData?.venue || "Loading venue..."}
             </h3>
 
             {/* Buttons Row */}

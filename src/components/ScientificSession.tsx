@@ -302,7 +302,7 @@
 //   return (
 //     <div className="w-full">
 
-//       <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>AIMLR 2026 CONFERENCE TOPICSes</h1>
+//       <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>ICBME 2026 CONFERENCE TOPICSes</h1>
 
 //       {/* SESSION GRID */}
 //       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
@@ -389,90 +389,84 @@
 
 
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+interface Topic {
+  id: number;
+  topicName: string;
+  conferencecode: string;
+  orderIndex: number;
+}
+
 const ScientificSession: React.FC = () => {
-  const sessions = [
-    // --- Responsible & Applied AI ---
-    "Responsible & Ethical Artificial Intelligence",
-    "Explainable AI (XAI) for Real-World Applications",
-    "AI in Smart Cities and Urban Development",
-    "AI for Healthcare, Diagnosis & Medical Imaging",
-    "AI in Education and Personalized Learning",
-    "Generative AI and Large Language Models (LLMs)",
-    "AI for Cybersecurity and Fraud Detection",
-    "AI in Finance, Banking & FinTech",
-    "Human-Centered AI and Trustworthy Systems",
+  const [sessions, setSessions] = useState<Topic[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
-    // --- Machine Learning & Data Science ---
-    "Deep Learning Architectures & Optimization",
-    "Reinforcement Learning and Decision Making",
-    "Transfer Learning & Few-Shot Learning",
-    "Natural Language Processing (NLP) Applications",
-    "Computer Vision & Image Recognition",
-    "Time-Series Forecasting and Predictive Analytics",
-    "AutoML and Model Optimization Techniques",
-    "Federated Learning & Privacy-Preserving ML",
-    "ML in Big Data and Cloud Computing",
-
-    // --- Robotics & Autonomous Systems ---
-    "Autonomous Robots and Intelligent Systems",
-    "Human-Robot Interaction (HRI)",
-    "AI-Driven Robotics for Industrial Automation",
-    "Service Robots in Healthcare and Hospitality",
-    "Robotics in Agriculture and Smart Farming",
-    "Swarm Robotics and Multi-Robot Systems",
-    "Robotics Vision, Navigation & Control",
-    "Soft Robotics and Bio-Inspired Robots",
-    "Ethical, Safety & Social Impact of Robotics",
-    "Robot Motion Planning and Control",
-    "AI-Powered Drones and Autonomous Vehicles",
-    "Underwater and Space Robotics",
-  ];
+  useEffect(() => {
+    fetch('https://backendconf.roboticsaisummit.com/api/robotics/topics/by-conferencecode/biomedical')
+      .then(res => res.json())
+      .then((data: Topic[]) => {
+        // Sort by orderIndex
+        const sortedData = data.sort((a, b) => a.orderIndex - b.orderIndex);
+        setSessions(sortedData);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error fetching topics:', err);
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div className="w-full py-14 px-4">
 
       {/* Heading */}
       <h1 className="text-center text-3xl md:text-4xl font-bold mb-10 text-[#1E293B]">
-        AIMLR 2026 Conference Topics
+        ICBME 2026 Conference Topics
       </h1>
 
       {/* SESSION GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-7xl mx-auto">
-        {sessions.map((session, index) => (
-          <div
-            key={index}
-            className="
-              group relative
-              bg-white
-              px-6 py-4
-              border border-[#A7F3D0]
-              shadow-sm
-              transition-all duration-300
-              hover:shadow-lg
-              flex items-center
-              overflow-hidden
-            "
-          >
-            {/* Left Hover Accent */}
-            <div
-              className="
-                absolute left-0 top-0 h-full w-1
-                bg-[#047857]
-                scale-y-0
-                group-hover:scale-y-100
-                transition-transform duration-300
-                origin-top
-              "
-            />
-
-            <span className="text-[#1E293B] font-semibold text-[15px] leading-snug">
-              {session}
-            </span>
+        {loading ? (
+          <div className="col-span-full flex justify-center items-center py-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#047857]"></div>
+            <span className="ml-3 text-slate-600">Loading topics...</span>
           </div>
-        ))}
+        ) : (
+          sessions.map((item) => (
+            <div
+              key={item.id}
+              className="
+                group relative
+                bg-white
+                px-6 py-4
+                border border-[#A7F3D0]
+                shadow-sm
+                transition-all duration-300
+                hover:shadow-lg
+                flex items-center
+                overflow-hidden
+              "
+            >
+              {/* Left Hover Accent */}
+              <div
+                className="
+                  absolute left-0 top-0 h-full w-1
+                  bg-[#047857]
+                  scale-y-0
+                  group-hover:scale-y-100
+                  transition-transform duration-300
+                  origin-top
+                "
+              />
+
+              <span className="text-[#1E293B] font-semibold text-[15px] leading-snug">
+                {item.topicName}
+              </span>
+            </div>
+          ))
+        )}
       </div>
 
       {/* CTA BUTTONS */}

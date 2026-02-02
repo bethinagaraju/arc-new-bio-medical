@@ -28,7 +28,7 @@ const PrivacyPolicyPage: React.FC = () => {
               This Privacy & Cookies Policy ("Policy") replaces our previous policies. Please take the time to review before you continue to use our products and services.
             </p>
             <p className="mb-4">
-              The <strong>AI, ML & Robotics International Conference (ROBOTICS-2026)</strong> is an international scientific gathering dedicated to the advancement of technology. For the purpose of applicable data protection laws, the <strong>Data Controller</strong> is the Organizing Committee of ROBOTICS-2026.
+              The <strong>Biomedical Engineering International Conference (ROBOTICS-2026)</strong> is an international scientific gathering dedicated to the advancement of technology. For the purpose of applicable data protection laws, the <strong>Data Controller</strong> is the Organizing Committee of ROBOTICS-2026.
             </p>
             <p className="mb-4">
               We are committed to protecting and respecting your privacy. This privacy policy explains the types of personal information we collect, how we use that information, who we share it with, how we protect that information, and your legal rights in relation to your information. We are committed to abiding by this privacy policy, as well as the requirements of applicable laws, in the operation of our business.

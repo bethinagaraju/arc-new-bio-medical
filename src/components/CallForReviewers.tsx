@@ -15,18 +15,18 @@
 //     <>
 //       <Helmet>
 //         {/* ✅ 1. TITLE: Specific to Academic Service + Keywords */}
-//         <title>Call for Reviewers | Scientific Committee AIMLR 2026</title>
+//         <title>Call for Reviewers | Scientific Committee ICBME 2026</title>
 
 //         {/* ✅ 2. DESCRIPTION: Targets "Peer Review" and "Committee" keywords */}
 //         <meta 
 //           name="description" 
-//           content="Join the AIMLR 2026 Scientific Committee. We invite qualified academicians and researchers to serve as peer reviewers for the AI & Robotics conference in Rome." 
+//           content="Join the ICBME 2026 Scientific Committee. We invite qualified academicians and researchers to serve as peer reviewers for the AI & Robotics conference in Rome." 
 //         />
 
 //         {/* ✅ 3. KEYWORDS: Specific to academic volunteering */}
 //         <meta 
 //           name="keywords" 
-//           content="Call for Reviewers, Scientific Committee, Peer Review Service, Academic Volunteer, AI Research Evaluator, Technical Program Committee, AIMLR 2026" 
+//           content="Call for Reviewers, Scientific Committee, Peer Review Service, Academic Volunteer, AI Research Evaluator, Technical Program Committee, ICBME 2026" 
 //         />
 
 //         {/* ✅ 4. CANONICAL LINK */}
@@ -34,11 +34,11 @@
         
 //         {/* 5. Robots Tag */}
 //         <meta name="robots" content="index, follow, max-image-preview:large" />
-//         <meta name="author" content="AIMLR Organizing Committee" />
+//         <meta name="author" content="ICBME Organizing Committee" />
 //         <meta name="publisher" content="Robotics & AI Summit" />
 
 //         {/* 6. Open Graph */}
-//         <meta property="og:title" content="Join the Scientific Committee - AIMLR 2026" />
+//         <meta property="og:title" content="Join the Scientific Committee - ICBME 2026" />
 //         <meta property="og:url" content="https://roboticsaisummit.com/call-for-reviewers" />
 //         <meta property="og:description" content="Apply to become a peer reviewer for the 3rd Global Conference on AI & Robotics. Gain recognition and certificates for your academic service." />
 //         <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
@@ -46,7 +46,7 @@
 
 //         {/* 7. Twitter Cards */}
 //         <meta name="twitter:card" content="summary_large_image" />
-//         <meta name="twitter:title" content="Call for Reviewers | AIMLR 2026" />
+//         <meta name="twitter:title" content="Call for Reviewers | ICBME 2026" />
 //         <meta name="twitter:description" content="Join the scientific committee for the premier AI & Robotics conference in Rome." />
 //         <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 //       </Helmet>
@@ -58,10 +58,10 @@
 //       {/* Page Header */}
 //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 //         <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
-//           CALL FOR REVIEWERS – AIMLR 2026
+//           CALL FOR REVIEWERS – ICBME 2026
 //         </h1>
 //         <p className="mt-2 text-gray-500 text-lg">
-//           Submit your research and join the global conversation on AI, ML and Robotics.
+//           Submit your research and join the global conversation on Biomedical Engineering.
 //         </p>
 //       </div>
 
@@ -72,7 +72,7 @@
 //           <h3 className="text-2xl font-bold text-gray-900">About the Call</h3>
 //         </div>
 //         <p className="text-gray-700 leading-relaxed">
-//           We invite qualified researchers and academicians to join the Review Committee of AIMLR 2026 and contribute to maintaining the academic quality of the conference.
+//           We invite qualified researchers and academicians to join the Review Committee of ICBME 2026 and contribute to maintaining the academic quality of the conference.
 //         </p>
 //       </div>
 
@@ -156,8 +156,8 @@
 //         <Link
 //           to="/register"
 //           className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors"
-//           title="Register for the AIMLR 2026 Conference in Rome"
-//           aria-label="Register for the AIMLR 2026 Conference in Rome"
+//           title="Register for the ICBME 2026 Conference in Rome"
+//           aria-label="Register for the ICBME 2026 Conference in Rome"
 //         >
 //           Register Now <ArrowRight className="w-4 h-4" />
 //         </Link>
@@ -165,8 +165,8 @@
 //         <Link
 //           to="/AbstractSubmission"
 //           className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors"
-//           title="Join as Reviewer for AIMLR 2026 Conference"
-//           aria-label="Join as Reviewer for AIMLR 2026 Conference"
+//           title="Join as Reviewer for ICBME 2026 Conference"
+//           aria-label="Join as Reviewer for ICBME 2026 Conference"
 //         >
 //           Join as Reviewer
 //         </Link>
@@ -204,24 +204,24 @@ const CallForReviewers: React.FC = () => {
     <>
       {/* ================= SEO (UNCHANGED) ================= */}
       <Helmet>
-        <title>Call for Reviewers | Scientific Committee AIMLR 2026</title>
+        <title>Call for Reviewers | Scientific Committee ICBME 2026</title>
         <meta
           name="description"
-          content="Join the AIMLR 2026 Scientific Committee. We invite qualified academicians and researchers to serve as peer reviewers for the AI & Robotics conference in Rome."
+          content="Join the ICBME 2026 Scientific Committee. We invite qualified academicians and researchers to serve as peer reviewers for the AI & Robotics conference in Rome."
         />
         <meta
           name="keywords"
-          content="Call for Reviewers, Scientific Committee, Peer Review Service, Academic Volunteer, AI Research Evaluator, Technical Program Committee, AIMLR 2026"
+          content="Call for Reviewers, Scientific Committee, Peer Review Service, Academic Volunteer, AI Research Evaluator, Technical Program Committee, ICBME 2026"
         />
         <link
           rel="canonical"
           href="https://roboticsaisummit.com/call-for-reviewers"
         />
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="author" content="AIMLR Organizing Committee" />
+        <meta name="author" content="ICBME Organizing Committee" />
         <meta name="publisher" content="Robotics & AI Summit" />
 
-        <meta property="og:title" content="Join the Scientific Committee - AIMLR 2026" />
+        <meta property="og:title" content="Join the Scientific Committee - ICBME 2026" />
         <meta
           property="og:description"
           content="Apply to become a peer reviewer for the premier AI & Robotics conference. Gain recognition and certificates for academic service."
@@ -233,7 +233,7 @@ const CallForReviewers: React.FC = () => {
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Call for Reviewers | AIMLR 2026" />
+        <meta name="twitter:title" content="Call for Reviewers | ICBME 2026" />
         <meta
           name="twitter:description"
           content="Join the scientific committee for the premier AI & Robotics conference in Rome."
@@ -250,11 +250,11 @@ const CallForReviewers: React.FC = () => {
         <div className="bg-white px-6 pt-12 pb-8">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-extrabold text-[#0F766E] tracking-tight">
-              CALL FOR REVIEWERS – AIMLR 2026
+              CALL FOR REVIEWERS – ICBME 2026
             </h1>
 
             <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
-              Join the Scientific Committee and contribute to maintaining the academic quality of AIMLR 2026.
+              Join the Scientific Committee and contribute to maintaining the academic quality of ICBME 2026.
             </p>
 
             <div className="mt-5 h-[2px] w-full bg-[#0F766E]" />
@@ -274,7 +274,7 @@ const CallForReviewers: React.FC = () => {
 
             <p className="text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">
               We invite qualified researchers and academicians to serve as peer reviewers
-              for AIMLR 2026 and help ensure the technical rigor, originality, and relevance
+              for ICBME 2026 and help ensure the technical rigor, originality, and relevance
               of submitted research contributions.
             </p>
           </div>

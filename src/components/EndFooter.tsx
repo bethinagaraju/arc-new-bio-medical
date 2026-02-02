@@ -232,7 +232,7 @@
 // //         </ul> */}
 
 // //         <span className="block text-gray-500 text-sm">
-// //           © 2026 All rights reserved. AI, ML & Robotics Conference
+// //           © 2026 All rights reserved. Biomedical Engineering Conference
 // //         </span>
 // //       </div>
 
@@ -426,8 +426,8 @@
 //                     key={label as string}
 //                     to={path as string}
 //                     className="text-[#FFFFFF] hover:text-[#60A5FA] transition hover:translate-x-1 inline-block"
-//                     title={`${label} | AIMLR 2026 Conference`}
-//                     aria-label={`${label} | AIMLR 2026 Conference`}
+//                     title={`${label} | ICBME 2026 Conference`}
+//                     aria-label={`${label} | ICBME 2026 Conference`}
 //                   >
 //                     {label}
 //                   </Link>
@@ -450,18 +450,18 @@
 //       {/* ================= BOTTOM BAR ================= */}
 //       <div className="text-center py-4 border-t border-[#ffffff]">
 //         <span className="block text-[#FFFFFF] text-sm">
-//           © 2026 All rights reserved. AI, ML & Robotics Conference
+//           © 2026 All rights reserved. Biomedical Engineering Conference
 //         </span>
 //       </div>
 
 //       {/* ================= FLOAT COOKIE BUTTON ================= */}
 //       <button
 //         onClick={() => setCookieVisible(true)}
-//         aria-label="Manage cookie preferences for AIMLR 2026 Conference"
-//         title="Manage cookie preferences for AIMLR 2026 Conference"
+//         aria-label="Manage cookie preferences for ICBME 2026 Conference"
+//         title="Manage cookie preferences for ICBME 2026 Conference"
 //         className="hidden md:block fixed bottom-6 left-6 z-50 p-3 bg-white rounded-full shadow-lg border hover:scale-110 transition"
 //       >
-//         <FaCookieBite className="w-6 h-6 text-[#002d45]" title="Manage cookie preferences for AIMLR 2026 Conference" aria-label="Manage cookie preferences for AIMLR 2026 Conference" />
+//         <FaCookieBite className="w-6 h-6 text-[#002d45]" title="Manage cookie preferences for ICBME 2026 Conference" aria-label="Manage cookie preferences for ICBME 2026 Conference" />
 //       </button>
 
 //     </footer>
@@ -623,8 +623,8 @@ const EndFooter: React.FC = () => {
                     key={label as string}
                     to={path as string}
                     className="text-white hover:text-[#84CC16] transition hover:translate-x-1 inline-block"
-                    title={`${label} | AIMLR 2026 Conference`}
-                    aria-label={`${label} | AIMLR 2026 Conference`}
+                    title={`${label} | ICBME 2026 Conference`}
+                    aria-label={`${label} | ICBME 2026 Conference`}
                   >
                     {label}
                   </Link>
@@ -649,7 +649,7 @@ const EndFooter: React.FC = () => {
       {/* ================= BOTTOM BAR ================= */}
       <div className="text-center py-4 border-t border-[#065F46]">
         <span className="block text-white text-sm">
-          © 2026 All rights reserved. AI, ML & Robotics Conference
+          © 2026 All rights reserved. Biomedical Engineering Conference
         </span>
       </div>
 

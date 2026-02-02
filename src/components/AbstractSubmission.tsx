@@ -1112,7 +1112,7 @@
 //           Abstract Submission
 //         </h2>
 //         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-//           Submit your research abstract for the Artificial Intelligence, Machine Learning, and Robotics Conference 2026.
+//           Submit your research abstract for the Biomedical Engineering Conference 2026.
 //         </p>
 
 //         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">
@@ -1435,7 +1435,7 @@ const AbstractSubmission: React.FC = () => {
           Abstract Submission
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Submit your research abstract for the Artificial Intelligence, Machine Learning, and Robotics Conference 2026.
+          Submit your research abstract for the Biomedical Engineering Conference 2026.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">

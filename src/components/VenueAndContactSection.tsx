@@ -31,8 +31,8 @@
 // //           <Link
 // //             to="/venue-travel"
 // //             className="inline-flex items-center gap-2 bg-indigo-600 text-white px-7 py-3 hover:bg-indigo-700 transition duration-300 font-semibold"
-// //             title="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
-// //             aria-label="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
+// //             title="View detailed venue and travel information for ICBME 2026 Conference in Rome"
+// //             aria-label="View detailed venue and travel information for ICBME 2026 Conference in Rome"
 // //           >
 // //             View Venue Details
 // //             <ArrowRight size={18}/>
@@ -67,8 +67,8 @@
 // //             you shortly.
 // //           </p>
 
-// //           <Link to="/contact" title="Contact AIMLR 2026 Conference Organizers" aria-label="Contact AIMLR 2026 Conference Organizers">
-// //             <button className="bg-white text-[#344278] font-bold py-3 px-10 transition duration-300 hover:bg-gray-200" title="Contact AIMLR 2026 Conference Organizers" aria-label="Contact AIMLR 2026 Conference Organizers">
+// //           <Link to="/contact" title="Contact ICBME 2026 Conference Organizers" aria-label="Contact ICBME 2026 Conference Organizers">
+// //             <button className="bg-white text-[#344278] font-bold py-3 px-10 transition duration-300 hover:bg-gray-200" title="Contact ICBME 2026 Conference Organizers" aria-label="Contact ICBME 2026 Conference Organizers">
 // //               Contact Us
 // //             </button>
 // //           </Link>
@@ -103,7 +103,7 @@
 //             Venue & Contact Information
 //           </h2>
 //           <p className="text-[#1F2937]/70 max-w-2xl mx-auto text-lg">
-//             Conference venue details and direct communication with the AIMLR 2026 organizing committee.
+//             Conference venue details and direct communication with the ICBME 2026 organizing committee.
 //           </p>
 //         </div>
 
@@ -137,8 +137,8 @@
 //               <Link
 //                 to="/venue-travel"
 //                 className="inline-flex items-center gap-2 text-[#0B5ED7] font-semibold hover:text-[#084298] transition"
-//                 title="View detailed venue and travel information for AIMLR 2026"
-//                 aria-label="View detailed venue and travel information for AIMLR 2026"
+//                 title="View detailed venue and travel information for ICBME 2026"
+//                 aria-label="View detailed venue and travel information for ICBME 2026"
 //               >
 //                 View Venue & Travel Details
 //                 <ArrowRight size={18} />
@@ -160,7 +160,7 @@
 
 //               <p className="text-white/90 leading-relaxed mb-8">
 //                 For inquiries related to registration, submissions, sponsorship,
-//                 or participation, please reach out to the AIMLR 2026 organizing team.
+//                 or participation, please reach out to the ICBME 2026 organizing team.
 //               </p>
 //             </div>
 
@@ -168,8 +168,8 @@
 //               to="/contact"
 //               className="inline-flex items-center justify-center bg-white text-[#0B5ED7]
 //               font-bold py-3 px-8 rounded-md hover:bg-gray-100 transition"
-//               title="Contact AIMLR 2026 Conference Organizers"
-//               aria-label="Contact AIMLR 2026 Conference Organizers"
+//               title="Contact ICBME 2026 Conference Organizers"
+//               aria-label="Contact ICBME 2026 Conference Organizers"
 //             >
 //               Contact Us
 //             </Link>
@@ -188,11 +188,30 @@
 
 
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MapPin, ArrowRight, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
+interface Venue {
+  id: number;
+  venue: string;
+  conferencecode: string;
+  description: string;
+}
+
 const VenueAndContactSection: React.FC = () => {
+  const [venueData, setVenueData] = useState<Venue | null>(null);
+
+  useEffect(() => {
+    fetch('https://backendconf.roboticsaisummit.com/api/robotics/venues/by-conferencecode/biomedical')
+      .then(res => res.json())
+      .then((data: Venue[]) => {
+        if (data.length > 0) {
+          setVenueData(data[0]);
+        }
+      })
+      .catch(err => console.error('Error fetching venue:', err));
+  }, []);
   return (
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -203,7 +222,7 @@ const VenueAndContactSection: React.FC = () => {
             Venue & Contact Information
           </h2>
           <p className="text-[#64748B] max-w-2xl mx-auto text-lg">
-            Conference venue details and direct communication with the AIMLR 2026 organizing committee.
+            Conference venue details and direct communication with the ICBME 2026 organizing committee.
           </p>
         </div>
 
@@ -223,13 +242,11 @@ const VenueAndContactSection: React.FC = () => {
               </div>
 
               <p className="text-xl font-medium text-[#1E293B] mb-3">
-                Crowne Plaza — St. Peter&apos;s Rome
+                {venueData?.venue || "Loading venue..."}
               </p>
 
               <p className="text-[#64748B] leading-relaxed max-w-xl">
-                Located near Vatican City, the venue offers modern conference
-                facilities, comfortable accommodation, and convenient access to
-                Rome’s cultural and historical landmarks.
+                {venueData?.description || "Loading description..."}
               </p>
             </div>
 
@@ -237,8 +254,8 @@ const VenueAndContactSection: React.FC = () => {
               <Link
                 to="/venue-travel"
                 className="inline-flex items-center gap-2 text-[#047857] font-semibold hover:text-[#065F46] transition"
-                title="View detailed venue and travel information for AIMLR 2026"
-                aria-label="View detailed venue and travel information for AIMLR 2026"
+                title="View detailed venue and travel information for ICBME 2026"
+                aria-label="View detailed venue and travel information for ICBME 2026"
               >
                 View Venue & Travel Details
                 <ArrowRight size={18} />
@@ -260,7 +277,7 @@ const VenueAndContactSection: React.FC = () => {
 
               <p className="text-white/90 leading-relaxed mb-8">
                 For inquiries related to registration, submissions, sponsorship,
-                or participation, please reach out to the AIMLR 2026 organizing team.
+                or participation, please reach out to the ICBME 2026 organizing team.
               </p>
             </div>
 
@@ -269,8 +286,8 @@ const VenueAndContactSection: React.FC = () => {
               className="inline-flex items-center justify-center bg-[#84CC16]
               text-[#1E293B] font-bold py-3 px-8 rounded-md
               hover:bg-[#65A30D] transition"
-              title="Contact AIMLR 2026 Conference Organizers"
-              aria-label="Contact AIMLR 2026 Conference Organizers"
+              title="Contact ICBME 2026 Conference Organizers"
+              aria-label="Contact ICBME 2026 Conference Organizers"
             >
               Contact Us
             </Link>

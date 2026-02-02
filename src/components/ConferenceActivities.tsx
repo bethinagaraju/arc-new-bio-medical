@@ -272,7 +272,7 @@
 // //           Conference Sessions & Activities 
 // //         </h2>
 // //         <p className="text-gray-600 leading-relaxed">
-// //           The conference will feature a diverse range of technical sessions and interactive activities designed to encourage knowledge exchange, discussion, and collaboration across Artificial Intelligence, Machine Learning, and Robotics.
+// //           The conference will feature a diverse range of technical sessions and interactive activities designed to encourage knowledge exchange, discussion, and collaboration across Biomedical Engineering.
 // //         </p>
 // //       </div>
 
@@ -380,7 +380,7 @@
 //           Conference Sessions & Activities
 //         </h2>
 //         <p className="text-slate-600 leading-relaxed">
-//           AIMLR 2026 will feature a wide range of technical sessions and
+//           ICBME 2026 will feature a wide range of technical sessions and
 //           collaborative activities designed to promote knowledge exchange and
 //           interdisciplinary discussion.
 //         </p>
@@ -510,7 +510,7 @@ const ConferenceActivities: React.FC = () => {
             Conference Sessions & Activities
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            AIMLR 2026 will feature a carefully curated set of technical sessions
+            ICBME 2026 will feature a carefully curated set of technical sessions
             and collaborative activities designed to foster knowledge exchange
             and interdisciplinary discussion.
           </p>

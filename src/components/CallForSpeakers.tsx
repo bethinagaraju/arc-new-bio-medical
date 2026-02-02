@@ -17,10 +17,10 @@
 //       {/* Page Header */}
 //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 //         <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-//           CALL FOR SPEAKERS – AIMLR 2026
+//           CALL FOR SPEAKERS – ICBME 2026
 //         </h2>
 //         <p className="mt-2 text-gray-500 text-lg">
-//           Submit your research and join the global conversation on AI, ML and Robotics.
+//           Submit your research and join the global conversation on Biomedical Engineering.
 //         </p>
 //       </div>
 
@@ -31,7 +31,7 @@
 //           <h3 className="text-2xl font-bold text-gray-900">About the Call</h3>
 //         </div>
 //         <p className="text-gray-700 leading-relaxed">
-//           AIMLR 2026 invites distinguished academicians, industry experts, and researchers to deliver keynote, invited, or technical talks at the conference.
+//           ICBME 2026 invites distinguished academicians, industry experts, and researchers to deliver keynote, invited, or technical talks at the conference.
 //         </p>
 //       </div>
 
@@ -176,13 +176,13 @@ const CallForSpeakers: React.FC = () => {
       <div className="bg-white px-6 pt-12 pb-8">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#0F766E] tracking-tight">
-            CALL FOR SPEAKERS – AIMLR 2026
+            CALL FOR SPEAKERS – ICBME 2026
           </h1>
 
-          <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
-            Share your expertise and inspire a global audience in Artificial
-            Intelligence, Machine Learning, and Robotics.
-          </p>
+            <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
+            Share your expertise and inspire a global audience in Biomedical
+            Engineering.
+            </p>
 
           <div className="mt-5 h-[2px] w-full bg-[#0F766E]" />
         </div>
@@ -199,11 +199,11 @@ const CallForSpeakers: React.FC = () => {
             </h3>
           </div>
 
-          <p className="text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">
-            AIMLR 2026 invites distinguished academicians, industry experts,
+            <p className="text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">
+            ICBME 2026 invites distinguished academicians, industry experts,
             and researchers to deliver keynote, invited, or technical talks
-            and contribute to advancing global AI & Robotics research.
-          </p>
+            and contribute to advancing global Biomedical Engineering research.
+            </p>
         </div>
 
         {/* ================= CONTENT ================= */}

@@ -19,10 +19,10 @@
 // // //       {/* Page Header */}
 // // //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 // // //         <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
-// // //           CALL FOR PAPERS – AIMLR 2026
+// // //           CALL FOR PAPERS – ICBME 2026
 // // //         </h1>
 // // //         <p className="mt-2 text-gray-500 text-lg">
-// // //           Submit your research and join the global conversation on AI, ML and Robotics.
+// // //           Submit your research and join the global conversation on Biomedical Engineering.
 // // //         </p>
 // // //       </div>
 
@@ -33,7 +33,7 @@
 // // //           <h3 className="text-2xl font-bold text-gray-900">About the Call</h3>
 // // //         </div>
 // // //         <p className="text-gray-700 leading-relaxed">
-// // //           AI, ML & Robotics Conference 2026 invites full-length research papers that present original research contributions, innovative methodologies, or significant applications in the fields of Artificial Intelligence, Machine Learning, and Robotics.
+// // //           Biomedical Engineering Conference 2026 invites full-length research papers that present original research contributions, innovative methodologies, or significant applications in the fields of Biomedical Engineering.
 // // //         </p>
 // // //       </div>
 
@@ -128,8 +128,8 @@
 // // //               <Link
 // // //                 to="/sessions"
 // // //                 className="leading-relaxed text-blue-600 hover:text-blue-800 underline"
-// // //                 title="View more topics for AIMLR 2026 Conference"
-// // //                 aria-label="View more topics for AIMLR 2026 Conference"
+// // //                 title="View more topics for ICBME 2026 Conference"
+// // //                 aria-label="View more topics for ICBME 2026 Conference"
 // // //               >
 // // //                 more topics
 // // //               </Link>
@@ -212,8 +212,8 @@
 // // //         <Link
 // // //           to="/register"
 // // //           className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors"
-// // //           title="Register for the AIMLR 2026 Conference in Rome"
-// // //           aria-label="Register for the AIMLR 2026 Conference in Rome"
+// // //           title="Register for the ICBME 2026 Conference in Rome"
+// // //           aria-label="Register for the ICBME 2026 Conference in Rome"
 // // //         >
 // // //           Register Now <ArrowRight className="w-4 h-4" />
 // // //         </Link>
@@ -221,8 +221,8 @@
 // // //         <Link
 // // //           to="/AbstractSubmission"
 // // //           className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors"
-// // //           title="Submit your full paper for AIMLR 2026 Conference"
-// // //           aria-label="Submit your full paper for AIMLR 2026 Conference"
+// // //           title="Submit your full paper for ICBME 2026 Conference"
+// // //           aria-label="Submit your full paper for ICBME 2026 Conference"
 // // //         >
 // // //           Submit Full Paper
 // // //         </Link>
@@ -280,7 +280,7 @@
 // //              <h3 className="text-xl font-bold text-gray-900">About the Call</h3>
 // //           </div>
 // //           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
-// //             AI, ML & Robotics Conference 2026 invites full-length research papers that present original research contributions, innovative methodologies, or significant applications in the fields of Artificial Intelligence, Machine Learning, and Robotics.
+// //             Biomedical Engineering Conference 2026 invites full-length research papers that present original research contributions, innovative methodologies, or significant applications in the fields of Biomedical Engineering.
 // //           </p>
 // //         </div>
 
@@ -463,11 +463,11 @@
 //   <div className="max-w-6xl mx-auto">
 
 //     <h1 className="text-3xl md:text-4xl font-extrabold text-[#243B8F] tracking-tight">
-//       CALL FOR POSTERS – AIMLR 2026
+//       CALL FOR POSTERS – ICBME 2026
 //     </h1>
 
 //     <p className="mt-3 text-lg text-slate-600 max-w-3xl">
-//       Submit your research and join the global conversation on AI, ML and Robotics.
+//       Submit your research and join the global conversation on Biomedical Engineering.
 //     </p>
 
 //     {/* Divider */}
@@ -488,9 +488,9 @@
 //           </div>
 
 //           <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
-//             AIMLR 2026 invites full-length research papers that present original
+//             ICBME 2026 invites full-length research papers that present original
 //             contributions, innovative methodologies, or impactful applications
-//             in Artificial Intelligence, Machine Learning, and Robotics.
+//             in Biomedical Engineering.
 //           </p>
 //         </div>
 
@@ -638,7 +638,7 @@
 
 
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   FileText,
   Users,
@@ -651,7 +651,25 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+interface Topic {
+  id: number;
+  topicName: string;
+  conferencecode: string;
+  orderIndex: number;
+}
+
 const CallForPapers: React.FC = () => {
+  const [topics, setTopics] = useState<Topic[]>([]);
+
+  useEffect(() => {
+    fetch('https://backendconf.roboticsaisummit.com/api/robotics/topics/by-conferencecode/biomedical')
+      .then(res => res.json())
+      .then((data: Topic[]) => {
+        const sortedData = data.sort((a, b) => a.orderIndex - b.orderIndex);
+        setTopics(sortedData.slice(0, 8)); // Limit to 8 topics
+      })
+      .catch(err => console.error('Error fetching topics:', err));
+  }, []);
   return (
     <div className="font-sans text-[#1E293B] bg-white">
 
@@ -659,11 +677,11 @@ const CallForPapers: React.FC = () => {
       <div className="bg-white px-6 pt-12 pb-8">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#0F766E] tracking-tight">
-            CALL FOR POSTERS – AIMLR 2026
+            CALL FOR POSTERS – ICBME 2026
           </h1>
 
           <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
-            Submit your research and join the global conversation on AI, ML and Robotics.
+            Submit your research and join the global conversation on Biomedical Engineering.
           </p>
 
           <div className="mt-5 h-[2px] w-full bg-[#0F766E]" />
@@ -682,9 +700,9 @@ const CallForPapers: React.FC = () => {
           </div>
 
           <p className="text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">
-            AIMLR 2026 invites full-length research papers presenting original
+            ICBME 2026 invites full-length research papers presenting original
             contributions, innovative methodologies, or impactful applications
-            in Artificial Intelligence, Machine Learning, and Robotics.
+            in Biomedical Engineering.
           </p>
         </div>
 
@@ -718,17 +736,8 @@ const CallForPapers: React.FC = () => {
 
           <SectionRow icon={<Target className="w-5 h-5" />} title="Topics of Interest">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1">
-              {[
-                "Artificial Intelligence",
-                "Machine Learning & Deep Learning",
-                "Robotics & Autonomous Systems",
-                "Generative AI",
-                "AI in Healthcare",
-                "Computer Vision & NLP",
-                "Human–Robot Interaction",
-                "Smart Systems & IoT",
-              ].map((item, idx) => (
-                <ListItem key={idx} text={item} />
+              {topics.map((item) => (
+                <ListItem key={item.id} text={item.topicName} />
               ))}
             </div>
 

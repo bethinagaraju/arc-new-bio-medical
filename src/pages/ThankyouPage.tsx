@@ -17,7 +17,7 @@
 // //       <p className="text-lg text-gray-700 mb-6">
 // //         🎉 Congratulations! You’ve successfully registered for the <br />
 // //         <span className="font-semibold text-[#2e376d]">
-// //           AI, ML & Robotics Conference — Artificial Intelligence, Machine Learning and Robotics Conference
+// //           Biomedical Engineering Conference — Artificial Intelligence, Machine Learning and Robotics Conference
 // //         </span>
 // //       </p>
 
@@ -41,7 +41,7 @@
 
 // //       {/* Footer Text */}
 // //       <footer className="mt-10 text-sm text-gray-600">
-// //         © 2026 All rights reserved. AI, ML & Robotics Conference <br />
+// //         © 2026 All rights reserved. Biomedical Engineering Conference <br />
 // //         Artificial Intelligence, Machine Learning and Robotics Conference
 // //       </footer>
 // //     </div>
@@ -71,7 +71,7 @@
 //       <p className="text-lg text-gray-700 mb-4">
 //         🎉 Congratulations! You’ve successfully registered for the <br />
 //         <span className="font-semibold text-[#2e376d]">
-//           AI, ML & Robotics Conference — Artificial Intelligence, Machine Learning and Robotics Conference
+//           Biomedical Engineering Conference — Artificial Intelligence, Machine Learning and Robotics Conference
 //         </span>
 //       </p>
 
@@ -108,7 +108,7 @@
 
 //       {/* Footer Text */}
 //       <footer className="mt-10 text-sm text-gray-600 leading-relaxed">
-//         © 2026 All rights reserved. AI, ML & Robotics Conference <br />
+//         © 2026 All rights reserved. Biomedical Engineering Conference <br />
 //         Artificial Intelligence, Machine Learning and Robotics Conference
 //       </footer>
 //     </div>
@@ -165,7 +165,7 @@ const ThankyouPage: React.FC = () => {
         <p className="text-lg text-gray-700 mb-4">
           🎉 Congratulations! You’ve successfully registered for the <br />
           <span className="font-semibold text-[#2e376d]">
-            AI, ML & Robotics Conference — Artificial Intelligence, Machine Learning and Robotics Conference
+            Biomedical Engineering Conference — Artificial Intelligence, Machine Learning and Robotics Conference
           </span>
         </p>
       ) : (
@@ -220,7 +220,7 @@ const ThankyouPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="mt-10 text-sm text-gray-600 leading-relaxed">
-        © 2026 All rights reserved. AI, ML & Robotics Conference <br />
+        © 2026 All rights reserved. Biomedical Engineering Conference <br />
         Artificial Intelligence, Machine Learning and Robotics Conference
       </footer>
     </div>

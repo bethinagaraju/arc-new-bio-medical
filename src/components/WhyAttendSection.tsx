@@ -6,7 +6,7 @@
 // // // //     {
 // // // //       icon: <Users className="w-8 h-8" />,
 // // // //       title: "Learn from Global Experts",
-// // // //       description: "Immerse yourself in keynote speeches and sessions led by world-renowned experts who are shaping the future of AI, Machine Learning, and Robotics through groundbreaking research and real-world applications.",
+// // // //       description: "Immerse yourself in keynote speeches and sessions led by world-renowned experts who are shaping the future of Biomedical Engineering through groundbreaking research and real-world applications.",
 // // // //       bgColor: "bg-blue-100",
 // // // //       textColor: "text-blue-600"
 // // // //     },
@@ -27,7 +27,7 @@
 // // // //     {
 // // // //       icon: <Eye className="w-8 h-8" />,
 // // // //       title: "Gain Visibility",
-// // // //       description: "Elevate your professional profile by presenting at AIMLR 2026, increasing your visibility among key stakeholders, potential collaborators, and industry leaders in the field.",
+// // // //       description: "Elevate your professional profile by presenting at ICBME 2026, increasing your visibility among key stakeholders, potential collaborators, and industry leaders in the field.",
 // // // //       bgColor: "bg-orange-100",
 // // // //       textColor: "text-orange-600"
 // // // //     },
@@ -51,8 +51,8 @@
 // // // //     <div className="py-20 bg-gray-50">
 // // // //       <div className="container mx-auto px-6">
 // // // //         <div className="text-center max-w-3xl mx-auto mb-16">
-// // // //           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Attend AIMLR 2026?</h2>
-// // // //           <p className="text-gray-600 text-lg">This is standard on all top conferences. Join us for an unparalleled experience in AI, Machine Learning, and Robotics.</p>
+// // // //           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Attend ICBME 2026?</h2>
+// // // //           <p className="text-gray-600 text-lg">This is standard on all top conferences. Join us for an unparalleled experience in Biomedical Engineering.</p>
 // // // //         </div>
 
 // // // //         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -103,7 +103,7 @@
 // // //       icon: Eye,
 // // //       title: "Gain Industry Visibility",
 // // //       description:
-// // //         "Increase recognition among industry leaders, startups, and academic institutions by being part of AIMLR 2026."
+// // //         "Increase recognition among industry leaders, startups, and academic institutions by being part of ICBME 2026."
 // // //     },
 // // //     {
 // // //       icon: Handshake,
@@ -126,10 +126,10 @@
 // // //         {/* Section Title */}
 // // //         <div className="text-center mb-14">
 // // //           <h2 className="text-4xl font-bold text-gray-900 mb-3">
-// // //             Why Attend AIMLR 2026?
+// // //             Why Attend ICBME 2026?
 // // //           </h2>
 // // //           <p className="text-lg text-gray-600">
-// // //             Discover the value of being part of one of the most impactful AI, ML and Robotics conferences.
+// // //             Discover the value of being part of one of the most impactful Biomedical Engineering conferences.
 // // //           </p>
 // // //         </div>
 
@@ -222,10 +222,10 @@
 // //         {/* Section Title */}
 // //         <div className="text-center mb-14">
 // //           <h2 className="text-4xl font-bold text-gray-900 mb-3">
-// //             Why Attend AIMLR 2026?
+// //             Why Attend ICBME 2026?
 // //           </h2>
 // //           <p className="text-lg text-gray-600">
-// //             Be part of an influential global gathering shaping the future of AI, Machine Learning, and Robotics.
+// //             Be part of an influential global gathering shaping the future of Biomedical Engineering.
 // //           </p>
 // //         </div>
 
@@ -372,7 +372,7 @@ export default function WhyAttendSection() {
     >
       <div className="relative max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Why Attend AIMLR?
+          Why Attend ICBME?
         </h2>
 
         {/* Grid Layout: 1fr (Icons) - 2fr (Video) - 1fr (Icons) */}

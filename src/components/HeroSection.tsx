@@ -11,7 +11,7 @@
 // // // // //       {/* Background Video */}
 // // // // //       <video
 // // // // //         className="absolute inset-0 w-full h-full object-cover"
-// // // // //         src="/aimlr-banner-video.mp4"
+// // // // //         src="/ICBME-banner-video.mp4"
 // // // // //         autoPlay
 // // // // //         loop
 // // // // //         muted
@@ -29,7 +29,7 @@
 // // // // //               style={{ fontFamily: 'Manrope, sans-serif' }}
 // // // // //             >
 // // // // //               {/* Artificial Intelligence, Machine Learning and Robotics Conference */}
-// // // // //               3rd Global Conference on AI, ML & Robotics – July 2026, Rome, Italy.
+// // // // //               3rd Global Conference on Biomedical Engineering – July 2026, Rome, Italy.
 // // // // //             </h1>
 
 // // // // //             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-5 text-gray-800">
@@ -39,29 +39,29 @@
 // // // // //             <div className="flex flex-row items-center lg:items-start justify-center lg:justify-center gap-3 sm:gap-4 w-full">
 
 
-// // // // //               <Link to="/register" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
+// // // // //               <Link to="/register" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
 // // // // //                 <button
 // // // // //                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
 // // // // //                   style={{
 // // // // //                     backgroundImage:
 // // // // //                       'linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)',
 // // // // //                   }}
-// // // // //                   title="Register for AIMLR 2026 Conference"
-// // // // //                   aria-label="Register for AIMLR 2026 Conference"
+// // // // //                   title="Register for ICBME 2026 Conference"
+// // // // //                   aria-label="Register for ICBME 2026 Conference"
 // // // // //                 >
 // // // // //                   REGISTER
 // // // // //                 </button>
 // // // // //               </Link>
 
-// // // // //               <Link to="/register" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
+// // // // //               <Link to="/register" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
 // // // // //                 <button
 // // // // //                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
 // // // // //                   style={{
 // // // // //                     backgroundImage:
 // // // // //                       'linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)',
 // // // // //                   }}
-// // // // //                   title="Submit Abstract for AIMLR 2026 Conference"
-// // // // //                   aria-label="Submit Abstract for AIMLR 2026 Conference"
+// // // // //                   title="Submit Abstract for ICBME 2026 Conference"
+// // // // //                   aria-label="Submit Abstract for ICBME 2026 Conference"
 // // // // //                 >
 // // // // //                   SUBMISSION
 // // // // //                 </button>
@@ -105,7 +105,7 @@
 // // // //       {/* Background Video */}
 // // // //       <video
 // // // //         className="absolute inset-0 w-full h-full object-cover"
-// // // //         src="/aimlr-banner-video.mp4"
+// // // //         src="/ICBME-banner-video.mp4"
 // // // //         autoPlay
 // // // //         loop
 // // // //         muted
@@ -128,7 +128,7 @@
 // // // //             </h1>
 
 // // // //             <p className="mt-6 text-lg sm:text-xl text-white/90 font-medium">
-// // // //               3rd Global Conference on AI, ML & Robotics
+// // // //               3rd Global Conference on Biomedical Engineering
 // // // //             </p>
 
 // // // //             <p className="mt-2 text-base sm:text-lg text-white/80">
@@ -195,7 +195,7 @@
 // // //       {/* Background Video */}
 // // //       <video
 // // //         className="absolute inset-0 w-full h-full object-cover"
-// // //         src="/aimlr-banner-video.mp4"
+// // //         src="/ICBME-banner-video.mp4"
 // // //         autoPlay
 // // //         loop
 // // //         muted
@@ -265,7 +265,7 @@
 // //       {/* Background Video */}
 // //       <video
 // //         className="absolute inset-0 w-full h-full object-cover"
-// //         src="/aimlr-banner-video.mp4"
+// //         src="/ICBME-banner-video.mp4"
 // //         autoPlay
 // //         loop
 // //         muted
@@ -469,9 +469,9 @@ const HeroSection: React.FC = () => {
         {/* Heading + Buttons */}
         <div className="max-w-4xl">
           <h1 className="uppercase font-extrabold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            3rd Global Conference on <br />
-            Biomedical Technology – <br />
-            July 2026, Rome, Italy.
+            2nd International Conference<br />
+            On Biomedical Engineering<br />
+            Rome, Italy.
           </h1>
 
           {/* Buttons */}

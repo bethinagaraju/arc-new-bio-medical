@@ -9,18 +9,18 @@ const CallForPostersPage: React.FC = () => {
     <>
     <Helmet>
   {/* ✅ 1. TITLE: Specific to "Posters" + Keywords */}
-  <title>Call for Posters | AI, ML & Robotics Conference 2026 Rome</title>
+  <title>Call for Posters | Biomedical Engineering Conference 2026 Rome</title>
 
   {/* ✅ 2. DESCRIPTION: Targets students and early-stage researchers */}
   <meta 
     name="description" 
-    content="Submit your research poster for AIMLR 2026 in Rome, July 28-30. Ideal for early-stage research, student projects, and visual presentations in AI, ML & Robotics." 
+    content="Submit your research poster for ICBME 2026 in Rome, July 28-30. Ideal for early-stage research, student projects, and visual presentations in Biomedical Engineering." 
   />
 
   {/* ✅ 3. KEYWORDS: Specific to visual/poster sessions */}
   <meta 
     name="keywords" 
-    content="Call for Posters, Poster Presentation, Research Poster, AI Student Competition, Visual Presentation, Rome Conference 2026, AIMLR Posters, PhD Research Showcase" 
+    content="Call for Posters, Poster Presentation, Research Poster, AI Student Competition, Visual Presentation, Rome Conference 2026, ICBME Posters, PhD Research Showcase" 
   />
 
   {/* ✅ 4. CANONICAL: Must point to /call-for-posters */}
@@ -29,20 +29,20 @@ const CallForPostersPage: React.FC = () => {
   {/* 5. Open Graph / Facebook */}
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://roboticsaisummit.com/call-for-posters" />
-  <meta property="og:title" content="Call for Posters - AI, ML & Robotics Conference 2026" />
-  <meta property="og:description" content="Present your research visually at AIMLR 2026 in Rome. We invite posters on Artificial Intelligence, Machine Learning, and Robotics." />
+  <meta property="og:title" content="Call for Posters - Biomedical Engineering Conference 2026" />
+  <meta property="og:description" content="Present your research visually at ICBME 2026 in Rome. We invite posters on Biomedical Engineering." />
   <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
-  <meta property="og:site_name" content="AIMLR 2026" />
+  <meta property="og:site_name" content="ICBME 2026" />
 
   {/* 6. Twitter Cards */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Call for Posters | AIMLR 2026 Rome" />
-  <meta name="twitter:description" content="Submit your poster abstract for the premier AI, ML & Robotics conference. Open to students and researchers." />
+  <meta name="twitter:title" content="Call for Posters | ICBME 2026 Rome" />
+  <meta name="twitter:description" content="Submit your poster abstract for the premier Biomedical Engineering conference. Open to students and researchers." />
   <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
   
   {/* 7. Robots Tag (Essential) */}
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="author" content="AIMLR Organizing Committee" />
+  <meta name="author" content="ICBME Organizing Committee" />
   <meta name="publisher" content="Robotics & AI Summit" />
 </Helmet>
 

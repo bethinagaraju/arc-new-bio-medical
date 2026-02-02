@@ -40,7 +40,7 @@ const PaymentSuccess: React.FC = () => {
     const interval = setInterval(async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8080/api/registration/status?referenceId=${ref}`
+          `https://backendconf.roboticsaisummit.com/api/registration/status?referenceId=${ref}`
         );
 
         if (res.data.paymentStatus === 'COMPLETED') {

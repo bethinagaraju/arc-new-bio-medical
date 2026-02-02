@@ -16,7 +16,7 @@
 // // // // // // // // // // // // // // // // //         numberOfNights: 2,
 // // // // // // // // // // // // // // // // //       };
 
-// // // // // // // // // // // // // // // // //       const res = await axios.post('http://localhost:8080/api/registration/create', payload);
+// // // // // // // // // // // // // // // // //       const res = await axios.post('https://backendconf.roboticsaisummit.com/api/registration/create', payload);
 
 // // // // // // // // // // // // // // // // //       const { checkoutUrl, referenceId } = res.data;
 
@@ -61,7 +61,7 @@
 // // // // // // // // // // // // // // // //       };
 
 // // // // // // // // // // // // // // // //       const res = await axios.post(
-// // // // // // // // // // // // // // // //         'http://localhost:8080/api/registration/create',
+// // // // // // // // // // // // // // // //         'https://backendconf.roboticsaisummit.com/api/registration/create',
 // // // // // // // // // // // // // // // //         payload
 // // // // // // // // // // // // // // // //       );
 
@@ -156,7 +156,7 @@
 
 // // // // // // // // // // // // // // //       // 🚀 API Call to Spring Boot
 // // // // // // // // // // // // // // //       const res = await axios.post(
-// // // // // // // // // // // // // // //         'http://localhost:8080/api/registration/create',
+// // // // // // // // // // // // // // //         'https://backendconf.roboticsaisummit.com/api/registration/create',
 // // // // // // // // // // // // // // //         formData
 // // // // // // // // // // // // // // //       );
 
@@ -353,7 +353,7 @@
 // // // // // // // // // // // // // //       console.log('Sending Payload:', formData);
 
 // // // // // // // // // // // // // //       const res = await axios.post(
-// // // // // // // // // // // // // //         'http://localhost:8080/api/registration/create',
+// // // // // // // // // // // // // //         'https://backendconf.roboticsaisummit.com/api/registration/create',
 // // // // // // // // // // // // // //         formData
 // // // // // // // // // // // // // //       );
 
@@ -704,7 +704,7 @@
 // // // // // // // // // // // // //     setLoading(true);
 // // // // // // // // // // // // //     try {
 // // // // // // // // // // // // //       const res = await axios.post(
-// // // // // // // // // // // // //         "http://localhost:8080/api/registration/create",
+// // // // // // // // // // // // //         "https://backendconf.roboticsaisummit.com/api/registration/create",
 // // // // // // // // // // // // //         formData
 // // // // // // // // // // // // //       );
 // // // // // // // // // // // // //       window.location.href = res.data.checkoutUrl;
@@ -968,7 +968,7 @@
 // // // // // // // // // // // //     setLoading(true);
 // // // // // // // // // // // //     try {
 // // // // // // // // // // // //       const res = await axios.post(
-// // // // // // // // // // // //         "http://localhost:8080/api/registration/create",
+// // // // // // // // // // // //         "https://backendconf.roboticsaisummit.com/api/registration/create",
 // // // // // // // // // // // //         formData
 // // // // // // // // // // // //       );
 // // // // // // // // // // // //       window.location.href = res.data.checkoutUrl;
@@ -5842,7 +5842,7 @@
 //   try {
 //     const res = await axios.post(
 //       "https://backendconf.roboticsaisummit.com/api/registration/create",
-//     // "http://localhost:8080/api/registration/create",
+//     // "https://backendconf.roboticsaisummit.com/api/registration/create",
 //       formData
 //     );
 
@@ -6462,6 +6462,20 @@ interface FormData {
     captcha: string; 
 }
 
+interface ImportantDate {
+    id: number;
+    date: string;
+    conferencecode: string;
+    dateType: string;
+}
+
+interface Venue {
+    id: number;
+    venue: string;
+    conferencecode: string;
+    description: string;
+}
+
 // ---------------- STYLES ----------------
 
 const Style: React.FC = () => (
@@ -6714,6 +6728,10 @@ const RegistrationPage: React.FC = () => {
         captcha: "",
     });
 
+    // API Data State
+    const [importantDates, setImportantDates] = useState<ImportantDate[]>([]);
+    const [venueData, setVenueData] = useState<Venue | null>(null);
+
     const nameRef = useRef<HTMLInputElement>(null);
     const phoneRef = useRef<HTMLInputElement>(null);
     const emailRef = useRef<HTMLInputElement>(null);
@@ -6722,48 +6740,29 @@ const RegistrationPage: React.FC = () => {
     const captchaRef = useRef<HTMLInputElement>(null);
     const errorSectionRef = useRef<HTMLDivElement>(null);
 
-    // ---------------- PAYMENT VERIFICATION LOGIC ----------------
-    // This runs when the page loads (e.g. when user returns from payment gateway)
-    // useEffect(() => {
-    //     const checkPaymentStatus = async () => {
-    //         const isPending = localStorage.getItem('is_payment_pending');
-    //         const pendingEmail = localStorage.getItem('pending_payment_email');
+    // Fetch API Data
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // Fetch important dates
+                const datesRes = await fetch('https://backendconf.roboticsaisummit.com/api/robotics/important-dates/by-conferencecode/biomedical');
+                const datesData: ImportantDate[] = await datesRes.json();
+                setImportantDates(datesData);
 
-    //         // Only check if we explicitly flagged a pending payment and have an email
-    //         if (isPending === 'true' && pendingEmail) {
-    //             setVerifyingPayment(true);
-    //             try {
-    //                 console.log(`Verifying payment for: ${pendingEmail}`);
-    //                 const res = await axios.get(`https://backendconf.roboticsaisummit.com/api/registration/status/${pendingEmail}`);
-                    
-    //                 const status = res.data.paymentStatus;
-    //                 console.log("Payment Status:", status);
+                // Fetch venue
+                const venueRes = await fetch('https://backendconf.roboticsaisummit.com/api/robotics/venues/by-conferencecode/biomedical');
+                const venueDataArray: Venue[] = await venueRes.json();
+                if (venueDataArray.length > 0) {
+                    setVenueData(venueDataArray[0]);
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
 
-    //                 // Clear flags to prevent infinite checks on reload
-    //                 localStorage.removeItem('is_payment_pending');
-    //                 localStorage.removeItem('pending_payment_email');
+        fetchData();
+    }, []);
 
-    //                 if (status === 'COMPLETED') {
-    //                     window.location.href = '/thankyou';
-    //                 } else {
-    //                     window.location.href = '/payment-fail';
-    //                 }
-    //             } catch (error) {
-    //                 console.error("Error verifying payment:", error);
-    //                 // On error, we assume fail or let the user retry
-    //                 localStorage.removeItem('is_payment_pending');
-    //                 localStorage.removeItem('pending_payment_email');
-    //                 window.location.href = '/payment-fail';
-    //             } finally {
-    //                 setVerifyingPayment(false);
-    //             }
-    //         }
-    //     };
-
-    //     checkPaymentStatus();
-    // }, []);
-
-    // ---- Plan Matching Logic ----
     useEffect(() => {
         const plans = pricingData.pricing as PricingItem[];
         
@@ -6958,7 +6957,7 @@ const RegistrationPage: React.FC = () => {
                         </h2>
                         <div className="w-24 h-1 bg-black mx-auto mb-2"></div>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                            Register for the AIMLR 2026
+                            Register for the ICBME 2026
                         </p>
                     </div>
 
@@ -6967,16 +6966,17 @@ const RegistrationPage: React.FC = () => {
                             {/* INFO STRIP */}
                             <div className="info-section">
                                 <div className="info-item">
-                                    <label>Conference Date</label>
-                                    <p>July 28–30, 2026</p>
+                                    <label>Conference Dates</label>
+                                    <p>{importantDates.find(d => d.dateType === 'Conference Dates')?.date || 'Loading...'}</p>
                                 </div>
                                 <div className="info-item">
                                     <label>Location</label>
-                                    <p>Crowne Plaza - St. Peter’s Rome, Italy</p>
+                                    <p>{venueData?.venue || 'Loading...'}</p>
+                                    
                                 </div>
                                 <div className="info-item">
                                     <label>Registration Deadline</label>
-                                    <p>July 10, 2026</p>
+                                    <p>{importantDates.find(d => d.dateType === 'Submission Deadline')?.date || 'Loading...'}</p>
                                 </div>
                             </div>
 
@@ -7178,8 +7178,11 @@ const RegistrationPage: React.FC = () => {
 
                                     <div className="mt-4 p-3 bg-white border border-blue-200 rounded text-sm text-gray-700">
                                         <p className="font-medium text-gray-900 mb-1">Accommodation Details:</p>
-                                        <p>• Conference Date: July 28–30, 2026</p>
-                                        <p>• Location: Crowne Plaza Rome - St. Peter’s</p>
+                                        
+                   
+                                        <p>• Conference Date: {importantDates.find(d => d.dateType === 'Conference Dates')?.date || 'Loading...'}</p>
+                                        <p>• {venueData?.venue || 'Loading...'}</p>
+                                        
                                         <p>• Selected: {formData.numberOfGuests} guest{formData.numberOfGuests > 1 ? 's' : ''} for {formData.numberOfNights} night{formData.numberOfNights > 1 ? 's' : ''}</p>
                                     </div>
                                 </div>

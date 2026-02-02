@@ -47,7 +47,7 @@ const ContactPage: React.FC = () => {
             Contact Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Team</span>
           </h1>
           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-            Have questions about AIMLR 2026? We're here to help you every step of the way.
+            Have questions about ICBME 2026? We're here to help you every step of the way.
           </p>
         </div>
       </div> */}
@@ -59,7 +59,7 @@ const ContactPage: React.FC = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h2
-              style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
+              style={{ fontFamily: "'Manrope', sans-serif", color: '#047857' }}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
               We're Here to Help
@@ -76,7 +76,7 @@ const ContactPage: React.FC = () => {
             <div className="space-y-8">
 
               {/* Conference Information */}
-              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-8 border border-indigo-100">
+                <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 p-8 border border-emerald-100">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
                     <MessageSquare className="w-6 h-6 text-indigo-600" />
@@ -104,7 +104,7 @@ const ContactPage: React.FC = () => {
               </div>
 
               {/* Contact Details */}
-              <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <div className="bg-white shadow-xl p-8 border border-gray-100">
                 <h3 className="text-xl font-bold text-gray-800 mb-6">Get in Touch</h3>
 
                 <div className="space-y-6">
@@ -245,65 +245,7 @@ const ContactPage: React.FC = () => {
 
 
 
-      {/* Support Team Section */}
-      {/* <div className="py-16 px-4 sm:px-6 lg:px-32 bg-white">
-        <div className="container mx-auto max-w-6xl">
 
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-              <Users className="w-8 h-8 text-blue-600" />
-            </div>
-            <h2
-              style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
-              className="text-3xl md:text-4xl font-bold mb-4"
-            >
-              Meet Our Support Team
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Our dedicated team is here to ensure your conference experience is exceptional
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 text-center border border-blue-100">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="font-bold text-gray-800 mb-2">Registration Support</h3>
-              <p className="text-gray-600 text-sm mb-3">Questions about registration, payments, and confirmations</p>
-              <a href="mailto:registration@icamlr2026.com" className="text-blue-600 hover:text-blue-800 font-medium">
-                registration@icamlr2026.com
-              </a>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 text-center border border-green-100">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="font-bold text-gray-800 mb-2">Abstract Submissions</h3>
-              <p className="text-gray-600 text-sm mb-3">Technical support for paper submissions and reviews</p>
-              <a href="mailto:abstracts@icamlr2026.com" className="text-green-600 hover:text-green-800 font-medium">
-                abstracts@icamlr2026.com
-              </a>
-            </div>
-
-            <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-6 text-center border border-purple-100">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="font-bold text-gray-800 mb-2">Sponsorship & Partnerships</h3>
-              <p className="text-gray-600 text-sm mb-3">Partnership opportunities and sponsorship inquiries</p>
-              <a href="mailto:sponsorship@icamlr2026.com" className="text-purple-600 hover:text-purple-800 font-medium">
-                sponsorship@icamlr2026.com
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div> */}
-
-      {/* Emergency Contacts & Social Media */}
    
       {/* FAQ Section */}
       <div className="py-16 px-4 sm:px-6 lg:px-32 bg-gray-50">
@@ -311,16 +253,16 @@ const ContactPage: React.FC = () => {
 
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-full mb-6">
-              <HelpCircle className="w-8 h-8 text-indigo-600" />
+              <HelpCircle className="w-8 h-8 text-[#047857]" />
             </div>
             <h2
-              style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
+              style={{ fontFamily: "'Manrope', sans-serif", color: '#047857' }}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 text-lg">
-              Quick answers to common questions about AIMLR 2026
+              Quick answers to common questions about ICBME 2026
             </p>
           </div>
 

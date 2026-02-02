@@ -9,14 +9,14 @@
 //       <div className="bg-gradient-to-r from-indigo-900 to-blue-500 text-white py-16">
 //         <div className="container mx-auto px-4 text-center">
 //           <h1 className="text-4xl font-bold mb-4">About the Conference</h1>
-//           <p className="text-xl">Discover the future of AI, Machine Learning, and Robotics</p>
+//           <p className="text-xl">Discover the future of Biomedical Engineering</p>
 //         </div>
 //       </div>
 //       <div className="py-16 bg-white">
 //         <div className="container mx-auto px-4">
 //           <div className="max-w-4xl mx-auto">
 //             <p className="text-lg text-gray-700 mb-8">
-//               Join the global community of visionaries at the International Conference on Artificial Intelligence, Machine Learning, and Robotics, taking place from July 28–30, 2026, at Crowne Plaza – St. Peter’s Rome, Italy. This world-class event brings together researchers, technologists, industry leaders, and innovators to explore groundbreaking advancements transforming industries and society.
+//               Join the global community of visionaries at the International Conference on Biomedical Engineering, taking place from July 28–30, 2026, at Crowne Plaza – St. Peter’s Rome, Italy. This world-class event brings together researchers, technologists, industry leaders, and innovators to explore groundbreaking advancements transforming industries and society.
 //             </p>
 //             <p className="text-lg text-gray-700 mb-8">
 //               Engage in insightful discussions and hands-on sessions on deep learning, autonomous systems, generative AI, human–robot collaboration, robotics in healthcare, and ethical AI frameworks. Explore how these technologies are transforming industries, enhancing decision-making, and improving human life through intelligent, adaptive systems. Gain valuable insights from global experts and innovators driving real-world AI and robotics applications. Join this dynamic platform that fosters collaboration, discovery, and innovation, shaping the next era of intelligent and sustainable technological progress.
@@ -106,26 +106,26 @@ function AboutPage() {
   return (
     <>
     <Helmet>
-        <title>About AIMLR 2026 | AI, ML & Robotics Conference Rome</title>
+        <title>About ICBME 2026 | Biomedical Engineering Conference Rome</title>
         
         <meta 
           name="description" 
-          content="Learn about AIMLR 2026, the premier International Conference on Artificial Intelligence, Machine Learning & Robotics in Rome. Discover our mission, vision, and global impact." 
+          content="Learn about ICBME 2026, the premier International Conference on Biomedical Engineering in Rome. Discover our mission, vision, and global impact." 
         />
         
         <meta 
           name="keywords" 
-          content="About AIMLR, AI Conference Mission, Robotics Conference Vision, AI Summit Rome, Machine Learning Event Goals, Future of AI" 
+          content="About ICBME, AI Conference Mission, Robotics Conference Vision, AI Summit Rome, Machine Learning Event Goals, Future of AI" 
         />
 
         <link rel="canonical" href="https://roboticsaisummit.com/about" />
         
         {/* Robots & Author */}
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="author" content="AIMLR Organizing Committee" />
+        <meta name="author" content="ICBME Organizing Committee" />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="About AIMLR 2026 - The Future of AI & Robotics" />
+        <meta property="og:title" content="About ICBME 2026 - The Future of AI & Robotics" />
         <meta property="og:description" content="Join us in Rome, July 2026. Uniting global minds for intelligent, sustainable innovation in AI and Robotics." />
         <meta property="og:url" content="https://roboticsaisummit.com/about" />
         <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
@@ -133,8 +133,8 @@ function AboutPage() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About AIMLR 2026 | Rome Conference" />
-        <meta name="twitter:description" content="Discover the mission and vision of the 3rd Global Conference on AI, ML & Robotics." />
+        <meta name="twitter:title" content="About ICBME 2026 | Rome Conference" />
+        <meta name="twitter:description" content="Discover the mission and vision of the 3rd Global Conference on Biomedical Engineering." />
         <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 
         {/* Organization Schema */}
@@ -143,10 +143,10 @@ function AboutPage() {
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "AIMLR 2026",
+              "name": "ICBME 2026",
               "url": "https://roboticsaisummit.com",
               "logo": "https://roboticsaisummit.com/aimllogo.jpg",
-              "description": "The International Conference on Artificial Intelligence, Machine Learning, and Robotics.",
+              "description": "The International Conference on Biomedical Engineering.",
               "location": {
                 "@type": "Place",
                 "name": "Crowne Plaza Rome - St. Peter's",
@@ -166,7 +166,7 @@ function AboutPage() {
      
   <main>
       {/* --- HERO SECTION --- */}
-      <div className="relative bg-indigo-900 text-white overflow-hidden">
+      {/* <div className="relative bg-indigo-900 text-white overflow-hidden">
       
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         
@@ -177,7 +177,7 @@ function AboutPage() {
             <span className="text-sm font-medium text-indigo-200 uppercase tracking-wide">International Conference 2026</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-white to-indigo-200">
-            The Future of AI, ML & Robotics
+            The Future of Biomedical Engineering
           </h1>
           <p className="text-xl md:text-2xl text-indigo-100 max-w-2xl mx-auto mb-8 font-light">
             Uniting minds for intelligent, sustainable innovation.
@@ -200,10 +200,10 @@ function AboutPage() {
 
 
 
-      </div>
+      </div> */}
 
       {/* --- ABOUT SECTION (Split Layout) --- */}
-      <div className="py-20 bg-white">
+      <div className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image Side */}
@@ -211,8 +211,8 @@ function AboutPage() {
 
             {/* <div className="lg:w-1/2 relative">
               <video 
-              src="aimlr-2026-video.mp4" 
-              alt="AIMLR 2026 Video" 
+              src="ICBME-2026-video.mp4" 
+              alt="ICBME 2026 Video" 
               className="relative shadow-2xl w-full object-cover h-[400px] rounded-2xl"
               controls
               autoPlay
@@ -223,14 +223,14 @@ function AboutPage() {
 
             <div className="lg:w-1/2 relative overflow-hidden">
   <video
-    src="aimlr-2026-video.mp4"
+    src="ICBME-2026-video.mp4"
     className="w-full h-[320px] object-cover aspect-video"
     autoPlay
     muted
     loop
     playsInline
     controls
-    poster="/aimlr-2026-video-poster.jpg"
+    poster="/ICBME-2026-video-poster.jpg"
   />
 </div>
 
@@ -241,7 +241,7 @@ function AboutPage() {
                 Shaping the Intelligent Era
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                The International Conference on Artificial Intelligence, Machine Learning, and Robotics (AIMLR 2026) provides a global forum for researchers, academics, and industry professionals to share ideas, present research, and discuss recent advancements in intelligent systems.
+                The International Conference on Biomedical Engineering (ICBME 2026) provides a global forum for researchers, academics, and industry professionals to share ideas, present research, and discuss recent advancements in intelligent systems.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 The conference encourages knowledge exchange across theoretical research, applied innovations, and interdisciplinary collaboration, supporting the development of responsible and impactful AI and robotics technologies.
@@ -278,9 +278,9 @@ function AboutPage() {
       {/* --- CTA SECTION --- */}
       {/* <div className="py-12 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">JOIN AIMLR 2026</h2>
+          <h2 className="text-3xl font-bold mb-4">JOIN ICBME 2026</h2>
           <p className="text-lg text-indigo-200 mb-8 max-w-2xl mx-auto">
-            Participate in an international academic forum dedicated to AI, Machine Learning, and Robotics.
+            Participate in an international academic forum dedicated to Biomedical Engineering.
           </p>
           <Link to="/register">
             <button className="bg-white text-indigo-900 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
@@ -299,18 +299,18 @@ function AboutPage() {
       className="inline-block mb-4 px-4 py-1 text-xs font-semibold tracking-wider uppercase
       text-[#047857] bg-[#D1FAE5] rounded-full"
     >
-      AIMLR 2026
+      ICBME 2026
     </span>
 
     {/* Heading */}
     <h2 className="text-2xl md:text-3xl font-extrabold text-[#1E293B] mb-4">
-      Join AIMLR 2026
+      Join ICBME 2026
     </h2>
 
     {/* Description */}
     <p className="text-[#475569] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
       Participate in a premier international academic forum dedicated to
-      Artificial Intelligence, Machine Learning, and Robotics.
+      Biomedical Engineering.
     </p>
 
     {/* CTA */}

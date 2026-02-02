@@ -9,9 +9,9 @@
 // //       <Header />
 // //       <section className="py-16 px-4 md:px-16 max-w-4xl mx-auto">
 // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Cookie Policy</h1>
-// //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Cookie Policy for AI, ML & Robotics Conference</h2>
+// //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Cookie Policy for Biomedical Engineering Conference</h2>
 // //         <p className="text-lg mb-6 text-gray-700">
-// //           World Conference on Artificial Intelligence, Machine Learning, and Robotics
+// //           World Conference on Biomedical Engineering
 // //           <br />
 // //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
 // //         </p>
@@ -91,11 +91,11 @@
 //         {/* <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Cookie Policy</h1> */}
 
 //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
-//           Cookie Policy for AI, ML & Robotics International Conference
+//           Cookie Policy for Biomedical Engineering International Conference
 //         </h2>
 
 //         <p className="text-base mb-6 text-gray-700">
-//           World Conference on Artificial Intelligence, Machine Learning, and Robotics  
+//           World Conference on Biomedical Engineering  
 //           <br />
 //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
 //         </p>
@@ -315,7 +315,7 @@ const CookiePolicyPage: React.FC = () => {
             Cookie Policy
           </h1>
           <p className="text-lg text-gray-700 font-medium mt-2">
-            World Conference on Artificial Intelligence, Machine Learning, and Robotics
+            World Conference on Biomedical Engineering
           </p>
           <p className="text-sm text-gray-500 mt-1">
             July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy

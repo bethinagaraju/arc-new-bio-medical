@@ -15,7 +15,7 @@ function SpeakersBanner() {
           Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Speakers</span>
         </h1>
         <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-          Discover the thought leaders and innovators shaping the future of AI, Machine Learning, and Robotics.
+          Discover the thought leaders and innovators shaping the future of Biomedical Engineering.
         </p>
       </div>
     </div>
