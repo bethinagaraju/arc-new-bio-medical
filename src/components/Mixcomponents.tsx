@@ -128,7 +128,8 @@
 
 
 
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useConference } from "../contexts/ConferenceContext";
 
 interface Speaker {
   id: number;
@@ -141,36 +142,9 @@ interface Speaker {
 }
 
 function Mixcomponents() {
-  const [speakers, setSpeakers] = useState<Speaker[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const { data, loading, error } = useConference();
 
-  useEffect(() => {
-    const fetchSpeakers = async () => {
-      try {
-        const res = await fetch(
-          "https://backendconf.roboticsaisummit.com/api/speakers/conference/biomedical"
-        );
-
-        if (!res.ok) {
-          throw new Error("Failed to fetch speakers");
-        }
-
-        const data: Speaker[] = await res.json();
-
-        // optional: sort by orderIndex
-        data.sort((a, b) => a.orderIndex - b.orderIndex);
-
-        setSpeakers(data);
-      } catch (err) {
-        setError("Unable to load speakers");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchSpeakers();
-  }, []);
+  const speakers = data?.speakers.sort((a, b) => a.orderIndex - b.orderIndex).slice(0, 6) || [];
 
   if (loading) {
     return (

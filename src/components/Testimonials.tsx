@@ -650,6 +650,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { useConference } from "../contexts/ConferenceContext";
 
 /* =======================
    Types
@@ -663,47 +664,22 @@ interface Testimonial {
   rating?: number;
 }
 
-interface ApiTestimonial {
-  id: number;
-  imagePath: string;
-  name: string;
-  university: string;
-  description: string;
-  rating?: number;
-  conferencecode: string;
-}
-
 /* =======================
    Component
 ======================= */
 const Testimonials: React.FC = () => {
-  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const { data, loading, error } = useConference();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  /* =======================
-     Fetch Testimonials
-  ======================= */
-  useEffect(() => {
-    fetch(
-      "https://backendconf.roboticsaisummit.com/api/testimonials/by-conferencecode/biomedical"
-    )
-      .then((res) => res.json())
-      .then((data: ApiTestimonial[]) => {
-        const mapped = data.map((item) => ({
-          id: item.id,
-          name: item.name,
-          title: item.university,
-          image: item.imagePath,
-          message: item.description,
-          rating: item.rating,
-        }));
-        setTestimonials(mapped);
-      })
-      .catch((err) =>
-        console.error("Testimonials API error:", err)
-      );
-  }, []);
+  const testimonials: Testimonial[] = data?.testimonials.map((item) => ({
+    id: item.id,
+    name: item.name,
+    title: item.university,
+    image: item.imagePath,
+    message: item.description,
+    rating: item.rating,
+  })) || [];
 
   /* =======================
      Responsive Check
@@ -715,6 +691,8 @@ const Testimonials: React.FC = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  if (loading) return <div>Loading testimonials...</div>;
+  if (error) return <div>Error loading testimonials: {error}</div>;
   if (!testimonials.length) return null;
 
   /* =======================

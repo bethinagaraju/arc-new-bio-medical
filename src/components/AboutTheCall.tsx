@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   FileText,
   Users,
@@ -13,26 +13,10 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-
-interface Topic {
-  id: number;
-  topicName: string;
-  conferencecode: string;
-  orderIndex: number;
-}
+import { useConference } from '../contexts/ConferenceContext';
 
 const AboutTheCall: React.FC = () => {
-  const [topics, setTopics] = useState<Topic[]>([]);
-
-  useEffect(() => {
-    fetch('https://backendconf.roboticsaisummit.com/api/robotics/topics/by-conferencecode/biomedical')
-      .then(res => res.json())
-      .then((data: Topic[]) => {
-        const sortedData = data.sort((a, b) => a.orderIndex - b.orderIndex);
-        setTopics(sortedData.slice(0, 8)); // Limit to 8 topics
-      })
-      .catch(err => console.error('Error fetching topics:', err));
-  }, []);
+  const { data } = useConference();
   return (
     <>
       {/* ================= SEO (UNCHANGED) ================= */}
@@ -146,7 +130,7 @@ const AboutTheCall: React.FC = () => {
 
             <SectionRow icon={<Target className="w-5 h-5" />} title="Topics of Interest">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
-                {topics.map((item) => (
+                {data?.topics?.slice(0, 8).map((item) => (
                   <ListItem key={item.id} text={item.topicName} />
                 ))}
               </div>

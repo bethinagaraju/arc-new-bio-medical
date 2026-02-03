@@ -1180,6 +1180,7 @@
 import { useEffect, useState } from "react";
 import { ScrollText } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useConference } from "../contexts/ConferenceContext";
 
 /* =======================
    Types
@@ -1196,29 +1197,9 @@ interface CommitteeMember {
    Page
 ======================= */
 function CommitteePage() {
-  const [committeeMembers, setCommitteeMembers] = useState<CommitteeMember[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const { data, loading, error } = useConference();
 
-  /* =======================
-     Fetch Committee Members
-  ======================= */
-  useEffect(() => {
-    fetch(
-      "https://backendconf.roboticsaisummit.com/api/committees/by-conferencecode/biomedical"
-    )
-      .then((res) => res.json())
-      .then((data: CommitteeMember[]) => {
-        const sorted = [...data].sort(
-          (a, b) => a.orderIndex - b.orderIndex
-        );
-        setCommitteeMembers(sorted);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Committee API error:", err);
-        setLoading(false);
-      });
-  }, []);
+  const committeeMembers = data?.committee || [];
 
   return (
     <section className="font-sans text-[#1E293B]">
@@ -1245,6 +1226,10 @@ function CommitteePage() {
             <div className="flex justify-center items-center py-12">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#047857]"></div>
               <span className="ml-3 text-slate-600">Loading committee members...</span>
+            </div>
+          ) : error ? (
+            <div className="text-center py-12 text-red-500">
+              Error loading committee: {error}
             </div>
           ) : (
             <ul className="space-y-4">

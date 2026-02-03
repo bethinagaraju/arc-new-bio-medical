@@ -101,6 +101,7 @@ import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useConference } from "../contexts/ConferenceContext";
 
 interface Sponsor {
   id: number;
@@ -111,27 +112,12 @@ interface Sponsor {
 }
 
 const CompanyCarousel = () => {
-  const [logos, setLogos] = useState<{ src: string; alt: string }[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const { data, loading, error } = useConference();
 
-  useEffect(() => {
-    fetch(
-      "https://backendconf.roboticsaisummit.com/api/robotics/sponsors/by-conferencecode/biomedical"
-    )
-      .then((res) => res.json())
-      .then((data: Sponsor[]) => {
-        const mappedLogos = data.map((item) => ({
-          src: item.imagePath,
-          alt: `${item.name} logo - Partner of Biomedical Conference`,
-        }));
-        setLogos(mappedLogos);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error fetching sponsors:", err);
-        setLoading(false);
-      });
-  }, []);
+  const logos = data?.sponsors.map((item) => ({
+    src: item.imagePath,
+    alt: `${item.name} logo - Partner of Biomedical Conference`,
+  })) || [];
 
   const settings = {
     infinite: true,
@@ -167,6 +153,14 @@ const CompanyCarousel = () => {
         <div className="flex justify-center items-center py-12">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
           <span className="ml-3 text-slate-600">Loading sponsors...</span>
+        </div>
+      ) : error ? (
+        <div className="flex justify-center items-center py-12">
+          <span className="text-red-600">Error loading sponsors: {error}</span>
+        </div>
+      ) : logos.length === 0 ? (
+        <div className="flex justify-center items-center py-12">
+          <span className="text-slate-600">No sponsors available</span>
         </div>
       ) : (
         <Slider {...settings}>

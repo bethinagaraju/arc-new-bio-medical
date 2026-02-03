@@ -389,34 +389,21 @@
 
 
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { useConference } from "../contexts/ConferenceContext";
 
-interface Topic {
-  id: number;
-  topicName: string;
-  conferencecode: string;
-  orderIndex: number;
-}
+// Skeleton component for loading state
+const SkeletonCard: React.FC = () => (
+  <div className="bg-white px-6 py-4 border border-gray-200 animate-pulse">
+    <div className="h-5 bg-gray-200 rounded w-3/4"></div>
+  </div>
+);
 
 const ScientificSession: React.FC = () => {
-  const [sessions, setSessions] = useState<Topic[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const { data, loading, error } = useConference();
 
-  useEffect(() => {
-    fetch('https://backendconf.roboticsaisummit.com/api/robotics/topics/by-conferencecode/biomedical')
-      .then(res => res.json())
-      .then((data: Topic[]) => {
-        // Sort by orderIndex
-        const sortedData = data.sort((a, b) => a.orderIndex - b.orderIndex);
-        setSessions(sortedData);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error fetching topics:', err);
-        setLoading(false);
-      });
-  }, []);
+  const sessions = data?.topics?.sort((a, b) => a.orderIndex - b.orderIndex) || [];
 
   return (
     <div className="w-full py-14 px-4">
@@ -428,10 +415,16 @@ const ScientificSession: React.FC = () => {
 
       {/* SESSION GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-7xl mx-auto">
-        {loading ? (
+        {loading && sessions.length === 0 ? (
+          // Show skeleton cards while loading (no cached data)
+          <>
+            {Array.from({ length: 12 }).map((_, index) => (
+              <SkeletonCard key={index} />
+            ))}
+          </>
+        ) : error && sessions.length === 0 ? (
           <div className="col-span-full flex justify-center items-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#047857]"></div>
-            <span className="ml-3 text-slate-600">Loading topics...</span>
+            <span className="text-red-600">Error loading topics: {error}</span>
           </div>
         ) : (
           sessions.map((item) => (

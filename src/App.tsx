@@ -1,12 +1,6 @@
-
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ConferenceProvider } from './contexts/ConferenceContext';
 import HomePage from './components/HomePage';
 // import BiotechAgenda from './components/BiotechAgenda';
 import AbstractSubmission from './components/AbstractSubmission';
@@ -26,11 +20,6 @@ import CommitteePage from './pages/CommitteePage';
 // import PastConferencesPage from './pages/PastConferencesPage';
 import Posterpage from './pages/Posterpage';
 import CallForPapersPage from './pages/CallForPapersPage';
-
-
-
-
-
 import ScrollToTop from './components/ScrollToTop';
 import ContactPage from './pages/ContactPage';
 import HurryUpModal from './components/HurryUpModal';
@@ -91,9 +80,10 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
+    <ConferenceProvider>
+      <Router>
+        <ScrollToTop />
+        <Routes>
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/register" element={<RegisterPage />} /> */}
         <Route path="/register" element={<RegisterPasses />} />
@@ -146,6 +136,7 @@ function App() {
       <WhatsAppButton />
       {/* <HurryUpModal isOpen={showModal} onClose={() => setShowModal(false)} /> */}
     </Router>
+    </ConferenceProvider>
   );
 }
 

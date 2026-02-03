@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import EndFooter from '../components/EndFooter';
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare, ChevronDown, ChevronUp, Users, HelpCircle, Globe, AlertTriangle, FileText } from 'lucide-react';
-import WhatsAppButton from '../components/WhatsAppButton';
+import { Mail, MapPin, Clock, Send, MessageSquare, ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { useConference } from '../contexts/ConferenceContext';
 
 const ContactPage: React.FC = () => {
+  const { data } = useConference();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -89,7 +89,7 @@ const ContactPage: React.FC = () => {
                     <MapPin className="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-800">Venue</p>
-                      <p className="text-gray-600">Crowne Plaza — St. Peter's Rome<br />Via Aurelia Antica, 415<br />Rome, Italy</p>
+                      <p className="text-gray-600">{data?.venues[0]?.venue}</p>
                     </div>
                   </div>
 
@@ -97,9 +97,10 @@ const ContactPage: React.FC = () => {
                     <Clock className="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-gray-800">Dates</p>
-                      <p className="text-gray-600">July 28–30, 2026</p>
+                      <p className="text-gray-600">{data?.importantDates?.find(d => d.dateType === 'Conference Dates')?.date}</p>
                     </div>
                   </div>
+
                 </div>
               </div>
 

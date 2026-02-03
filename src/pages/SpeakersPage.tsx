@@ -498,11 +498,12 @@
 
 
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import SpeakersBottomSection from "../components/SpeakersBottomSection";
 import EndFooter from "../components/EndFooter";
 import { Helmet } from "react-helmet-async";
+import { useConference } from "../contexts/ConferenceContext";
 
 /* ================= TYPES ================= */
 
@@ -525,45 +526,23 @@ interface CommitteeMember {
 /* ================= COMPONENT ================= */
 
 function SpeakersPage() {
-  const [speakers, setSpeakers] = useState<Speaker[]>([]);
-  const [committee, setCommittee] = useState<CommitteeMember[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data, loading, error } = useConference();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [speakersRes, committeeRes] = await Promise.all([
-          fetch(
-            "https://backendconf.roboticsaisummit.com/api/speakers/conference/biomedical"
-          ),
-          fetch(
-            "https://backendconf.roboticsaisummit.com/api/committees/by-conferencecode/biomedical"
-          ),
-        ]);
-
-        const speakersData: Speaker[] = await speakersRes.json();
-        const committeeData: CommitteeMember[] = await committeeRes.json();
-
-        // sort by orderIndex
-        speakersData.sort((a, b) => a.orderIndex - b.orderIndex);
-        committeeData.sort((a, b) => a.orderIndex - b.orderIndex);
-
-        setSpeakers(speakersData);
-        setCommittee(committeeData.slice(0, 4)); // ✅ ONLY 4 MEMBERS
-      } catch (error) {
-        console.error("Failed to load speakers or committee");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const speakers = data?.speakers || [];
+  const committee = data?.committee || [];
 
   if (loading) {
     return (
       <div className="text-center py-24 text-gray-500">
         Loading speakers & committee...
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center py-24 text-red-500">
+        Error loading data: {error}
       </div>
     );
   }
@@ -641,7 +620,7 @@ function SpeakersPage() {
             </h3>
 
             <div className="space-y-4">
-              {committee.map((member) => (
+              {committee.slice(0, 4).map((member) => (
                 <div
                   key={member.id}
                   className="p-4 bg-[#ECFDF5] border border-[#D1FAE5]"

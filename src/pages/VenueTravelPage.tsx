@@ -574,12 +574,7 @@ function VenueTravelPage() {
       {/* <Header /> */}
       
       {/* --- 1. OLD BANNER (Restored) --- */}
-      {/* <div className="bg-[#312e81] bg-[url('https://www.transparenttextures.com/patterns/dark-fish-skin.png')] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">Venue & Travel</h1>
-          <p className="text-xl">Everything you need to know about attending ICBME 2026 in Rome</p>
-        </div>
-      </div> */}
+
 
       <div className="py-0 bg-white">
         <div className="container mx-auto px-4">

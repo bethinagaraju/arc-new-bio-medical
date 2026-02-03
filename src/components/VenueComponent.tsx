@@ -679,6 +679,7 @@
 
 import { useState, useEffect } from "react";
 import { MapPin, Navigation, ExternalLink, Phone } from "lucide-react";
+import { useConference } from "../contexts/ConferenceContext";
 
 interface Venue {
   id: number;
@@ -688,27 +689,27 @@ interface Venue {
 }
 
 function VenueComponent() {
-  const [venueData, setVenueData] = useState<Venue | null>(null);
+  const { data, loading, error } = useConference();
 
-  useEffect(() => {
-    fetch('https://backendconf.roboticsaisummit.com/api/robotics/venues/by-conferencecode/biomedical')
-      .then(res => res.json())
-      .then((data: Venue[]) => {
-        if (data.length > 0) {
-          setVenueData(data[0]);
-        }
-      })
-      .catch(err => console.error('Error fetching venue:', err));
-  }, []);
+  const venueData = data?.venues[0] || null;
   return (
     <section className="w-full py-6 font-sans">
       <div className="max-w-8xl">
 
         {/* MAIN CONTAINER */}
-        <div
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center
-          border border-gray-200 rounded-xl px-2 py-2"
-        >
+        {loading ? (
+          <div className="text-center py-12 text-gray-500">
+            Loading venue information...
+          </div>
+        ) : error ? (
+          <div className="text-center py-12 text-red-500">
+            Error loading venue: {error}
+          </div>
+        ) : (
+          <div
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center
+            border border-gray-200 rounded-xl px-2 py-2"
+          >
 
           {/* ================= LEFT PANEL ================= */}
           <div className="lg:col-span-1 space-y-4">
@@ -782,6 +783,7 @@ function VenueComponent() {
           </div>
 
         </div>
+        )}
       </div>
     </section>
   );

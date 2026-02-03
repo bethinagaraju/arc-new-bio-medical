@@ -701,6 +701,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useConference } from '../contexts/ConferenceContext';
 
 /* =======================
    Types
@@ -725,48 +726,14 @@ interface ScheduleData {
    Agenda Component
 ======================= */
 const Agenda: React.FC = () => {
+  const { data, loading, error } = useConference();
   const [activeDay, setActiveDay] = useState<number>(1);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [scheduleData, setScheduleData] = useState<ScheduleData>({
-    day1: [],
-    day2: [],
-    day3: [],
-  });
 
-  /* =======================
-     Fetch Agenda API
-  ======================= */
-  useEffect(() => {
-    fetch(
-      'https://backendconf.roboticsaisummit.com/api/agendas/conference/biomedical'
-    )
-      .then((res) => res.json())
-      .then((data: ScheduleItem[]) => {
-        const grouped: ScheduleData = {
-          day1: [],
-          day2: [],
-          day3: [],
-        };
-
-        data.forEach((item) => {
-          if (item.day === 'day1') grouped.day1.push(item);
-          if (item.day === 'day2') grouped.day2.push(item);
-          if (item.day === 'day3') grouped.day3.push(item);
-        });
-
-        // Sort by orderIndex
-        grouped.day1.sort((a, b) => a.orderIndex - b.orderIndex);
-        grouped.day2.sort((a, b) => a.orderIndex - b.orderIndex);
-        grouped.day3.sort((a, b) => a.orderIndex - b.orderIndex);
-
-        setScheduleData(grouped);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error('Agenda API error:', err);
-        setLoading(false);
-      });
-  }, []);
+  const scheduleData: ScheduleData = {
+    day1: data?.agenda.filter(item => item.day === 'day1').sort((a, b) => a.orderIndex - b.orderIndex) || [],
+    day2: data?.agenda.filter(item => item.day === 'day2').sort((a, b) => a.orderIndex - b.orderIndex) || [],
+    day3: data?.agenda.filter(item => item.day === 'day3').sort((a, b) => a.orderIndex - b.orderIndex) || [],
+  };
 
   /* =======================
      Render Schedule
@@ -866,6 +833,10 @@ const Agenda: React.FC = () => {
             <div className="flex justify-center items-center py-12">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#047857]"></div>
               <span className="ml-3 text-slate-600">Loading agenda...</span>
+            </div>
+          ) : error ? (
+            <div className="flex justify-center items-center py-12">
+              <span className="text-red-600">Error loading agenda: {error}</span>
             </div>
           ) : (
             <>

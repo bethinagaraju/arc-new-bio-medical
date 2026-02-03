@@ -400,8 +400,10 @@ import {
   CalendarDays,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useConference } from '../contexts/ConferenceContext';
 
 const ConferenceGuidelines: React.FC = () => {
+  const { data, loading, error } = useConference();
   return (
     <section className="max-w-5xl mx-auto px-6 py-6 font-sans text-[#1E293B]">
 
@@ -423,12 +425,14 @@ const ConferenceGuidelines: React.FC = () => {
           <h2 className="text-xl font-semibold">Conference Details</h2>
         </div>
 
+        {loading ? <div>Loading...</div> : error ? <div>Error: {error}</div> : (
         <ul className="space-y-1 text-gray-700 text-sm md:text-base">
-          <li><strong>Date:</strong> July 28, 2026</li>
+          <li><strong>Date:</strong> {data?.importantDates?.find(d => d.dateType === 'Conference Start Date')?.date}</li>
           <li><strong>Time:</strong> 08:00 AM</li>
           <li><strong>Location:</strong> Rome, Italy</li>
-          <li><strong>Venue:</strong> Crowne Plaza – St. Peter’s, Rome</li>
+          <li><strong>Venue:</strong> {data?.venues[0]?.venue}</li>
         </ul>
+        )}
       </section>
 
       {/* ================= GUIDELINES ================= */}

@@ -271,21 +271,12 @@
 import { Bell } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
-/* =======================
-   Types
-======================= */
-interface ImportantDate {
-  id: number;
-  date: string;
-  conferencecode: string;
-  dateType: string;
-}
+import { useConference } from '../contexts/ConferenceContext';
 
 export default function AnnouncementBar() {
+  const { data } = useConference();
   const [isVisible, setIsVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
-  const [announcements, setAnnouncements] = useState<string[]>([]);
 
   /* =======================
      Mobile detection
@@ -308,36 +299,19 @@ export default function AnnouncementBar() {
   }, [isMobile]);
 
   /* =======================
-     Fetch Important Dates
+     Build Announcements from Context
   ======================= */
-  useEffect(() => {
-    fetch(
-      "https://backendconf.roboticsaisummit.com/api/robotics/important-dates/by-conferencecode/biomedical"
-    )
-      .then((res) => res.json())
-      .then((data: ImportantDate[]) => {
-        const list: string[] = [];
-
-        data.forEach((item) => {
-          if (item.dateType === "First Round of Abstract Submission Closes") {
-            list.push(
-              `First Round of Abstract Submission Closes on ${item.date}`
-            );
-          }
-
-          if (item.dateType === "Early Bird Registration Closes") {
-            list.push(
-              `Early Bird Registration Closes on ${item.date}`
-            );
-          }
-        });
-
-        setAnnouncements(list);
-      })
-      .catch((err) =>
-        console.error("Announcement API error:", err)
-      );
-  }, []);
+  const announcements: string[] = [];
+  
+  const abstractDate = data?.importantDates?.find(d => d.dateType === 'First Round of Abstract Submission Closes');
+  if (abstractDate) {
+    announcements.push(`First Round of Abstract Submission Closes on ${abstractDate.date}`);
+  }
+  
+  const earlyBirdDate = data?.importantDates?.find(d => d.dateType === 'Early Bird Registration Closes');
+  if (earlyBirdDate) {
+    announcements.push(`Early Bird Registration Closes on ${earlyBirdDate.date}`);
+  }
 
   /* =======================
      Render
