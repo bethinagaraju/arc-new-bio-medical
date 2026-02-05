@@ -209,6 +209,7 @@ import Dashboard from './RegionChartComponent';
 import Highletsec from './Highletsec';
 import WhatsAppButton from './WhatsAppButton';
 import WhyAttendNew from './WhyAttendNew';
+import WhySection from './WhySection';
 
 function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -337,6 +338,7 @@ function HomePage() {
           <Mixcomponents />
           
           <WhyAttendNew />
+          <WhySection />
           
           <ScientificSessions />
           
