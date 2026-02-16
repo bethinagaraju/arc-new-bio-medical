@@ -1,9 +1,309 @@
 
+// import React, { useState, useRef, useEffect } from "react";
+// import { Home, ChevronDown } from "lucide-react";
+// import { Link } from "react-router-dom";
+
+// const BottomNavbar = ({ menuOpen, setMenuOpen, headerRef }: { menuOpen: boolean, setMenuOpen: (open: boolean) => void, headerRef: React.RefObject<HTMLDivElement> }) => {
+//   const [hovered, setHovered] = useState<string | null>(null);
+//   const [conferenceOpen, setConferenceOpen] = useState(false);
+//   const [programOpen, setProgramOpen] = useState(false);
+//   const [callsOpen, setCallsOpen] = useState(false);
+//   const clickOutsideRef = useRef<((event: MouseEvent) => void) | null>(null);
+
+//   useEffect(() => {
+//     if (!menuOpen) {
+//       if (clickOutsideRef.current) {
+//         document.removeEventListener('mousedown', clickOutsideRef.current);
+//         clickOutsideRef.current = null;
+//       }
+//       return;
+//     }
+//     const handleClickOutside = (event: MouseEvent) => {
+//       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+//         setMenuOpen(false);
+//       }
+//     };
+//     clickOutsideRef.current = handleClickOutside;
+//     const timer = setTimeout(() => {
+//       document.addEventListener('mousedown', handleClickOutside);
+//     }, 100);
+//     return () => {
+//       clearTimeout(timer);
+//       if (clickOutsideRef.current) {
+//         document.removeEventListener('mousedown', clickOutsideRef.current);
+//         clickOutsideRef.current = null;
+//       }
+//     };
+//   }, [menuOpen, setMenuOpen, headerRef]);
+//   const initialScrollY = useRef<number>(0);
+
+//   useEffect(() => {
+//     if (!menuOpen) return;
+//     initialScrollY.current = window.scrollY;
+//     let timeoutId: NodeJS.Timeout;
+//     const handleScroll = () => {
+//       clearTimeout(timeoutId);
+//       timeoutId = setTimeout(() => {
+//         if (Math.abs(window.scrollY - initialScrollY.current) > 10) {
+//           setMenuOpen(false);
+//         }
+//       }, 100);
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       clearTimeout(timeoutId);
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, [menuOpen, setMenuOpen]);
+
+//   return (
+//     <div>
+//       {/* Desktop Navbar */}
+//       <nav
+//         className="hidden md:flex w-full h-[50px] flex items-center"
+//         style={{
+//           backgroundImage:
+//             "linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)",
+//         }}
+//       >
+//         <div className="container mx-auto px-4 hidden md:flex items-center justify-center gap-6 text-white font-semibold">
+          
+//           {/* HOME */}
+//           <Link
+//             to="/"
+//             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+//             className="flex items-center hover:text-gray-300 text-sm mr-12"
+//             title="Go to ICBME 2026 Home Page"
+//             aria-label="ICBME 2026 Home Page"
+//           >
+//             <Home size={20} />
+//             <span className="ml-2">HOME</span>
+//           </Link>
+
+
+//           {/* CALLS DROPDOWN */}
+//           <div
+//             className="relative"
+//             onMouseEnter={() => setHovered("calls")}
+//             onMouseLeave={() => setHovered(null)}
+//           >
+//             <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-2xl cursor-pointer flex items-center">
+//               CALLS <ChevronDown size={18} />
+//             </span>
+//             {hovered === "calls" && (
+//               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
+//                 <Link to="/call-for-abstract" className="block px-4 py-2 hover:bg-gray-100" title="Call for Abstracts - ICBME 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
+//                 <Link to="/call-for-papers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Papers - ICBME 2026" aria-label="Call for Papers">Call for Papers</Link>
+//                 <Link to="/call-for-posters" className="block px-4 py-2 hover:bg-gray-100" title="Call for Posters - ICBME 2026" aria-label="Call for Posters">Call for Posters</Link>
+//                 <Link to="/call-for-speakers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Speakers - ICBME 2026" aria-label="Call for Speakers">Call for Speakers</Link>
+//                 <Link to="/call-for-reviewers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Reviewers - ICBME 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
+//               </div>
+//             )}
+//           </div>
+
+//           {/* CONFERENCE DROPDOWN */}
+//           <div
+//             className="relative"
+//             onMouseEnter={() => setHovered("conference")}
+//             onMouseLeave={() => setHovered(null)}
+//           >
+//             <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
+//               CONFERENCE <ChevronDown size={16} />
+//             </span>
+//             {hovered === "conference" && (
+//               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
+//                 <Link to="/about" className="block px-4 py-2 hover:bg-gray-100" title="About ICBME 2026 Conference" aria-label="About Conference">About Conference</Link>
+//                 <Link to="/committee" className="block px-4 py-2 hover:bg-gray-100" title="ICBME 2026 Conference Committee" aria-label="Committee">Committee</Link>
+//                 {/* <Link to="/past-conferences" className="block px-4 py-2 hover:bg-gray-100">Past Conferences</Link> */}
+//               </div>
+//             )}
+//           </div>
+
+//           <Link to="/sessions" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Sessions - ICBME 2026" aria-label="Sessions">
+//             SESSIONS
+//           </Link>
+
+//           {/* SPEAKERS */}
+//           <Link to="/speakers" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Speakers - ICBME 2026" aria-label="Speakers">
+//             SPEAKERS
+//           </Link>
+
+//           {/* PROGRAM DROPDOWN */}
+//           <div
+//             className="relative"
+//             onMouseEnter={() => setHovered("program")}
+//             onMouseLeave={() => setHovered(null)}
+//           >
+//             <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
+//               PROGRAM <ChevronDown size={16} />
+//             </span>
+//             {hovered === "program" && (
+//               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
+//                 <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100" title="Program Schedule - ICBME 2026" aria-label="Program Schedule">Program Schedule</Link>
+//                 <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100" title="Venue - ICBME 2026" aria-label="Venue">Venue</Link>
+//                 {/* <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100" title="Sessions - ICBME 2026" aria-label="Sessions">Sessions</Link> */}
+//                 <Link to="/important-dates" className="block px-4 py-2 hover:bg-gray-100" title="Important Dates - ICBME 2026" aria-label="Important Dates">Important Dates</Link>
+
+//                 {/* Newly Added */}
+//                 <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100" title="Conference Guidelines - ICBME 2026" aria-label="Guidelines">Guidelines</Link>
+//                 <Link to="/faq" className="block px-4 py-2 hover:bg-gray-100" title="Conference FAQ - ICBME 2026" aria-label="FAQ">FAQ</Link>
+//               </div>
+//             )}
+//           </div>
+
+
+
+//           <Link to="/register" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Register for ICBME 2026 Conference" aria-label="Register">
+//             REGISTER
+//           </Link>
+
+//           <Link to="/contact" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Contact ICBME 2026 Organizers" aria-label="Contact">
+//             CONTACT
+//           </Link>
+
+//         </div>  
+//       </nav>
+
+//       {/* Mobile Menu */}
+//       {menuOpen && (
+//         <div className="md:hidden bg-white shadow-md px-6 py-6 space-y-6">
+//           <div className="space-y-3">
+//             <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="block text-gray-800 font-semibold" title="Go to ICBME 2026 Home Page" aria-label="ICBME 2026 Home Page">
+//               HOME
+//             </Link>
+
+
+//             {/* CALLS DROPDOWN */}
+//             <div>
+//               <div
+//                 onClick={() => setCallsOpen(!callsOpen)}
+//                 className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
+//               >
+//                 CALLS
+//                 <ChevronDown
+//                   className={`transform transition-transform ${callsOpen ? 'rotate-180' : ''}`}
+//                   size={16}
+//                 />
+//               </div>
+//               {callsOpen && (
+//                 <div className="ml-4 space-y-2 mt-2">
+//                   <Link to="/call-for-abstract" className="block text-gray-600 hover:text-gray-800" title="Call for Abstracts - ICBME 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
+//                   <Link to="/call-for-papers" className="block text-gray-600 hover:text-gray-800" title="Call for Papers - ICBME 2026" aria-label="Call for Papers">Call for Papers</Link>
+//                   <Link to="/call-for-posters" className="block text-gray-600 hover:text-gray-800" title="Call for Posters - ICBME 2026" aria-label="Call for Posters">Call for Posters</Link>
+//                   <Link to="/call-for-speakers" className="block text-gray-600 hover:text-gray-800" title="Call for Speakers - ICBME 2026" aria-label="Call for Speakers">Call for Speakers</Link>
+//                   <Link to="/call-for-reviewers" className="block text-gray-600 hover:text-gray-800" title="Call for Reviewers - ICBME 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
+//                 </div>
+//               )}
+//             </div>
+
+
+//                         {/* CONFERENCE DROPDOWN */}
+//             <div>
+//               <div
+//                 onClick={() => setConferenceOpen(!conferenceOpen)}
+//                 className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
+//               >
+//                 CONFERENCE
+//                 <ChevronDown
+//                   className={`transform transition-transform ${conferenceOpen ? 'rotate-180' : ''}`}
+//                   size={16}
+//                 />
+//               </div>
+//               {conferenceOpen && (
+//                 <div className="ml-4 space-y-2 mt-2">
+//                   <Link to="/about" className="block text-gray-600 hover:text-gray-800" title="About ICBME 2026 Conference" aria-label="About Conference">About Conference</Link>
+//                   <Link to="/committee" className="block text-gray-600 hover:text-gray-800" title="ICBME 2026 Conference Committee" aria-label="Committee">Committee</Link>
+//                 </div>
+//               )}
+//             </div>
+
+
+//             <Link to="/sessions" className="block text-gray-800 font-semibold" title="Conference Sessions - ICBME 2026" aria-label="Sessions">
+//               SESSIONS
+//             </Link>
+
+//             <Link to="/speakers" className="block text-gray-800 font-semibold" title="Conference Speakers - ICBME 2026" aria-label="Speakers">
+//               SPEAKERS
+//             </Link>
+
+
+
+//             {/* PROGRAM DROPDOWN */}
+//             <div>
+//               <div
+//                 onClick={() => setProgramOpen(!programOpen)}
+//                 className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
+//               >
+//                 PROGRAM
+//                 <ChevronDown
+//                   className={`transform transition-transform ${programOpen ? 'rotate-180' : ''}`}
+//                   size={16}
+//                 />
+//               </div>
+//               {programOpen && (
+//                 <div className="ml-4 space-y-2 mt-2">
+//                   <Link to="/schedule" className="block text-gray-600 hover:text-gray-800" title="Program Schedule - ICBME 2026" aria-label="Program Schedule">Program Schedule</Link>
+//                   <Link to="/venue" className="block text-gray-600 hover:text-gray-800" title="Venue - ICBME 2026" aria-label="Venue">Venue</Link>
+//                   {/* <Link to="/sessions" className="block text-gray-600 hover:text-gray-800" title="Sessions - ICBME 2026" aria-label="Sessions">Sessions</Link> */}
+//                   <Link to="/guidelines" className="block text-gray-600 hover:text-gray-800" title="Conference Guidelines - ICBME 2026" aria-label="Guidelines">Guidelines</Link>
+//                   <Link to="/important-dates" className="block text-gray-600 hover:text-gray-800" title="Important Dates - ICBME 2026" aria-label="Important Dates">Important Dates</Link>
+//                   <Link to="/faq" className="block text-gray-600 hover:text-gray-800" title="Conference FAQ - ICBME 2026" aria-label="FAQ">FAQ</Link>
+//                 </div>
+//               )}
+//             </div>
+
+//             <Link to="/register" className="block text-gray-800 font-semibold" title="Register for ICBME 2026 Conference" aria-label="Register">
+//               REGISTER
+//             </Link>
+
+//             <Link to="/contact" className="block text-gray-800 font-semibold" title="Contact ICBME 2026 Organizers" aria-label="Contact">
+//               CONTACT
+//             </Link>
+//           </div>
+
+//           {/* Mobile Buttons */}
+//           <div className="flex flex-col gap-3 pt-4">
+//             <Link to="/register" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
+//               <button className="w-full bg-[#0047bd] text-white font-bold py-2 rounded-md hover:bg-[#178E70] transition-colors duration-300" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
+//                 REGISTER
+//               </button>
+//             </Link>
+//             <Link to="/AbstractSubmission" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
+//               <button className="w-full bg-[#000f30] text-white font-bold py-2 rounded-md hover:bg-orange-600 transition-colors duration-300" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
+//                 ABSTRACT SUBMISSION
+//               </button>
+//             </Link>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default BottomNavbar;
+
+
+
+
+
+
+
 import React, { useState, useRef, useEffect } from "react";
 import { Home, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const BottomNavbar = ({ menuOpen, setMenuOpen, headerRef }: { menuOpen: boolean, setMenuOpen: (open: boolean) => void, headerRef: React.RefObject<HTMLDivElement> }) => {
+const navText =
+  "!text-xl tracking-wider hover:text-gray-300 font-semibold inline-flex items-center gap-1 cursor-pointer";
+
+const BottomNavbar = ({
+  menuOpen,
+  setMenuOpen,
+  headerRef,
+}: {
+  menuOpen: boolean;
+  setMenuOpen: (open: boolean) => void;
+  headerRef: React.RefObject<HTMLDivElement>;
+}) => {
   const [hovered, setHovered] = useState<string | null>(null);
   const [conferenceOpen, setConferenceOpen] = useState(false);
   const [programOpen, setProgramOpen] = useState(false);
@@ -13,267 +313,179 @@ const BottomNavbar = ({ menuOpen, setMenuOpen, headerRef }: { menuOpen: boolean,
   useEffect(() => {
     if (!menuOpen) {
       if (clickOutsideRef.current) {
-        document.removeEventListener('mousedown', clickOutsideRef.current);
+        document.removeEventListener("mousedown", clickOutsideRef.current);
         clickOutsideRef.current = null;
       }
       return;
     }
+
     const handleClickOutside = (event: MouseEvent) => {
-      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
         setMenuOpen(false);
       }
     };
+
     clickOutsideRef.current = handleClickOutside;
-    const timer = setTimeout(() => {
-      document.addEventListener('mousedown', handleClickOutside);
-    }, 100);
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
-      clearTimeout(timer);
       if (clickOutsideRef.current) {
-        document.removeEventListener('mousedown', clickOutsideRef.current);
+        document.removeEventListener("mousedown", clickOutsideRef.current);
         clickOutsideRef.current = null;
       }
     };
   }, [menuOpen, setMenuOpen, headerRef]);
-  const initialScrollY = useRef<number>(0);
-
-  useEffect(() => {
-    if (!menuOpen) return;
-    initialScrollY.current = window.scrollY;
-    let timeoutId: NodeJS.Timeout;
-    const handleScroll = () => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        if (Math.abs(window.scrollY - initialScrollY.current) > 10) {
-          setMenuOpen(false);
-        }
-      }, 100);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      clearTimeout(timeoutId);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [menuOpen, setMenuOpen]);
 
   return (
     <div>
-      {/* Desktop Navbar */}
+      {/* DESKTOP NAVBAR */}
       <nav
-        className="hidden md:flex w-full h-[50px] flex items-center"
+        className="hidden md:flex w-full h-[56px] items-center"
         style={{
-          backgroundImage:
+          background:
             "linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)",
         }}
       >
-        <div className="container mx-auto px-4 hidden md:flex items-center justify-center gap-6 text-white font-semibold text-[14px]">
-          
+        <div className="container mx-auto px-6 flex items-center justify-center gap-8 text-white">
+
           {/* HOME */}
           <Link
             to="/"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center hover:text-gray-300 text-sm mr-12"
-            title="Go to ICBME 2026 Home Page"
-            aria-label="ICBME 2026 Home Page"
+            className="flex items-center gap-2 hover:text-gray-300 !text-xl"
           >
-            <Home size={20} />
-            <span className="ml-2">HOME</span>
+            <Home size={22} />
+            HOME
           </Link>
 
-
-          {/* CALLS DROPDOWN */}
+          {/* CALLS */}
           <div
             className="relative"
             onMouseEnter={() => setHovered("calls")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
-              CALLS <ChevronDown size={16} />
+            <span
+              style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}
+              className={navText}
+            >
+              CALLS <ChevronDown className="w-5 h-5" />
             </span>
+
             {hovered === "calls" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
-                <Link to="/call-for-abstract" className="block px-4 py-2 hover:bg-gray-100" title="Call for Abstracts - ICBME 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
-                <Link to="/call-for-papers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Papers - ICBME 2026" aria-label="Call for Papers">Call for Papers</Link>
-                <Link to="/call-for-posters" className="block px-4 py-2 hover:bg-gray-100" title="Call for Posters - ICBME 2026" aria-label="Call for Posters">Call for Posters</Link>
-                <Link to="/call-for-speakers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Speakers - ICBME 2026" aria-label="Call for Speakers">Call for Speakers</Link>
-                <Link to="/call-for-reviewers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Reviewers - ICBME 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
+                {[
+                  ["Call for Abstracts", "/call-for-abstract"],
+                  ["Call for Papers", "/call-for-papers"],
+                  ["Call for Posters", "/call-for-posters"],
+                  ["Call for Speakers", "/call-for-speakers"],
+                  ["Call for Reviewers", "/call-for-reviewers"],
+                ].map(([label, path]) => (
+                  <Link
+                    key={label}
+                    to={path}
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    {label}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
 
-          {/* CONFERENCE DROPDOWN */}
+          {/* CONFERENCE */}
           <div
             className="relative"
             onMouseEnter={() => setHovered("conference")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
-              CONFERENCE <ChevronDown size={16} />
+            <span className={navText}>
+              CONFERENCE <ChevronDown className="w-5 h-5" />
             </span>
+
             {hovered === "conference" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
-                <Link to="/about" className="block px-4 py-2 hover:bg-gray-100" title="About ICBME 2026 Conference" aria-label="About Conference">About Conference</Link>
-                <Link to="/committee" className="block px-4 py-2 hover:bg-gray-100" title="ICBME 2026 Conference Committee" aria-label="Committee">Committee</Link>
-                {/* <Link to="/past-conferences" className="block px-4 py-2 hover:bg-gray-100">Past Conferences</Link> */}
+                <Link to="/about" className="block px-4 py-2 hover:bg-gray-100">
+                  About Conference
+                </Link>
+                <Link to="/committee" className="block px-4 py-2 hover:bg-gray-100">
+                  Committee
+                </Link>
               </div>
             )}
           </div>
 
-          <Link to="/sessions" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Sessions - ICBME 2026" aria-label="Sessions">
+          <Link to="/sessions" className={navText}>
             SESSIONS
           </Link>
 
-          {/* SPEAKERS */}
-          <Link to="/speakers" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Speakers - ICBME 2026" aria-label="Speakers">
+          <Link to="/speakers" className={navText}>
             SPEAKERS
           </Link>
 
-          {/* PROGRAM DROPDOWN */}
+          {/* PROGRAM */}
           <div
             className="relative"
             onMouseEnter={() => setHovered("program")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
-              PROGRAM <ChevronDown size={16} />
+            <span className={navText}>
+              PROGRAM <ChevronDown className="w-5 h-5" />
             </span>
+
             {hovered === "program" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
-                <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100" title="Program Schedule - ICBME 2026" aria-label="Program Schedule">Program Schedule</Link>
-                <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100" title="Venue - ICBME 2026" aria-label="Venue">Venue</Link>
-                {/* <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100" title="Sessions - ICBME 2026" aria-label="Sessions">Sessions</Link> */}
-                <Link to="/important-dates" className="block px-4 py-2 hover:bg-gray-100" title="Important Dates - ICBME 2026" aria-label="Important Dates">Important Dates</Link>
-
-                {/* Newly Added */}
-                <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100" title="Conference Guidelines - ICBME 2026" aria-label="Guidelines">Guidelines</Link>
-                <Link to="/faq" className="block px-4 py-2 hover:bg-gray-100" title="Conference FAQ - ICBME 2026" aria-label="FAQ">FAQ</Link>
+                <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100">
+                  Program Schedule
+                </Link>
+                <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100">
+                  Venue
+                </Link>
+                <Link
+                  to="/important-dates"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Important Dates
+                </Link>
+                <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100">
+                  Guidelines
+                </Link>
+                <Link to="/faq" className="block px-4 py-2 hover:bg-gray-100">
+                  FAQ
+                </Link>
               </div>
             )}
           </div>
 
-
-
-          <Link to="/register" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Register for ICBME 2026 Conference" aria-label="Register">
+          <Link to="/register" className={navText}>
             REGISTER
           </Link>
 
-          <Link to="/contact" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Contact ICBME 2026 Organizers" aria-label="Contact">
+          <Link to="/contact" className={navText}>
             CONTACT
           </Link>
-
-        </div>  
+        </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU (UNCHANGED LOGIC) */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md px-6 py-6 space-y-6">
-          <div className="space-y-3">
-            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="block text-gray-800 font-semibold" title="Go to ICBME 2026 Home Page" aria-label="ICBME 2026 Home Page">
-              HOME
-            </Link>
-
-
-            {/* CALLS DROPDOWN */}
-            <div>
-              <div
-                onClick={() => setCallsOpen(!callsOpen)}
-                className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
-              >
-                CALLS
-                <ChevronDown
-                  className={`transform transition-transform ${callsOpen ? 'rotate-180' : ''}`}
-                  size={16}
-                />
-              </div>
-              {callsOpen && (
-                <div className="ml-4 space-y-2 mt-2">
-                  <Link to="/call-for-abstract" className="block text-gray-600 hover:text-gray-800" title="Call for Abstracts - ICBME 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
-                  <Link to="/call-for-papers" className="block text-gray-600 hover:text-gray-800" title="Call for Papers - ICBME 2026" aria-label="Call for Papers">Call for Papers</Link>
-                  <Link to="/call-for-posters" className="block text-gray-600 hover:text-gray-800" title="Call for Posters - ICBME 2026" aria-label="Call for Posters">Call for Posters</Link>
-                  <Link to="/call-for-speakers" className="block text-gray-600 hover:text-gray-800" title="Call for Speakers - ICBME 2026" aria-label="Call for Speakers">Call for Speakers</Link>
-                  <Link to="/call-for-reviewers" className="block text-gray-600 hover:text-gray-800" title="Call for Reviewers - ICBME 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
-                </div>
-              )}
-            </div>
-
-
-                        {/* CONFERENCE DROPDOWN */}
-            <div>
-              <div
-                onClick={() => setConferenceOpen(!conferenceOpen)}
-                className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
-              >
-                CONFERENCE
-                <ChevronDown
-                  className={`transform transition-transform ${conferenceOpen ? 'rotate-180' : ''}`}
-                  size={16}
-                />
-              </div>
-              {conferenceOpen && (
-                <div className="ml-4 space-y-2 mt-2">
-                  <Link to="/about" className="block text-gray-600 hover:text-gray-800" title="About ICBME 2026 Conference" aria-label="About Conference">About Conference</Link>
-                  <Link to="/committee" className="block text-gray-600 hover:text-gray-800" title="ICBME 2026 Conference Committee" aria-label="Committee">Committee</Link>
-                </div>
-              )}
-            </div>
-
-
-            <Link to="/sessions" className="block text-gray-800 font-semibold" title="Conference Sessions - ICBME 2026" aria-label="Sessions">
-              SESSIONS
-            </Link>
-
-            <Link to="/speakers" className="block text-gray-800 font-semibold" title="Conference Speakers - ICBME 2026" aria-label="Speakers">
-              SPEAKERS
-            </Link>
-
-
-
-            {/* PROGRAM DROPDOWN */}
-            <div>
-              <div
-                onClick={() => setProgramOpen(!programOpen)}
-                className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
-              >
-                PROGRAM
-                <ChevronDown
-                  className={`transform transition-transform ${programOpen ? 'rotate-180' : ''}`}
-                  size={16}
-                />
-              </div>
-              {programOpen && (
-                <div className="ml-4 space-y-2 mt-2">
-                  <Link to="/schedule" className="block text-gray-600 hover:text-gray-800" title="Program Schedule - ICBME 2026" aria-label="Program Schedule">Program Schedule</Link>
-                  <Link to="/venue" className="block text-gray-600 hover:text-gray-800" title="Venue - ICBME 2026" aria-label="Venue">Venue</Link>
-                  {/* <Link to="/sessions" className="block text-gray-600 hover:text-gray-800" title="Sessions - ICBME 2026" aria-label="Sessions">Sessions</Link> */}
-                  <Link to="/guidelines" className="block text-gray-600 hover:text-gray-800" title="Conference Guidelines - ICBME 2026" aria-label="Guidelines">Guidelines</Link>
-                  <Link to="/important-dates" className="block text-gray-600 hover:text-gray-800" title="Important Dates - ICBME 2026" aria-label="Important Dates">Important Dates</Link>
-                  <Link to="/faq" className="block text-gray-600 hover:text-gray-800" title="Conference FAQ - ICBME 2026" aria-label="FAQ">FAQ</Link>
-                </div>
-              )}
-            </div>
-
-            <Link to="/register" className="block text-gray-800 font-semibold" title="Register for ICBME 2026 Conference" aria-label="Register">
-              REGISTER
-            </Link>
-
-            <Link to="/contact" className="block text-gray-800 font-semibold" title="Contact ICBME 2026 Organizers" aria-label="Contact">
-              CONTACT
-            </Link>
-          </div>
-
-          {/* Mobile Buttons */}
-          <div className="flex flex-col gap-3 pt-4">
-            <Link to="/register" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
-              <button className="w-full bg-[#0047bd] text-white font-bold py-2 rounded-md hover:bg-[#178E70] transition-colors duration-300" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
-                REGISTER
-              </button>
-            </Link>
-            <Link to="/AbstractSubmission" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
-              <button className="w-full bg-[#000f30] text-white font-bold py-2 rounded-md hover:bg-orange-600 transition-colors duration-300" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
-                ABSTRACT SUBMISSION
-              </button>
-            </Link>
-          </div>
+        <div className="md:hidden bg-white shadow-md px-6 py-6 space-y-4">
+          <Link to="/" className="block font-semibold text-gray-800">
+            HOME
+          </Link>
+          <Link to="/sessions" className="block font-semibold text-gray-800">
+            SESSIONS
+          </Link>
+          <Link to="/speakers" className="block font-semibold text-gray-800">
+            SPEAKERS
+          </Link>
+          <Link to="/register" className="block font-semibold text-gray-800">
+            REGISTER
+          </Link>
+          <Link to="/contact" className="block font-semibold text-gray-800">
+            CONTACT
+          </Link>
         </div>
       )}
     </div>

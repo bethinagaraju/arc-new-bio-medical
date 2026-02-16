@@ -80,7 +80,7 @@ const CTARegisterAbstract: React.FC = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="container mx-auto max-w-5xl">
-        <div className="bg-[#047857] text-white shadow-xl rounded-xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
+        <div className="text-white shadow-xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10" style={{ background: 'linear-gradient(90deg, rgba(2, 44, 34, 1) 0%, rgba(2, 44, 34, 0.83) 49%, rgba(2, 44, 34, 0.56) 99%)' }}>
 
           {/* Left text */}
           <div className="flex-1 text-center md:text-left">

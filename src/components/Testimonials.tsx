@@ -722,7 +722,7 @@ const Testimonials: React.FC = () => {
      JSX (UI UNCHANGED)
   ======================= */
   return (
-    <section className="bg-[#047857] py-20 px-4">
+    <section className="bg-[#022C22] py-20 px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Title */}

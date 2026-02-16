@@ -1208,8 +1208,8 @@ function CommitteePage() {
         {/* ===== PAGE HEADER ===== */}
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-3">
-            <ScrollText className="w-6 h-6 text-[#047857]" />
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <ScrollText className="w-6 h-6 text-[#004E5A]" />
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-[#004E5A]">
               Committee Members
             </h1>
           </div>
@@ -1221,10 +1221,10 @@ function CommitteePage() {
         </header>
 
         {/* ===== COMMITTEE LIST ===== */}
-        <div className="pl-4 border-l-4 border-[#047857]">
+        <div className="pl-4 border-l-4 border-[#004E5A]">
           {loading ? (
             <div className="flex justify-center items-center py-12">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#047857]"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#004E5A]"></div>
               <span className="ml-3 text-slate-600">Loading committee members...</span>
             </div>
           ) : error ? (
@@ -1259,10 +1259,9 @@ function CommitteePage() {
               inline-flex items-center justify-center
               px-10 py-3
               font-semibold text-white
-              bg-[#047857]
+              bg-[#004E5A]
               hover:bg-[#065F46]
               transition-colors
-              rounded-md
             "
           >
             Apply to Join the Committee

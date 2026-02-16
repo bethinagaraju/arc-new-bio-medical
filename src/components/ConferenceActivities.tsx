@@ -506,7 +506,7 @@ const ConferenceActivities: React.FC = () => {
 
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#047857]">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#004E5A]">
             Conference Sessions & Activities
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed max-w-3xl mx-auto">
@@ -526,7 +526,7 @@ const ConferenceActivities: React.FC = () => {
                 className="flex gap-4 items-start border-b border-[#D1FAE5] pb-5"
               >
                 {/* Icon */}
-                <div className="mt-1 p-2 rounded-md bg-[#ECFDF5] text-[#047857] shrink-0">
+                <div className="mt-1 p-2 bg-[#ECFDF5] text-[#004E5A] shrink-0">
                   <Icon className="w-5 h-5" />
                 </div>
 

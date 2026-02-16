@@ -101,6 +101,7 @@ import EthicsValues from '../components/EthicsValues';
 import ComboKeyDatesAndVenue from '../components/ComboKeyDatesAndVenue';
 import WhyAttendNew from '../components/WhyAttendNew';
 import { Helmet } from 'react-helmet-async';
+import WhySection from '../components/WhySection';
 
 function AboutPage() {
   return (
@@ -237,7 +238,7 @@ function AboutPage() {
             
             {/* Text Side */}
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 border-l-4 border-green-600 pl-4">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900 border-l-4 border-[#004E5A] pl-4">
                 Shaping the Intelligent Era
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
@@ -257,10 +258,12 @@ function AboutPage() {
       {/* --- WHY ATTEND (Feature Cards) --- */}
       {/* <WhyAttendSection /> */}
 
-       <WhyAttendNew />
+       {/* <WhyAttendNew /> */}
 
       {/* --- WHO SHOULD ATTEND --- */}
-      <WhoShouldAttendSection />
+      {/* <WhoShouldAttendSection /> */}
+
+      <WhySection />
 
       {/* --- KEY TOPICS (Grid) --- */}
       {/* <AboutKeyTopics /> */}
@@ -297,7 +300,7 @@ function AboutPage() {
     {/* Badge */}
     <span
       className="inline-block mb-4 px-4 py-1 text-xs font-semibold tracking-wider uppercase
-      text-[#047857] bg-[#D1FAE5] rounded-full"
+      text-[#FFFFFF] bg-[#004E5A] rounded-full"
     >
       ICBME 2026
     </span>
@@ -308,7 +311,7 @@ function AboutPage() {
     </h2>
 
     {/* Description */}
-    <p className="text-[#475569] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+    <p className="text-[#475569] text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
       Participate in a premier international academic forum dedicated to
       Biomedical Engineering.
     </p>
@@ -317,7 +320,7 @@ function AboutPage() {
     <Link to="/register">
       <button
         className="inline-flex items-center justify-center gap-2 px-10 py-4
-        bg-[#047857] text-white font-bold rounded-md
+        bg-[#004E5A] text-white font-bold
         hover:bg-[#065F46] transition shadow-sm"
       >
         Register Now

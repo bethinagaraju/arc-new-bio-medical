@@ -145,7 +145,7 @@ const SessionTypesSection: React.FC = () => {
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1E293B]">
-          Explore <span className="text-[#047857]">Session Types</span>
+          Explore <span className="text-[#004E5A]">Session Types</span>
         </h2>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto mt-4 leading-relaxed">
           Each session is designed to foster learning, exchange perspectives,
@@ -166,7 +166,7 @@ const SessionTypesSection: React.FC = () => {
                 p-5
                 bg-white
                 border border-[#D1FAE5]
-                rounded-xl
+                
                 shadow-sm
                 transition-all duration-300
                 hover:shadow-lg
@@ -192,7 +192,7 @@ const SessionTypesSection: React.FC = () => {
                   w-11 h-11
                   rounded-lg
                   bg-[#ECFDF5]
-                  text-[#047857]
+                  text-[#043d2f]
                   flex-shrink-0
                 "
               >
@@ -200,7 +200,7 @@ const SessionTypesSection: React.FC = () => {
               </div>
 
               {/* Text */}
-              <h3 className="text-[15px] font-semibold text-[#1E293B]">
+              <h3 className="text-[15px] font-semibold text-[#000000]">
                 {item.name}
               </h3>
             </div>

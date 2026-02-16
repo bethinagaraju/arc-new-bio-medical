@@ -406,11 +406,14 @@ const ScientificSession: React.FC = () => {
   const sessions = data?.topics?.sort((a, b) => a.orderIndex - b.orderIndex) || [];
 
   return (
-    <div className="w-full py-14 px-4">
+    <div className="w-full py-6 px-4">
 
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-4xl font-bold mb-10 text-[#1E293B]">
-        ICBME 2026 Conference Topics
+      <h1 
+        className="text-center text-3xl md:text-4xl font-bold mb-6"
+        style={{ fontFamily: "'Manrope', sans-serif", color: "#004E5A" }}
+      >
+        ICBME 2026 CONFERENCE TOPICS
       </h1>
 
       {/* SESSION GRID */}
@@ -471,11 +474,10 @@ const ScientificSession: React.FC = () => {
             to="/register"
             className="
               inline-flex items-center justify-center
-              bg-[#84CC16]
-              text-[#1E293B]
+              bg-[#004E5A]
+              text-[#FFFFFF]
               font-bold
               px-20 py-4
-              rounded-md
               shadow-md
               hover:brightness-95
               hover:scale-[1.02]
@@ -496,7 +498,6 @@ const ScientificSession: React.FC = () => {
               text-white
               font-bold
               px-16 py-4
-              rounded-md
               shadow-md
               hover:bg-[#065F46]
               hover:scale-[1.02]

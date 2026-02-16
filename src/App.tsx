@@ -37,6 +37,7 @@ import CallForPostersPage from './pages/CallForPostersPage';
 import CallForSpeakersPage from './pages/CallForSpeakersPage';
 import CallForReviewersPage from './pages/CallForReviewersPage';
 import WhatsAppButton from './components/WhatsAppButton';
+import SpeakerDetailPage from './pages/SpeakerDetailPage';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -130,6 +131,9 @@ function App() {
         <Route path='/important-dates' element={<ComboKeyDatesAndVenue />} />
         <Route path='/call-for-abstract' element={<AboutTheCallPage />} />
         {/* <Route path='/call-for-papers' element={<CallForPapersPage />} /> */}
+
+
+        <Route path='/speakers/:id' element={<SpeakerDetailPage />} />
 
       </Routes>
 

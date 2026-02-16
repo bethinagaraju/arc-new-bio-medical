@@ -552,17 +552,17 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
         <div className="flex items-center gap-3 shrink-0">
           <Link to="/" onClick={() => window.scrollTo(0, 0)}>
             <img
-              src="aimllogo.jpg"
+              src="/aimllogo.jpg"
               alt="ICBME 2026 Logo"
               className="h-12 md:h-16 w-auto object-contain"
             />
           </Link>
 
           <div className="leading-tight">
-            <h1 className="text-lg md:text-2xl font-extrabold text-[#047857] uppercase">
+            <h1 className="text-lg md:text-2xl font-extrabold text-[#004E5A] uppercase">
               ICBME 2026
             </h1>
-            <div className="text-[10px] md:text-[11px] font-semibold text-[#64748B] mt-1">
+            <div className="text-[10px] md:text-[11px] font-semibold mt-1">
               <span>28 – 30 July 2026</span><br />
               <span>Rome, Italy</span>
             </div>
@@ -578,12 +578,12 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
             onMouseEnter={() => setHovered("calls")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span className="flex items-center cursor-pointer hover:text-[#047857]">
+            <span style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="flex items-center cursor-pointer hover:text-[#047857] text-base">
               CALLS <ChevronDown size={14} className="ml-1" />
             </span>
 
             {hovered === "calls" && (
-              <div className="absolute top-[120%] left-0 w-60 bg-white shadow-xl border-t-4 border-[#047857] rounded-md">
+              <div style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="absolute top-[120%] left-0 w-60 bg-white shadow-xl border-t-4 border-[#047857] rounded-md">
                 {[
                   ["Call for Abstracts", "/call-for-abstract"],
                   ["Call for Papers", "/call-for-papers"],
@@ -609,21 +609,21 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
             onMouseEnter={() => setHovered("conference")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span className="flex items-center cursor-pointer hover:text-[#047857]">
+            <span style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="flex items-center cursor-pointer hover:text-[#047857] text-base">
               CONFERENCE <ChevronDown size={14} className="ml-1" />
             </span>
 
             {hovered === "conference" && (
-              <div className="absolute top-[120%] left-0 w-56 bg-white shadow-xl border-t-4 border-[#047857] rounded-md">
-                <Link to="/about" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">About Conference</Link>
-                <Link to="/committee" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Committee</Link>
-                <Link to="/past-conferences" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Past Conferences</Link>
+              <div  className="absolute top-[120%] left-0 w-56 bg-white shadow-xl border-t-4 border-[#047857] rounded-md text-sm">
+                <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/about" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">About Conference</Link>
+                <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/committee" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Committee</Link>
+                <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/past-conferences" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Past Conferences</Link>
               </div>
             )}
           </div>
 
-          <Link to="/sessions" className="hover:text-[#047857]">SESSIONS</Link>
-          <Link to="/speakers" className="hover:text-[#047857]">SPEAKERS</Link>
+          <Link to="/sessions" style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="hover:text-[#047857] text-base">SESSIONS</Link>
+          <Link to="/speakers" style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="hover:text-[#047857] text-base">SPEAKERS</Link>
 
           {/* PROGRAM */}
           <div
@@ -631,12 +631,12 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
             onMouseEnter={() => setHovered("program")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span className="flex items-center cursor-pointer hover:text-[#047857]">
+            <span style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="flex items-center cursor-pointer hover:text-[#047857] text-base">
               PROGRAM <ChevronDown size={14} className="ml-1" />
             </span>
 
             {hovered === "program" && (
-              <div className="absolute top-[120%] left-0 w-56 bg-white shadow-xl border-t-4 border-[#047857] rounded-md">
+              <div  style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="absolute top-[120%] left-0 w-56 bg-white shadow-xl border-t-4 border-[#047857] rounded-md text-sm">
                 <Link to="/schedule" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Program Schedule</Link>
                 <Link to="/venue" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Venue</Link>
                 <Link to="/important-dates" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Important Dates</Link>
@@ -646,16 +646,25 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
             )}
           </div>
 
-          <Link to="/contact" className="hover:text-[#047857]">CONTACT</Link>
+          <Link to="/contact" style={{fontFamily:'"IBM Plex Sans", sans-serif'}} className="hover:text-[#047857] text-base">CONTACT</Link>
+
         </nav>
 
         {/* ================= CTA ================= */}
-        <div className="hidden md:flex gap-2">
-          <Link to="/register">
-            <button className="bg-[#84CC16] hover:bg-[#65A30D] text-[#1E293B] text-xs font-bold px-5 py-2.5 rounded-md uppercase">
+        <div className="hidden md:flex gap-1 flex-col items-center w-[220px]">
+
+          <Link to="/register" className="w-full">
+            <button className="w-full bg-[#004E5A] hover:bg-[#65A30D] text-[#FFFFFF] text-sm font-bold px-2 py-2 uppercase">
               Register
             </button>
           </Link>
+
+          <Link to="/AbstractSubmission" className="w-full">
+            <button className="w-full bg-[#FFFFFF]  text-[#004E5A] text-sm font-bold px-2 py-2 uppercase border border-[#004E5A]">
+              Abstract Submission
+            </button>
+          </Link>
+
         </div>
 
         {/* ================= MOBILE TOGGLE ================= */}

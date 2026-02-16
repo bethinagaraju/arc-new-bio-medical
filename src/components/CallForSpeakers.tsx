@@ -175,7 +175,7 @@ const CallForSpeakers: React.FC = () => {
       {/* ================= PAGE HEADER ================= */}
       <div className="bg-white px-6 pt-12 pb-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-[#0F766E] tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-[#004E5A] tracking-tight">
             CALL FOR SPEAKERS – ICBME 2026
           </h1>
 
@@ -194,7 +194,7 @@ const CallForSpeakers: React.FC = () => {
         <div className="mb-12 border-l-2 border-[#0F766E]/40 pl-5">
           <div className="flex items-center gap-3 mb-2">
             <FileText className="w-5 h-5 text-[#0F766E]" />
-            <h3 className="text-lg font-bold text-[#1E293B]">
+            <h3 className="text-lg font-bold text-[#004E5A]">
               About the Call
             </h3>
           </div>
@@ -274,14 +274,14 @@ const CallForSpeakers: React.FC = () => {
         <div className="mt-14 flex flex-col sm:flex-row gap-4">
           <Link
             to="/register"
-            className="flex items-center justify-center gap-2 px-8 py-3.5 bg-[#84CC16] text-[#1E293B] font-bold rounded-md hover:brightness-95 transition"
+            className="flex items-center justify-center gap-2 px-8 py-3.5 bg-[#004E5A] text-[#FFFFFF] font-bold hover:brightness-95 transition"
           >
             Register Now <ArrowRight className="w-5 h-5" />
           </Link>
 
           <Link
             to="/AbstractSubmission"
-            className="flex items-center justify-center gap-2 px-8 py-3.5 border border-slate-300 text-[#1E293B] font-bold rounded-md hover:border-[#0F766E] hover:text-[#0F766E] transition"
+            className="flex items-center justify-center gap-2 px-8 py-3.5 border border-slate-300 text-[#004E5A] font-bold hover:border-[#004E5A] hover:text-[#004E5A] transition"
           >
             Apply as Speaker
           </Link>
@@ -301,10 +301,10 @@ const SectionRow: React.FC<{
   <div className="flex flex-col md:flex-row gap-6 md:gap-10 py-8">
     <div className="md:w-1/3 flex-shrink-0">
       <div className="flex items-center gap-3 sticky top-6">
-        <div className="p-2 bg-[#ECFDF5] rounded-md text-[#0F766E]">
+        <div className="p-2 bg-[#ECFDF5] text-[#004E5A]">
           {icon}
         </div>
-        <h3 className="text-lg font-bold text-[#1E293B]">
+        <h3 className="text-lg font-bold text-[#004E5A]">
           {title}
         </h3>
       </div>
@@ -316,7 +316,7 @@ const SectionRow: React.FC<{
 
 const ListItem: React.FC<{ text: string }> = ({ text }) => (
   <div className="flex items-start gap-3 mb-2 last:mb-0">
-    <div className="mt-2 w-[5px] h-[5px] rounded-full bg-[#0F766E]" />
+    <div className="mt-3 w-[5px] h-[5px] rounded-full bg-[#0F766E]" />
     <span className="text-[16.5px] text-slate-600 leading-relaxed">
       {text}
     </span>

@@ -726,8 +726,8 @@ function VenueComponent() {
                 href="https://www.google.com/maps?q=Crowne+Plaza+Rome+St+Peter's+Rome+Italy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold
-                bg-[#047857] text-white rounded-md hover:bg-[#065F46] transition"
+                className="inline-flex items-center gap-2 px-2 py-2 text-xs font-semibold
+                bg-[#047857] text-white hover:bg-[#065F46] transition"
               >
                 <Navigation className="w-4 h-4" />
                 Directions
@@ -738,20 +738,20 @@ function VenueComponent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold
-                border border-gray-300 rounded-md
+                border border-gray-300 
                 hover:border-[#047857] hover:text-[#047857] transition"
               >
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4 text-[#004E5A]" />
                 Website
               </a>
 
               <a
                 href="tel:+3906634381"
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold
-                border border-gray-300 rounded-md
+                border border-gray-300 
                 hover:border-[#047857] hover:text-[#047857] transition"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 text-[#004E5A]" />
                 Contact
               </a>
 

@@ -161,7 +161,7 @@ const TimeUnit = ({
   <div className="flex flex-col items-center min-w-[70px]">
     <div
       className={`text-4xl md:text-6xl font-extrabold tabular-nums
-        ${isActive ? "text-[#84CC16]" : "text-[#047857]"}`}
+        ${isActive ? "text-[#84CC16]" : "text-[#022C22]"}`}
     >
       {value}
     </div>

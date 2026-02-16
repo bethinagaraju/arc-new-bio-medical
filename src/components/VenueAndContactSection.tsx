@@ -21,9 +21,17 @@ const VenueAndContactSection: React.FC = () => {
 
         {/* Section Header */}
         <div className="mb-14 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#047857] mb-4">
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-[#047857] mb-4">
             Venue & Contact Information
-          </h2>
+          </h2> */}
+
+                <h2
+        className="text-center text-2xl md:text-3xl font-bold mb-2"
+        style={{ fontFamily: "'Manrope', sans-serif", color: "#004E5A" }}
+      >
+         Venue & Contact Information
+      </h2>
+
           <p className="text-[#64748B] max-w-2xl mx-auto text-lg">
             Conference venue details and direct communication with the ICBME 2026 organizing committee.
           </p>
@@ -42,7 +50,9 @@ const VenueAndContactSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch">
 
           {/* Venue Info — wide panel */}
-          <div className="lg:col-span-2 bg-[#ECFDF5] border border-[#D1FAE5] p-10 flex flex-col justify-between rounded-xl">
+          <div className="lg:col-span-2 p-10 flex flex-col justify-between">
+
+
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-[#D1FAE5] flex items-center justify-center text-[#047857]">
@@ -57,10 +67,13 @@ const VenueAndContactSection: React.FC = () => {
                 {venueData?.venue || "Loading venue..."}
               </p>
 
-              <p className="text-[#64748B] leading-relaxed max-w-xl">
+              <p className="text-[#64748B] leading-relaxed ">
                 {venueData?.description || "Loading description..."}
               </p>
             </div>
+
+
+            
 
             <div className="mt-8">
               <Link
@@ -75,8 +88,7 @@ const VenueAndContactSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Contact CTA — vertical card */}
-          <div className="bg-[#047857] p-10 text-white flex flex-col justify-between rounded-xl shadow-lg">
+          <div className="p-10 text-white flex flex-col justify-between shadow-lg" style={{background: "linear-gradient(90deg, rgba(2, 44, 34, 1) 0%, rgba(2, 44, 34, 0.83) 49%, rgba(2, 44, 34, 0.56) 99%)"}}>
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
@@ -96,7 +108,7 @@ const VenueAndContactSection: React.FC = () => {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center bg-[#84CC16]
-              text-[#1E293B] font-bold py-3 px-8 rounded-md
+              text-[#1E293B] font-bold py-3 px-8
               hover:bg-[#65A30D] transition"
               title="Contact ICBME 2026 Conference Organizers"
               aria-label="Contact ICBME 2026 Conference Organizers"

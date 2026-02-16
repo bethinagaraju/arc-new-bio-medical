@@ -504,6 +504,7 @@ import SpeakersBottomSection from "../components/SpeakersBottomSection";
 import EndFooter from "../components/EndFooter";
 import { Helmet } from "react-helmet-async";
 import { useConference } from "../contexts/ConferenceContext";
+import SpeakerNewCard from "../components/SpeakerNewCard";
 
 /* ================= TYPES ================= */
 
@@ -561,50 +562,31 @@ function SpeakersPage() {
 
           {/* ================= LEFT: SPEAKERS ================= */}
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold text-[#047857] mb-8">
-              ICBME 2026 Speakers
+            <h2 className="text-3xl font-bold text-[#004E5A] mb-8 text-center" style={{ fontFamily: "'Manrope', sans-serif" }}>
+              ICBME 2026 SPEAKERS
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div
+              className="
+                max-w-7xl mx-auto
+                grid gap-6
+                grid-cols-1
+                sm:grid-cols-2
+                md:grid-cols-3
+                lg:grid-cols-3
+                justify-items-center
+              "
+            >
               {speakers.map((speaker) => (
-                <div
+                <SpeakerNewCard
                   key={speaker.id}
-                  className="flex gap-4 p-5 bg-white border border-[#E5E7EB]
-                  shadow-sm hover:shadow-lg transition rounded-xl"
-                >
-                  {/* Image */}
-                  <img
-                    src={speaker.imagePath}
-                    alt={`${speaker.name} – ${speaker.university}`}
-                    className="w-28 h-28 object-cover rounded-lg"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src =
-                        "https://via.placeholder.com/150";
-                    }}
-                  />
-
-                  {/* Content */}
-                  <div className="flex flex-col justify-center">
-                    <h3 className="font-semibold text-[#1E293B] text-sm md:text-base">
-                      {speaker.name}
-                    </h3>
-
-                    <p className="text-xs md:text-sm text-[#64748B] leading-snug">
-                      {speaker.university}
-                    </p>
-
-                    <span
-                      className={`mt-2 inline-block w-fit text-xs font-semibold px-3 py-1 rounded-full
-                      ${
-                        speaker.speakerType === "Keynote"
-                          ? "bg-[#D1FAE5] text-[#047857]"
-                          : "bg-[#ECFDF5] text-[#1E293B]"
-                      }`}
-                    >
-                      {speaker.speakerType}
-                    </span>
-                  </div>
-                </div>
+                  speakerImageUrl={speaker.imagePath}
+                  speakerName={speaker.name}
+                  speakerType={speaker.speakerType}
+                  universityName={speaker.university}
+                  universityLogo="" // optional, can pass later
+                  slug={speaker.slug}
+                />
               ))}
             </div>
 

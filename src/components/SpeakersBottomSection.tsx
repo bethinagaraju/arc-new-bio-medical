@@ -59,7 +59,7 @@ function SpeakersBottomSection() {
 
         {/* Badge */}
         <span className="inline-block mb-4 px-4 py-1 text-xs font-semibold tracking-wider uppercase
-          text-[#047857] bg-[#D1FAE5] rounded-full">
+          text-[#FFFFFF] bg-[#004E5A] rounded-full">
           ICBME 2026
         </span>
 
@@ -81,7 +81,7 @@ function SpeakersBottomSection() {
           <Link to="/AbstractSubmission">
             <button
               className="inline-flex items-center justify-center gap-2 px-8 py-4
-              bg-[#047857] text-white font-bold rounded-md
+              bg-[#004E5A] text-white font-bold
               hover:bg-[#065F46] transition shadow-sm"
             >
               <Mic2 className="w-5 h-5" />
@@ -93,8 +93,8 @@ function SpeakersBottomSection() {
           <Link to="/call-for-papers">
             <button
               className="inline-flex items-center justify-center gap-2 px-8 py-4
-              border border-[#047857] text-[#047857] font-semibold rounded-md
-              hover:bg-[#D1FAE5] transition"
+              border border-[#004E5A] text-[#004E5A] font-semibold
+              hover:bg-[#065F46] hover:text-white transition"
             >
               Learn More
               <ArrowRight className="w-4 h-4" />

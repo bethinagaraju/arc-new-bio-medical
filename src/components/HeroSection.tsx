@@ -470,8 +470,8 @@ const HeroSection: React.FC = () => {
         <div className="max-w-4xl">
           <h1 className="uppercase font-extrabold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             2nd International Conference<br />
-            On Biomedical Engineering<br />
-            Rome, Italy.
+            On Health Innovation Summit 2026. Seoul, South Korea.<br />
+            
           </h1>
 
           {/* Buttons */}

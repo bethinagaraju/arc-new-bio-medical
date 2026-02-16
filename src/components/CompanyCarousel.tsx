@@ -254,7 +254,7 @@ const CompanyCarousel = () => {
     <section className="my-10 px-4 md:px-10 mb-0" aria-label="Partner Institutions">
       <h2
         className="text-center text-2xl md:text-3xl font-bold mb-2"
-        style={{ fontFamily: "'Manrope', sans-serif", color: "#2e376c" }}
+        style={{ fontFamily: "'Manrope', sans-serif", color: "#004E5A" }}
       >
         PARTNER INSTITUTIONS & SPONSORS
       </h2>

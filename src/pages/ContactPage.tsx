@@ -59,7 +59,7 @@ const ContactPage: React.FC = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h2
-              style={{ fontFamily: "'Manrope', sans-serif", color: '#047857' }}
+              style={{ fontFamily: "'Manrope', sans-serif", color: '#004E5A' }}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
               We're Here to Help
@@ -253,14 +253,13 @@ const ContactPage: React.FC = () => {
         <div className="container mx-auto max-w-4xl">
 
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-full mb-6">
-              <HelpCircle className="w-8 h-8 text-[#047857]" />
-            </div>
+
             <h2
-              style={{ fontFamily: "'Manrope', sans-serif", color: '#047857' }}
-              className="text-3xl md:text-4xl font-bold mb-4"
+              style={{ fontFamily: "'Manrope', sans-serif", color: '#004E5A' }}
+              className="text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-2"
             >
               Frequently Asked Questions
+               <HelpCircle className="w-8 h-8 text-[#004E5A]" />
             </h2>
             <p className="text-gray-600 text-lg">
               Quick answers to common questions about ICBME 2026
@@ -302,16 +301,16 @@ const FAQItem: React.FC<{ question: string; answer: string }> = ({ question, ans
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+    <div className="bg-white shadow-sm border border-gray-200">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
       >
         <span className="font-semibold text-gray-800">{question}</span>
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 text-gray-500" />
+          <ChevronUp className="w-5 h-5 text-[#004E5A]" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-gray-500" />
+          <ChevronDown className="w-5 h-5 text-[#004E5A]" />
         )}
       </button>
       {isOpen && (

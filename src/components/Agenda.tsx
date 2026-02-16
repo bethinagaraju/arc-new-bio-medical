@@ -804,6 +804,8 @@ const Agenda: React.FC = () => {
           CONFERENCE AGENDA
         </h1>
 
+        
+
         <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
           Experience three days of inspiring keynotes, hands-on workshops, and
           cutting-edge innovations in AI, ML, and Robotics.
@@ -818,7 +820,7 @@ const Agenda: React.FC = () => {
               className={`w-full px-5 py-3 text-sm sm:text-base font-bold rounded-full transition-all
                 ${
                   activeDay === day
-                    ? 'text-white bg-[#047857] shadow-md'
+                    ? 'text-white bg-[#004E5A] shadow-md'
                     : 'text-[#1E293B] hover:bg-[#ECFDF5]'
                 }`}
             >
@@ -867,7 +869,7 @@ const Agenda: React.FC = () => {
         <div className="flex justify-center mt-10">
           <Link
             to="/register"
-            className="bg-[#84CC16] hover:brightness-95 text-[#1E293B] px-6 py-2 font-bold text-sm rounded-md transition-all shadow-md"
+            className="bg-[#004E5A] hover:brightness-95 text-[#FFFFFF] px-8 py-4 font-bold text-base transition-all shadow-md"
           >
             Register Now
           </Link>

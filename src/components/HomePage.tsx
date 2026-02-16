@@ -210,6 +210,7 @@ import Highletsec from './Highletsec';
 import WhatsAppButton from './WhatsAppButton';
 import WhyAttendNew from './WhyAttendNew';
 import WhySection from './WhySection';
+import SpeakerNewCard from './SpeakerNewCard';
 
 function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -336,8 +337,16 @@ function HomePage() {
           <ContentSection />
           
           <Mixcomponents />
+
+{/* <SpeakerNewCard
+  speakerImageUrl="newspeaker.png"
+  speakerName="Jess Lee"
+  universityName="Sequoia Capital"
+  universityLogo="https://banner2.cleanpng.com/20180624/tlj/aazo1jwa1.webp"
+/> */}
+
           
-          <WhyAttendNew />
+          {/* <WhyAttendNew /> */}
           <WhySection />
           
           <ScientificSessions />

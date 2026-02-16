@@ -514,7 +514,7 @@ const ConferenceGuidelines: React.FC = () => {
         <Link
           to="/register"
           className="flex items-center justify-center gap-2 px-8 py-3
-          bg-[#047857] text-white font-semibold rounded-md hover:bg-[#065F46] transition"
+          bg-[#004E5A] text-white font-semibold hover:bg-[#065F46] transition"
         >
           Register Now <ArrowRight className="w-4 h-4" />
         </Link>
@@ -522,7 +522,7 @@ const ConferenceGuidelines: React.FC = () => {
         <Link
           to="/AbstractSubmission"
           className="flex items-center justify-center gap-2 px-8 py-3
-          border border-gray-300 text-gray-700 font-semibold rounded-md
+          border border-gray-300 text-gray-700 font-semibold
           hover:border-[#047857] hover:text-[#047857] transition"
         >
           Abstract Submission

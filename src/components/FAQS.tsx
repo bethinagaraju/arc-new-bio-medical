@@ -566,7 +566,7 @@ const FAQS = () => {
           <div key={index} className="border border-gray-200 shadow-sm overflow-hidden">
             {/* Header - Now just a static div, not a button */}
             <div
-              className="w-full flex justify-between items-center px-4 py-3 text-left font-bold text-white bg-[#047857]"
+              className="w-full flex justify-between items-center px-4 py-3 text-left font-bold text-white bg-[#004E5A]"
             >
               <span className="uppercase tracking-wide">{item.title}</span>
             </div>

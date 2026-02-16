@@ -736,44 +736,44 @@ function VenueTravelPage() {
   <div className="grid md:grid-cols-2 gap-8">
 
     {/* ================= VISA REQUIREMENTS ================= */}
-    <div className="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+    <div className="bg-white border border-slate-200 p-6 shadow-sm">
       <h3 className="text-lg font-semibold text-[#047857] mb-4">
         Visa Requirements
       </h3>
 
       <ul className="space-y-3 text-slate-700 text-sm leading-relaxed">
         <li className="flex items-start gap-2">
-          <CheckCircle2 className="w-4 h-4 text-[#22C55E] mt-0.5" />
+          <CheckCircle2 className="w-4 h-4 text-[#004E5A] mt-1" />
           Visa on Arrival available for 169 countries
         </li>
         <li className="flex items-start gap-2">
-          <CheckCircle2 className="w-4 h-4 text-[#22C55E] mt-0.5" />
+          <CheckCircle2 className="w-4 h-4 text-[#004E5A] mt-1" />
           30-day tourist visa: <strong>$35 USD</strong>
         </li>
         <li className="flex items-start gap-2">
-          <CheckCircle2 className="w-4 h-4 text-[#22C55E] mt-0.5" />
+          <CheckCircle2 className="w-4 h-4 text-[#004E5A] mt-1" />
           Passport validity of at least 6 months
         </li>
         <li className="flex items-start gap-2">
-          <CheckCircle2 className="w-4 h-4 text-[#22C55E] mt-0.5" />
+          <CheckCircle2 className="w-4 h-4 text-[#004E5A] mt-1" />
           Return or onward ticket required
         </li>
       </ul>
     </div>
 
     {/* ================= CONFERENCE SUPPORT ================= */}
-    <div className="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+    <div className="bg-white border border-slate-200 p-6 shadow-sm">
       <h3 className="text-lg font-semibold text-[#047857] mb-4">
         Conference Support
       </h3>
 
       <ul className="space-y-3 text-slate-700 text-sm leading-relaxed">
         <li className="flex items-start gap-2">
-          <Mail className="w-4 h-4 text-[#0F766E] mt-0.5" />
+          <Mail className="w-4 h-4 text-[#004E5A] mt-1" />
           Official invitation letter provided upon request
         </li>
         <li className="flex items-start gap-2">
-          <Phone className="w-4 h-4 text-[#0F766E] mt-0.5" />
+          <Phone className="w-4 h-4 text-[#004E5A] mt-1" />
           Dedicated support team for visa assistance
         </li>
       </ul>
@@ -786,8 +786,8 @@ function VenueTravelPage() {
     <button
       className="
         inline-flex items-center gap-2
-        bg-[#84CC16] text-[#1E293B]
-        font-bold px-8 py-3 rounded-md
+        bg-[#004E5A] text-[#FFFFFF]
+        font-bold px-8 py-3
         hover:brightness-95 hover:scale-[1.02]
         transition-all duration-300 shadow-md
       "
