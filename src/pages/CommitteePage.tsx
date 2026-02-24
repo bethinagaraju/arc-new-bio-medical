@@ -335,7 +335,7 @@
 // // // //         <div className="container mx-auto px-6 text-center relative z-10">
 // // // //           <div className="inline-flex items-center gap-2 bg-indigo-500/30 rounded-full px-4 py-1 mb-6 border border-indigo-400/30 backdrop-blur-md">
 // // // //             <Users className="w-4 h-4 text-indigo-200" />
-// // // //             <span className="text-xs font-semibold tracking-wider uppercase text-indigo-100">ICBME 2026 Organization</span>
+// // // //             <span className="text-xs font-semibold tracking-wider uppercase text-indigo-100">ICHIS 2026 Organization</span>
 // // // //           </div>
 // // // //           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Organizing Committee</h1>
 // // // //           <p className="text-xl text-indigo-100 max-w-2xl mx-auto font-light leading-relaxed">
@@ -666,7 +666,7 @@
 // // //         <div className="container mx-auto px-6 text-center relative z-10">
 // // //           <div className="inline-flex items-center gap-2 bg-indigo-500/30 rounded-full px-4 py-1 mb-6 border border-indigo-400/30 backdrop-blur-md">
 // // //             <Users className="w-4 h-4 text-indigo-200" />
-// // //             <span className="text-xs font-semibold tracking-wider uppercase text-indigo-100">ICBME 2026 Organization</span>
+// // //             <span className="text-xs font-semibold tracking-wider uppercase text-indigo-100">ICHIS 2026 Organization</span>
 // // //           </div>
 // // //           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Organizing Committee</h1>
 // // //           <p className="text-xl text-indigo-100 max-w-2xl mx-auto font-light leading-relaxed">
@@ -682,7 +682,7 @@
 // // //           <div className="text-center mb-8">
 // // //             <h2 className="text-3xl font-bold text-gray-900 mb-4">About Magnus Group</h2>
 // // //             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-// // //               The driving force behind ICBME 2026
+// // //               The driving force behind ICHIS 2026
 // // //             </p>
 // // //           </div>
 

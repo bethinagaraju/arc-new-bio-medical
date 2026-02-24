@@ -7,6 +7,7 @@ import { useConference } from '../contexts/ConferenceContext';
 
 const ContactPage: React.FC = () => {
   const { data } = useConference();
+  const submissionDeadline = data?.importantDates?.find(d => d.dateType === 'Submission Deadline')?.date || 'January 26, 2026';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -47,7 +48,7 @@ const ContactPage: React.FC = () => {
             Contact Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Team</span>
           </h1>
           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-            Have questions about ICBME 2026? We're here to help you every step of the way.
+            Have questions about ICHIS 2026? We're here to help you every step of the way.
           </p>
         </div>
       </div> */}
@@ -262,7 +263,7 @@ const ContactPage: React.FC = () => {
                <HelpCircle className="w-8 h-8 text-[#004E5A]" />
             </h2>
             <p className="text-gray-600 text-lg">
-              Quick answers to common questions about ICBME 2026
+              Quick answers to common questions about ICHIS 2026
             </p>
           </div>
 
@@ -273,8 +274,8 @@ const ContactPage: React.FC = () => {
             />
             <FAQItem
               question="What is the deadline for abstract submission?"
-              answer="The abstract submission deadline is January 30, 2026. All submissions will undergo a peer review process, and notifications will be sent by March 15, 2026."
-            />
+              answer={`The deadline for abstract submission is ${submissionDeadline}. All submissions will undergo a peer-review process, and notifications will be sent.`}
+            />  
             {/* <FAQItem
               question="Are there accommodation options near the venue?"
               answer="Yes, the Crowne Plaza offers conference rates for attendees. Additionally, we have partnered with nearby hotels to provide discounted rates for conference participants."

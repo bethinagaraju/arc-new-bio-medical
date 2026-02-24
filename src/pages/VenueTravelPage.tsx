@@ -9,7 +9,7 @@
 // //       <div className="bg-gradient-to-r from-indigo-900 to-blue-500 text-white py-16">
 // //         <div className="container mx-auto px-4 text-center">
 // //           <h1 className="text-4xl font-bold mb-4">Venue & Travel</h1>
-// //           <p className="text-xl">Everything you need to know about attending ICBME 2026 in Rome</p>
+// //           <p className="text-xl">Everything you need to know about attending ICHIS 2026 in Rome</p>
 // //         </div>
 // //       </div>
 
@@ -264,7 +264,7 @@
         
 //         <div className="relative container mx-auto px-6 text-center z-10 text-white">
 //           <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-bold uppercase tracking-widest mb-4">
-//             ICBME 2026
+//             ICHIS 2026
 //           </span>
 //           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Venue & Travel</h1>
 //           <p className="text-xl text-indigo-100 max-w-2xl mx-auto font-light">
@@ -293,7 +293,7 @@
 //             {/* Info Side */}
 //             <div className="lg:w-3/5 p-8 lg:p-12">
 //               <div className="flex items-center gap-2 text-indigo-600 font-bold uppercase text-xs tracking-wider mb-2">
-//                 <MapPin className="w-4 h-4" /> Rome, Italy
+//                 <MapPin className="w-4 h-4" /> Seoul, South Korea
 //               </div>
 //               <h2 className="text-3xl font-bold text-gray-900 mb-4">Crowne Plaza - St. Peter's Rome</h2>
 //               <p className="text-gray-600 mb-6 leading-relaxed">
@@ -340,7 +340,7 @@
 //             <div className="text-center mb-12">
 //                <h2 className="text-3xl font-bold text-gray-900 mb-3">Accommodation</h2>
 //                <p className="text-gray-500 max-w-2xl mx-auto">
-//                  We have negotiated special rates with several hotels near the venue. Mention "ICBME 2026" when booking.
+//                  We have negotiated special rates with several hotels near the venue. Mention "ICHIS 2026" when booking.
 //                </p>
 //             </div>
             
@@ -643,16 +643,16 @@ function VenueTravelPage() {
 
     {/* Content */}
     <p className="text-slate-700 mb-5 leading-relaxed">
-      <strong>Rome Fiumicino Airport (FCO)</strong> is approximately
-      <span className="font-semibold"> 30 km </span>
-      from the conference venue.
+      <strong>Incheon International Airport (ICN)</strong> is approximately
+      <span className="font-semibold"> 50 km </span>
+      from the conference venue in Seoul.
     </p>
 
     {/* Transport Options */}
     <ul className="space-y-3">
-      <TransportOption label="Taxi (Fixed Rate)" value="" time="" />
-      <TransportOption label="Leonardo Express" value="" time="" />
-      <TransportOption label="Bus Shuttle" value="" time="" />
+      <TransportOption label="Airport Limousine Bus" value="" time="" />
+      <TransportOption label="AREX (Airport Railroad Express)" value="" time="" />
+      <TransportOption label="Taxi (International Taxi available)" value="" time="" />
     </ul>
 
     {/* Footer note */}
@@ -676,15 +676,14 @@ function VenueTravelPage() {
 
     {/* Content */}
     <p className="text-slate-700 mb-5 leading-relaxed">
-      Rome offers an efficient and affordable public transportation network
-      connecting major attractions and the conference venue.
+      Seoul offers a highly efficient and affordable public transportation network connecting major attractions and the conference venue.
     </p>
 
     {/* Transport Options */}
     <ul className="space-y-3">
-      <TransportOption label="Metro / Bus Ticket" value="" time="" />
-      <TransportOption label="Roma Pass" value="" time="" />
-      <TransportOption label="Rideshare Services" value="" time="" />
+      <TransportOption label="Metro / Bus (T-money Card recommended)" value="" time="" />
+      <TransportOption label="Korea Tour Card" value="" time="" />
+      <TransportOption label="Rideshare & Taxi Services (Kakao T, Uber)" value="" time="" />
     </ul>
 
     {/* Footer note */}
@@ -807,14 +806,14 @@ function VenueTravelPage() {
                 <div>
                   <h3 className="text-3xl font-bold text-gray-900">Hotel Suggestions</h3>
                   <p className="text-gray-600 mt-2">
-                    We recommend these hotels near the venue. Mention "ICBME 2026" for special rates.
+                    We recommend these hotels near the venue. Mention "ICHIS 2026" for special rates.
                   </p>
                 </div>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8">
                  <HotelCard 
-                    name="Crowne Plaza Rome"
+                    name="Grand InterContinental Seoul Parnas"
                     stars={4}
                     image="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     distance="Conference Venue"
@@ -822,17 +821,17 @@ function VenueTravelPage() {
                     tag="On-Site"
                  />
                  <HotelCard 
-                    name="Hotel Degli Aranci"
+                    name="L7 Gangnam by Lotte (Quiet)"
                     stars={4}
-                    image="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    image="https://www.bing.com/th?id=OADD2.7147033169926_1MZUCTV2WP6IQZHQHJ&pid=21.2&c=16&roil=0&roit=0&roir=1&roib=1&w=472&h=247&rs=2&qlt=100"
                     distance="15 min walk"
                     price="€€"
                     tag="Quiet"
                  />
                  <HotelCard 
-                    name="Hotel Mozart"
+                    name="Hotel Cappuccino Seoul (City Center)"
                     stars={3}
-                    image="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    image="https://q-xx.bstatic.com/xdata/images/hotel/max500/58642222.jpg?k=f677fc170c942777516e1c093e68e2e4d84c04664679ca1227af3994fc3b887e&s=600x"
                     distance="20 min (Metro)"
                     price="€"
                     tag="City Center"
@@ -854,24 +853,24 @@ function VenueTravelPage() {
 
                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <AttractionCard 
-                    name="Vatican City"
+                    name="Gyeongbokgung Palace"
                     location="0.8 km from Venue"
-                    image="https://images.unsplash.com/photo-1531572753322-ad063cecc140?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    image="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepytIUfP9NEFUYBUr7SYfI98Jkk-UDC4YOaWUA9ibmPeWRL9o7R65c4GNs7i5IoKl8hRz4Z7EO5aOfaj-cj4EZvYG-UHCpPk7MJhmWUqUBXMnJpbyv8yXOQysjx-m3sMQIo2nAxew=w270-h312-n-k-no"
                   />
                   <AttractionCard 
-                    name="The Colosseum"
+                    name="N Seoul Tower"
                     location="4.5 km from Venue"
-                    image="https://th.bing.com/th/id/R.22620bc7580ff093ce87facf219b34de?rik=ctnM8sLMUoAgLg&riu=http%3a%2f%2fwww.mostamazingwonders.com%2fwp-content%2fuploads%2f2014%2f06%2fRoman-Colosseum1.jpg%3f0cc007&ehk=3313Bf0SVYWKUN5T%2fwj%2b9PRLfWhl2izz6A0K0qAFaO0%3d&risl=&pid=ImgRaw&r=0"
+                    image="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepjjz64uYoSmTmn9BA5Md4ra_pLkcacrAxgvthyWTpRgyp7ivfDbkVrKYWGooyNdK8lvECwfTVg0SHjskPnYmf8jVqtqYu4PN-0Tr_wbedHMZMMa0BasxezXj37abEluDPwhZ9BBA=w270-h312-n-k-no"
                   />
                   <AttractionCard 
-                    name="Trevi Fountain"
+                    name="Bukchon Hanok Village"
                     location="3.2 km from Venue"
-                    image="https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    image="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoLWf8K-QTctI1XC5yjLbU7_clGEiJRSs9qqcEIAjSg0VoGdgQaD86pqQEpW5JedFNTWjqsPdeyXO_E7Exf1_legfsfZdiWKzzPrHxM3A9diqmXV-M3anL7s17R_WiANTd1GqnsZQ=s1360-w1360-h1020-rw"
                   />
                   <AttractionCard 
-                    name="Spanish Steps"
+                    name="Myeongdong Shopping Street"
                     location="3.5 km from Venue"
-                    image="https://images.unsplash.com/photo-1529154036614-a60975f5c760?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    image="https://static.wixstatic.com/media/0505b9_a3c6ad84ba5e45a2bb61a53f4f35652b~mv2.jpg/v1/crop/x_0,y_122,w_1254,h_793/fill/w_1253,h_793,al_c,q_85,enc_avif,quality_auto/Myeongdong%20Shopping%20Street%20-%20Night%201-2%20landscape%20KTD%202024.jpg"
                   />
                </div>
             </div>

@@ -21,14 +21,14 @@ const AboutTheCall: React.FC = () => {
     <>
       {/* ================= SEO (UNCHANGED) ================= */}
       <Helmet>
-        <title>Call for Papers | Biomedical Engineering Conference 2026 Rome</title>
+        <title>Call for Papers | Health Innovation Summit Conference 2026 Rome</title>
         <meta
           name="description"
-          content="Submit your research abstract for the Biomedical Engineering Conference (ICBME 2026) in Rome. Peer-reviewed presentation opportunities for global researchers."
+          content="Submit your research abstract for the Health Innovation Summit Conference (ICHIS 2026) in Rome. Peer-reviewed presentation opportunities for global researchers."
         />
         <meta
           name="keywords"
-          content="Call for Abstracts AI, AI ML Robotics Conference, Abstract Submission, Research Conference, ICBME 2026"
+          content="Call for Abstracts AI, AI ML Robotics Conference, Abstract Submission, Research Conference, ICHIS 2026"
         />
         <link
           rel="canonical"
@@ -36,10 +36,10 @@ const AboutTheCall: React.FC = () => {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Call for Abstracts - ICBME 2026" />
+        <meta property="og:title" content="Call for Abstracts - ICHIS 2026" />
         <meta
           property="og:description"
-          content="Submit your abstract and present your research at ICBME 2026 in Rome."
+          content="Submit your abstract and present your research at ICHIS 2026 in Rome."
         />
         <meta
           property="og:image"
@@ -47,10 +47,10 @@ const AboutTheCall: React.FC = () => {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Call for Abstracts | ICBME 2026" />
+        <meta name="twitter:title" content="Call for Abstracts | ICHIS 2026" />
         <meta
           name="twitter:description"
-          content="Join global researchers at ICBME 2026. Abstract submissions now open."
+          content="Join global researchers at ICHIS 2026. Abstract submissions now open."
         />
         <meta
           name="twitter:image"
@@ -64,11 +64,11 @@ const AboutTheCall: React.FC = () => {
         <div className="bg-white px-6 pt-12 pb-8">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-extrabold text-[#004E5A] tracking-tight">
-              CALL FOR ABSTRACTS – ICBME 2026
+              CALL FOR ABSTRACTS – ICHIS 2026
             </h1>
 
             <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
-              Submit your research abstract and join the global Biomedical Engineering research community.
+              Submit your research abstract and join the global Health Innovation Summit research community.
             </p>
 
             <div className="mt-5 h-[2px] w-full bg-[#0F766E]" />
@@ -89,7 +89,7 @@ const AboutTheCall: React.FC = () => {
             <p className="text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">
               We cordially invite researchers, academicians, industry professionals,
               and students to submit research abstracts for presentation at the
-              International Conference on Biomedical Engineering (ICBME 2026), held in Rome, Italy with hybrid participation.
+              International Conference on Health Innovation Summit (ICHIS 2026), held in Seoul, South Korea with hybrid participation.
             </p>
 
             <p className="mt-2 text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">

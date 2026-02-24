@@ -15,7 +15,7 @@
 // // // // //           <div className="overflow-hidden bg-black relative">
 // // // // //             <video
 // // // // //               className="w-full h-full object-cover"
-// // // // //               src="/ICBME-2026-video.mp4"
+// // // // //               src="/ICHIS-2026-video.mp4"
 // // // // //               controls
 // // // // //               autoPlay
 // // // // //               muted
@@ -35,19 +35,19 @@
 // // // // //           "
 // // // // //         >
 // // // // //           <h2 className="text-3xl font-bold text-[#00488B] mb-6">
-// // // // //             ABOUT ICBME 2026  HYBRID EVENT
+// // // // //             ABOUT ICHIS 2026  HYBRID EVENT
 // // // // //           </h2>
 
 // // // // //           <p className="mb-3">
 // // // // //             The International Conference on Artificial Intelligence, Machine
-// // // // //             Learning & Robotics (ICBME 2026) is a global academic forum bringing
+// // // // //             Learning & Robotics (ICHIS 2026) is a global academic forum bringing
 // // // // //             together researchers, faculty members, students, and industry
 // // // // //             professionals to exchange knowledge and present recent advances in
 // // // // //             intelligent systems.
 // // // // //           </p>
 
 // // // // //           <p className="mb-3">
-// // // // //             Scheduled for July 28–30, 2026, in Rome, Italy, ICBME 2026 will be
+// // // // //             Scheduled for July 28–30, 2026, in Seoul, South Korea, ICHIS 2026 will be
 // // // // //             conducted in a hybrid format, enabling participation through both
 // // // // //             in-person and virtual presentations.
 // // // // //           </p>
@@ -55,29 +55,29 @@
 // // // // //           <p className="mb-3">
 // // // // //             The conference focuses on fostering academic discussion,
 // // // // //             interdisciplinary collaboration, and responsible innovation across
-// // // // //             Biomedical Engineering. Participants are invited to
+// // // // //             Health Innovation Summit. Participants are invited to
 // // // // //             share original research, case studies, and emerging ideas through
 // // // // //             oral and poster sessions.
 // // // // //           </p>
 
 // // // // //           <p className="mb-3">
-// // // // //             ICBME 2026 aims to support meaningful knowledge exchange,
+// // // // //             ICHIS 2026 aims to support meaningful knowledge exchange,
 // // // // //             professional networking, and collaboration within the global
-// // // // //             research community.<Link to="/about" className="text-[#0091b5] hover:text-[#00488B] hover:underline ml-1" title="About ICBME 2026 Conference" aria-label="About ICBME 2026 Conference">Know more</Link>
+// // // // //             research community.<Link to="/about" className="text-[#0091b5] hover:text-[#00488B] hover:underline ml-1" title="About ICHIS 2026 Conference" aria-label="About ICHIS 2026 Conference">Know more</Link>
 // // // // //           </p>
 // // // // //         </div>
 
 // // // // //         {/* --- BUTTON GROUP --- */}
 // // // // //         <div className="clear-both pt-8 mt-4 border-t border-gray-100">
 // // // // //           <div className="flex gap-4">
-// // // // //             <Link to="/register" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
-// // // // //               <button className="bg-[#00488B] hover:bg-[#0E64C4] text-white px-6 py-3 text-sm font-bold tracking-wide shadow-md transition-all transform hover:-translate-y-0.5" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
+// // // // //             <Link to="/register" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference">
+// // // // //               <button className="bg-[#00488B] hover:bg-[#0E64C4] text-white px-6 py-3 text-sm font-bold tracking-wide shadow-md transition-all transform hover:-translate-y-0.5" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference">
 // // // // //                 REGISTER NOW
 // // // // //               </button>
 // // // // //             </Link>
 
-// // // // //             <Link to="/AbstractSubmission" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
-// // // // //               <button className="bg-[#232357] hover:bg-[#36368C] text-white px-6 py-3 text-sm font-bold tracking-wide shadow-md transition-all transform hover:-translate-y-0.5" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
+// // // // //             <Link to="/AbstractSubmission" title="Submit Abstract for ICHIS 2026 Conference" aria-label="Submit Abstract for ICHIS 2026 Conference">
+// // // // //               <button className="bg-[#232357] hover:bg-[#36368C] text-white px-6 py-3 text-sm font-bold tracking-wide shadow-md transition-all transform hover:-translate-y-0.5" title="Submit Abstract for ICHIS 2026 Conference" aria-label="Submit Abstract for ICHIS 2026 Conference">
 // // // // //                 SUBMIT ABSTRACT
 // // // // //               </button>
 // // // // //             </Link>
@@ -88,23 +88,23 @@
 // // // // //         <div className="mt-8 pt-4 pb-2 text-[15px] leading-7 border-t border-dashed border-gray-300">
 // // // // //           <span className="text-black font-semibold mr-1">Quick Links:</span>
 
-// // // // //           <Link to="/AbstractSubmission" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Abstract Submission for ICBME 2026 Conference" aria-label="Abstract Submission for ICBME 2026 Conference">
+// // // // //           <Link to="/AbstractSubmission" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Abstract Submission for ICHIS 2026 Conference" aria-label="Abstract Submission for ICHIS 2026 Conference">
 // // // // //             Abstract Submission
 // // // // //           </Link>
 // // // // //           <span className="mx-2 text-gray-400">|</span>
 
-// // // // //           <Link to="/register" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Registration for ICBME 2026 Conference" aria-label="Registration for ICBME 2026 Conference">
+// // // // //           <Link to="/register" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Registration for ICHIS 2026 Conference" aria-label="Registration for ICHIS 2026 Conference">
 // // // // //             Registration
 // // // // //           </Link>
 // // // // //           <span className="mx-2 text-gray-400">|</span>
 
-// // // // //           <Link to="/speakers" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Speaker Registration for ICBME 2026 Conference" aria-label="Speaker Registration for ICBME 2026 Conference">
+// // // // //           <Link to="/speakers" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Speaker Registration for ICHIS 2026 Conference" aria-label="Speaker Registration for ICHIS 2026 Conference">
 // // // // //             Speaker Registration
 // // // // //           </Link>
 
 // // // // //           <span className="mx-2 text-gray-400">|</span>
 
-// // // // //           <Link to="/schedule" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Program Schedule for ICBME 2026 Conference" aria-label="Program Schedule for ICBME 2026 Conference">
+// // // // //           <Link to="/schedule" className="text-[#0091b5] hover:text-[#00488B] hover:underline" title="Program Schedule for ICHIS 2026 Conference" aria-label="Program Schedule for ICHIS 2026 Conference">
 // // // // //             Program Schedule
 // // // // //           </Link>
 // // // // //         </div>
@@ -147,7 +147,7 @@
 // // // //             <div className="overflow-hidden bg-black relative">
 // // // //               <video
 // // // //                 className="w-full h-full object-cover"
-// // // //                 src="/ICBME-2026-video.mp4"
+// // // //                 src="/ICHIS-2026-video.mp4"
 // // // //                 controls
 // // // //                 autoPlay
 // // // //                 muted
@@ -168,19 +168,19 @@
 // // // //             "
 // // // //           >
 // // // //             <h2 className="text-3xl font-bold text-[#00488B] mb-6">
-// // // //               ABOUT ICBME 2026 HYBRID EVENT
+// // // //               ABOUT ICHIS 2026 HYBRID EVENT
 // // // //             </h2>
 
 // // // //             <p className="mb-3">
 // // // //               The International Conference on Artificial Intelligence, Machine
-// // // //               Learning & Robotics (ICBME 2026) is a global academic forum bringing
+// // // //               Learning & Robotics (ICHIS 2026) is a global academic forum bringing
 // // // //               together researchers, faculty members, students, and industry
 // // // //               professionals to exchange knowledge and present recent advances in
 // // // //               intelligent systems.
 // // // //             </p>
 
 // // // //             <p className="mb-3">
-// // // //               Scheduled for July 28–30, 2026, in Rome, Italy, ICBME 2026 will be
+// // // //               Scheduled for July 28–30, 2026, in Seoul, South Korea, ICHIS 2026 will be
 // // // //               conducted in a hybrid format, enabling participation through both
 // // // //               in-person and virtual presentations.
 // // // //             </p>
@@ -188,20 +188,20 @@
 // // // //             <p className="mb-3">
 // // // //               The conference focuses on fostering academic discussion,
 // // // //               interdisciplinary collaboration, and responsible innovation across
-// // // //               Biomedical Engineering. Participants are invited to
+// // // //               Health Innovation Summit. Participants are invited to
 // // // //               share original research, case studies, and emerging ideas through
 // // // //               oral and poster sessions.
 // // // //             </p>
 
 // // // //             <p className="mb-3">
-// // // //               ICBME 2026 aims to support meaningful knowledge exchange,
+// // // //               ICHIS 2026 aims to support meaningful knowledge exchange,
 // // // //               professional networking, and collaboration within the global
 // // // //               research community.
 // // // //               <Link
 // // // //                 to="/about"
 // // // //                 className="text-[#0091b5] hover:text-[#00488B] hover:underline ml-1"
-// // // //                 title="About ICBME 2026 Conference"
-// // // //                 aria-label="About ICBME 2026 Conference"
+// // // //                 title="About ICHIS 2026 Conference"
+// // // //                 aria-label="About ICHIS 2026 Conference"
 // // // //               >
 // // // //                 Know more
 // // // //               </Link>
@@ -273,11 +273,11 @@
 // // //         {/* SECTION HEADER */}
 // // //         <div className="mb-12 max-w-3xl flex justify-end">
 // // //           <h2 className="text-4xl font-extrabold text-[#0b3a6f] leading-tight">
-// // //             About ICBME 2026
+// // //             About ICHIS 2026
 // // //           </h2>
 // // //           {/* <p className="mt-3 text-lg text-gray-600">
 // // //             A premier global conference advancing research and innovation in
-// // //             Biomedical Engineering.
+// // //             Health Innovation Summit.
 // // //           </p> */}
 // // //         </div>
 
@@ -292,7 +292,7 @@
 
 // // //             <video
 // // //               className="w-full h-[300px] sm:h-[320px] lg:h-[350px] object-cover"
-// // //               src="/ICBME-2026-video.mp4"
+// // //               src="/ICHIS-2026-video.mp4"
 // // //               controls
 // // //               muted
 // // //               loop
@@ -304,7 +304,7 @@
 // // //           <div className="text-gray-700 text-[16.5px] leading-relaxed">
 
 // // //             <p className="mb-4">
-// // //               The <strong>ICBME 2026 Conference</strong> is an international
+// // //               The <strong>ICHIS 2026 Conference</strong> is an international
 // // //               academic forum bringing together researchers, faculty members,
 // // //               students, and industry professionals to present and discuss recent
 // // //               advances in intelligent systems.
@@ -312,13 +312,13 @@
 
 // // //             <p className="mb-4">
 // // //               Scheduled for <strong>July 28–30, 2026</strong>, in
-// // //               <strong> Rome, Italy</strong>, the conference will be conducted in a
+// // //               <strong> Seoul, South Korea</strong>, the conference will be conducted in a
 // // //               <strong> hybrid format</strong>, enabling both in-person and
 // // //               virtual participation.
 // // //             </p>
 
 // // //             <p className="mb-4">
-// // //               ICBME 2026 emphasizes interdisciplinary collaboration, responsible
+// // //               ICHIS 2026 emphasizes interdisciplinary collaboration, responsible
 // // //               innovation, and the exchange of original research through keynote
 // // //               talks, oral presentations, poster sessions, and technical
 // // //               discussions.
@@ -412,7 +412,7 @@
 // //         {/* SECTION HEADER */}
 // //         <div className="mb-12 max-w-3xl">
 // //           <h2 className="text-4xl font-extrabold text-[#111827] leading-tight">
-// //             About ICBME 2026
+// //             About ICHIS 2026
 // //           </h2>
 // //         </div>
 
@@ -427,7 +427,7 @@
 
 // //             <video
 // //               className="w-full h-[300px] sm:h-[320px] lg:h-[350px] object-cover"
-// //               src="/ICBME-2026-video.mp4"
+// //               src="/ICHIS-2026-video.mp4"
 // //               controls
 // //               muted
 // //               loop
@@ -439,7 +439,7 @@
 // //           <div className="text-[#1F2937] text-[16.5px] leading-relaxed">
 
 // //             <p className="mb-4">
-// //               The <strong>ICBME 2026 Conference</strong> is an international
+// //               The <strong>ICHIS 2026 Conference</strong> is an international
 // //               academic forum bringing together researchers, faculty members,
 // //               students, and industry professionals to present and discuss recent
 // //               advances in intelligent systems.
@@ -447,13 +447,13 @@
 
 // //             <p className="mb-4">
 // //               Scheduled for <strong>July 28–30, 2026</strong>, in
-// //               <strong> Rome, Italy</strong>, the conference will be conducted in a
+// //               <strong> Seoul, South Korea</strong>, the conference will be conducted in a
 // //               <strong> hybrid format</strong>, enabling both in-person and
 // //               virtual participation.
 // //             </p>
 
 // //             <p className="mb-4">
-// //               ICBME 2026 emphasizes interdisciplinary collaboration, responsible
+// //               ICHIS 2026 emphasizes interdisciplinary collaboration, responsible
 // //               innovation, and the exchange of original research through keynote
 // //               talks, oral presentations, poster sessions, and technical
 // //               discussions.
@@ -543,7 +543,7 @@
 // //         {/* SECTION HEADER */}
 // //         <div className="mb-12 max-w-3xl">
 // //           <h2 className="text-4xl font-extrabold text-[#1E293B] leading-tight">
-// //             About ICBME 2026
+// //             About ICHIS 2026
 // //           </h2>
 // //         </div>
 
@@ -558,7 +558,7 @@
 
 // //             <video
 // //               className="w-full h-[300px] sm:h-[320px] lg:h-[350px] object-cover"
-// //               src="/ICBME-2026-video.mp4"
+// //               src="/ICHIS-2026-video.mp4"
 // //               controls
 // //               muted
 // //               loop
@@ -570,7 +570,7 @@
 // //           <div className="text-[#1E293B] text-[16.5px] leading-relaxed">
 
 // //             <p className="mb-4">
-// //               The <strong>ICBME 2026 Conference</strong> is an international
+// //               The <strong>ICHIS 2026 Conference</strong> is an international
 // //               academic forum bringing together researchers, faculty members,
 // //               students, and industry professionals to present and discuss recent
 // //               advances in intelligent systems.
@@ -578,13 +578,13 @@
 
 // //             <p className="mb-4">
 // //               Scheduled for <strong>July 28–30, 2026</strong>, in
-// //               <strong> Rome, Italy</strong>, the conference will be conducted in a
+// //               <strong> Seoul, South Korea</strong>, the conference will be conducted in a
 // //               <strong> hybrid format</strong>, enabling both in-person and
 // //               virtual participation.
 // //             </p>
 
 // //             <p className="mb-4">
-// //               ICBME 2026 emphasizes interdisciplinary collaboration, responsible
+// //               ICHIS 2026 emphasizes interdisciplinary collaboration, responsible
 // //               innovation, and the exchange of original research through keynote
 // //               talks, oral presentations, poster sessions, and technical
 // //               discussions.
@@ -673,7 +673,7 @@
 //         {/* SECTION HEADER */}
 //         <div className="mb-12">
 //           <h2 className="text-4xl text-center font-extrabold text-[#1E293B] leading-tight">
-//             About Biomedical Engineering Conference 2026
+//             About Health Innovation Summit Conference 2026
 //           </h2>
 //         </div>
 
@@ -700,9 +700,9 @@
 //           <div className="text-[#1E293B] text-[16.5px] leading-relaxed">
 
 //             <p className="mb-4">
-//               The <strong>Biomedical Engineering & Healthcare Innovation Summit 2026</strong>{" "}
+//               The <strong>Health Innovation Summit & Healthcare Innovation Summit 2026</strong>{" "}
 //               is a global platform dedicated to advancing research, technology,
-//               and interdisciplinary collaboration in biomedical engineering,
+//               and interdisciplinary collaboration in Health Innovation Summit,
 //               medical devices, AI-enabled healthcare systems, and life sciences
 //               innovation.
 //             </p>
@@ -823,14 +823,15 @@ const ContentSection: React.FC = () => {
         {/* HEADER */}
         <div className="mb-12 text-center">
           {/* <h2 className="text-[34px] sm:text-[40px] font-semibold text-[#004E5A] leading-tight">
-            About Biomedical Engineering Conference 2026
+            About Health Innovation Summit Conference 2026
           </h2> */}
-                <h2
-        className="text-center text-2xl md:text-3xl font-bold mb-2"
-        style={{ fontFamily: "'Manrope', sans-serif", color: "#004E5A" }}
-      >
-        About Biomedical Engineering Conference 2026
-      </h2>
+          <h2
+            className="text-center text-2xl md:text-3xl font-bold mb-2"
+            style={{ fontFamily: "'Manrope', sans-serif", color: "#004E5A" }}
+          >
+            {/* About Health Innovation Summit Conference 2026 */}
+            About Health Innovation Summit 2026
+          </h2>
         </div>
 
         {/* MAIN GRID */}
@@ -851,32 +852,35 @@ const ContentSection: React.FC = () => {
           {/* TEXT CONTENT */}
           <div className="text-[#111827] text-[17px] leading-[1.5]">
 
-            <p className="mb-2">
-              {/* The <strong>Biomedical Engineering & Healthcare Innovation Summit 2026</strong>{" "}
-              is a global platform dedicated to advancing research, technology,
-              and interdisciplinary collaboration in biomedical engineering,
-              medical devices, AI-enabled healthcare systems, and life sciences
-              innovation. */}
-
-
-              The Health Innovation Summit 2026 is a premier global forum dedicated to exploring the latest breakthroughs in health, medicine, biotechnology, and healthcare delivery innovations. The summit brings together researchers, clinicians, policymakers, industry experts, startups, and public health leaders to share insights, discuss emerging trends, and collaborate on transforming health outcomes worldwide.
+            {/* <p className="mb-2">
+              The Health Innovation Summit 2026 aims to foster collaboration among healthcare professionals, academic researchers, policymakers, and industry experts to address emerging global health challenges.
             </p>
 
-
-
-
             <p className="mb-8">
-              By fostering knowledge exchange and cross-disciplinary
-              collaboration, the summit aims to accelerate the translation of
-              research into impactful healthcare solutions that address global
-              challenges.
+              The conference will highlight cutting-edge research, breakthrough medical technologies, and practical solutions shaping the future of healthcare delivery. From AI-driven diagnostics to precision medicine and public health policy reform, the summit promotes interdisciplinary exchange and global partnerships.
               <Link
                 to="/about"
                 className="ml-2 text-[#0F766E] font-semibold hover:underline"
               >
                 Learn more →
               </Link>
-            </p>
+            </p> */}
+
+
+            <p className="mb-2">
+  The Health Innovation Summit 2026 aims to foster collaboration among healthcare professionals, academic researchers, policymakers, and industry experts to address emerging global health challenges. The summit provides a platform for knowledge sharing, networking, and innovative strategies that enhance healthcare accessibility and patient outcomes.
+</p>
+
+<p className="mb-6">
+  The conference will highlight cutting-edge research, breakthrough medical technologies, and practical solutions shaping the future of healthcare delivery. From AI-driven diagnostics to precision medicine and public health policy reform, the summit promotes interdisciplinary exchange and global partnerships through expert panels and collaborative sessions.
+  <br />
+  <Link
+    to="/about"
+    className="text-[#0F766E] font-semibold hover:underline"
+  >
+    Learn more →
+  </Link>
+</p>
 
             {/* CTA BUTTONS */}
             <div className="flex flex-wrap gap-5">

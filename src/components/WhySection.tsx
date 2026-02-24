@@ -707,7 +707,7 @@
 // // // // //   {
 // // // // //     icon: Cpu,
 // // // // //     title: "Cutting-Edge Research",
-// // // // //     description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering.",
+// // // // //     description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit.",
 // // // // //   },
 // // // // //   {
 // // // // //     icon: Globe,
@@ -757,7 +757,7 @@
 // // // // //               OUR CONFERENCE<span className="text-[#FFA726]">.</span>
 // // // // //             </h2>
 // // // // //             <p className="mt-6 text-xs md:text-sm font-medium tracking-[0.2em] text-gray-400 uppercase">
-// // // // //               Advancing innovation in Biomedical Engineering
+// // // // //               Advancing innovation in Health Innovation Summit
 // // // // //             </p>
 // // // // //           </div>
 
@@ -832,7 +832,7 @@
 // // // //   {
 // // // //     icon: Cpu,
 // // // //     title: "Cutting-Edge Research",
-// // // //     description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering.",
+// // // //     description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit.",
 // // // //   },
 // // // //   {
 // // // //     icon: Globe,
@@ -882,7 +882,7 @@
 // // // //               OUR CONFERENCE<span className="text-[#FFA726]">.</span>
 // // // //             </h2>
 // // // //             <p className="mt-6 text-xs md:text-sm font-medium tracking-[0.2em] text-gray-400 uppercase">
-// // // //               Advancing innovation in Biomedical Engineering
+// // // //               Advancing innovation in Health Innovation Summit
 // // // //             </p>
 // // // //           </div>
 
@@ -948,7 +948,7 @@
 // // //   {
 // // //     icon: Cpu,
 // // //     title: "Cutting-Edge Research",
-// // //     description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering.",
+// // //     description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit.",
 // // //   },
 // // //   {
 // // //     icon: Globe,
@@ -1000,7 +1000,7 @@
 // // //               OUR CONFERENCE<span className="text-[#84cc16]">.</span> {/* Updated Accent Dot */}
 // // //             </h2>
 // // //             <p className="mt-6 text-xs md:text-sm font-medium tracking-[0.2em] text-gray-300 uppercase">
-// // //               Advancing innovation in Biomedical Engineering
+// // //               Advancing innovation in Health Innovation Summit
 // // //             </p>
 // // //           </div>
 
@@ -1067,7 +1067,7 @@
 // //   {
 // //     icon: Cpu,
 // //     title: "Cutting-Edge Research",
-// //     description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering.",
+// //     description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit.",
 // //   },
 // //   {
 // //     icon: Globe,
@@ -1109,7 +1109,7 @@
 // //               OUR CONFERENCE<span className="text-[#84cc16]">.</span>
 // //             </h2>
 // //             <p className="mt-6 text-sm font-medium tracking-[0.2em] text-gray-400 uppercase border-l-2 border-[#84cc16] pl-4">
-// //               Advancing innovation in Biomedical Engineering
+// //               Advancing innovation in Health Innovation Summit
 // //             </p>
 // //           </div>
 
@@ -1167,7 +1167,7 @@
 // import { Cpu, Globe, Mic2, FileText, Bot, Briefcase } from "lucide-react";
 
 // const features = [
-//   { icon: Cpu, title: "Cutting-Edge Research", description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering." },
+//   { icon: Cpu, title: "Cutting-Edge Research", description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit." },
 //   { icon: Globe, title: "Global Networking", description: "Connect with researchers, faculty members, students, and industry professionals from around the world." },
 //   { icon: Mic2, title: "World-Class Speakers", description: "Gain insights from experienced researchers and industry practitioners sharing real-world applications." },
 //   { icon: FileText, title: "Publication Opportunities", description: "Present your research through oral or poster sessions and receive official conference recognition." },
@@ -1188,7 +1188,7 @@
 //               OUR CONFERENCE<span className="text-[#84cc16]">.</span>
 //             </h2>
 //             <p className="mt-6 text-sm font-medium tracking-[0.2em] text-gray-400 uppercase border-l-2 border-[#84cc16] pl-4">
-//               Advancing innovation in Biomedical Engineering
+//               Advancing innovation in Health Innovation Summit
 //             </p>
 //           </div>
 
@@ -1242,7 +1242,7 @@ import React from "react";
 import { Cpu, Globe, Mic2, FileText, Bot, Briefcase } from "lucide-react";
 
 const features = [
-  { icon: Cpu, title: "Cutting-Edge Research", description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering." },
+  { icon: Cpu, title: "Cutting-Edge Research", description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit." },
   { icon: Globe, title: "Global Networking", description: "Connect with researchers, faculty members, students, and industry professionals from around the world." },
   { icon: Mic2, title: "World-Class Speakers", description: "Gain insights from experienced researchers and industry practitioners sharing real-world applications." },
   { icon: FileText, title: "Publication Opportunities", description: "Present your research through oral or poster sessions and receive official conference recognition." },
@@ -1263,7 +1263,7 @@ export default function WhySection() {
               OUR CONFERENCE<span className="text-[#84cc16]">.</span>
             </h2>
             <p className="mt-6 text-sm font-medium tracking-[0.2em] text-gray-400 uppercase border-l-2 border-[#84cc16] pl-4">
-              Advancing innovation in Biomedical Engineering
+              Advancing innovation in Health Innovation Summit
             </p>
           </div>
 

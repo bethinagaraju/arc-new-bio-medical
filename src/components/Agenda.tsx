@@ -171,7 +171,7 @@
 // // //     {
 // // //       time: '15:30 - 16:00',
 // // //       title: 'Farewell & Closing Speech',
-// // //       description: 'Official closing with acknowledgments and announcements for next year’s Biomedical Engineering Conference.',
+// // //       description: 'Official closing with acknowledgments and announcements for next year’s Health Innovation Summit Conference.',
 // // //       speaker: 'Conference Chair',
 // // //       room: 'Main Hall',
 // // //     },

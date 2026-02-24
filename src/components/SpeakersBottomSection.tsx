@@ -15,7 +15,7 @@
 //             Ready to Share Your Research?
 //           </h2>
 //           <p className="text-indigo-200 mb-8 leading-relaxed">
-//             Join our distinguished speakers and present your groundbreaking work at ICBME 2026.
+//             Join our distinguished speakers and present your groundbreaking work at ICHIS 2026.
 //           </p>
 //           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
 //             <Link to="/AbstractSubmission">
@@ -60,7 +60,7 @@ function SpeakersBottomSection() {
         {/* Badge */}
         <span className="inline-block mb-4 px-4 py-1 text-xs font-semibold tracking-wider uppercase
           text-[#FFFFFF] bg-[#004E5A] rounded-full">
-          ICBME 2026
+          ICHIS 2026
         </span>
 
         {/* Heading */}
@@ -71,7 +71,7 @@ function SpeakersBottomSection() {
         {/* Subtitle */}
         <p className="text-[#475569] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           Join distinguished researchers and speakers from around the world and
-          present your work at the International Conference on Biomedical Engineering.
+          present your work at the International Conference on Health Innovation Summit.
         </p>
 
         {/* CTA Buttons */}

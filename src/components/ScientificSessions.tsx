@@ -42,7 +42,7 @@
 
 
 //           <p className="text-lg text-[#64748B] max-w-6xl mx-auto leading-relaxed">
-//   Discover the latest breakthroughs in biomedical engineering and healthcare innovation. Join global experts as we explore advanced medical technologies, AI-enabled healthcare systems, and their real-world clinical impact.
+//   Discover the latest breakthroughs in Health Innovation Summit and healthcare innovation. Join global experts as we explore advanced medical technologies, AI-enabled healthcare systems, and their real-world clinical impact.
 // </p>
 
 //         </div>
@@ -166,9 +166,7 @@ export default function ScientificSessions() {
           </h2>
 
           <p className="mt-5 text-lg text-[#64748B] max-w-4xl mx-auto leading-relaxed">
-            Discover the latest breakthroughs in biomedical engineering and
-            healthcare innovation. Join global experts exploring advanced
-            medical technologies and AI-enabled healthcare systems.
+            Discover the latest breakthroughs in Health Innovation Summit. Join global experts exploring advanced medical technologies.
           </p>
         </div>
 
@@ -200,7 +198,7 @@ export default function ScientificSessions() {
                 "
 
               >
-                <span className="text-[#022C22] font-medium text-[15px] leading-snug">
+                <span className="text-[#022C22] font-medium text-[15px] leading-snug text-center">
                   {item.topicName}
                 </span>
               </div>

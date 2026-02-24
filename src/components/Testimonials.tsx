@@ -32,7 +32,7 @@
 // // //     location: "Spain",
 // // //     image: "miguel-alvarez.jpeg",
 // // //     message:
-// // //       "The sessions were well organized and covered a broad range of topics in Biomedical Engineering."
+// // //       "The sessions were well organized and covered a broad range of topics in Health Innovation Summit."
 // // //   },
 
 // // //   {
@@ -123,7 +123,7 @@
 // // //           {/* <h2 className="text-4xl font-bold">Participants Feedback</h2> */}
 
 // // //           <h2 className="text-3xl font-bold text-[#ffffff] mb-4 text-center">
-// // //             ICBME 2025 PARTICIPANTS FEEDBACK
+// // //             ICHIS 2025 PARTICIPANTS FEEDBACK
 // // //           </h2>
 // // //         </div>
 
@@ -240,7 +240,7 @@
 // //     image: "miguel-alvarez.jpeg",
 // //     rating: 4,
 // //     message:
-// //       "The sessions were well organized and covered a broad range of topics in Biomedical Engineering."
+// //       "The sessions were well organized and covered a broad range of topics in Health Innovation Summit."
 // //   },
 // //   {
 // //     id: 3,
@@ -321,7 +321,7 @@
 
 // //         {/* Heading */}
 // //         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-14">
-// //           ICBME Participants Feedback
+// //           ICHIS Participants Feedback
 // //         </h2>
 
 // //         <div className="flex items-center gap-6">
@@ -450,7 +450,7 @@
 //     image: "miguel-alvarez.jpeg",
 //     rating: 4,
 //     message:
-//       "The sessions were well organized and covered a broad range of topics in Biomedical Engineering."
+//       "The sessions were well organized and covered a broad range of topics in Health Innovation Summit."
 //   },
 //   {
 //     id: 3,
@@ -531,7 +531,7 @@
 
 //         {/* Section Title */}
 //         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-14">
-//           ICBME Participants Feedback
+//           ICHIS Participants Feedback
 //         </h2>
 
 //         <div className="flex items-center gap-6">
@@ -727,7 +727,7 @@ const Testimonials: React.FC = () => {
 
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-14">
-          ICBME Participants Feedback
+          ICHIS Participants Feedback
         </h2>
 
         <div className="flex items-center gap-6">

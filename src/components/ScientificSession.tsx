@@ -302,7 +302,7 @@
 //   return (
 //     <div className="w-full">
 
-//       <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>ICBME 2026 CONFERENCE TOPICSes</h1>
+//       <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>ICHIS 2026 CONFERENCE TOPICSes</h1>
 
 //       {/* SESSION GRID */}
 //       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
@@ -413,7 +413,7 @@ const ScientificSession: React.FC = () => {
         className="text-center text-3xl md:text-4xl font-bold mb-6"
         style={{ fontFamily: "'Manrope', sans-serif", color: "#004E5A" }}
       >
-        ICBME 2026 CONFERENCE TOPICS
+        ICHIS 2026 CONFERENCE TOPICS
       </h1>
 
       {/* SESSION GRID */}

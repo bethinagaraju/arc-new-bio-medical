@@ -17,7 +17,7 @@
 // //       <p className="text-lg text-gray-700 mb-6">
 // //         🎉 Congratulations! You’ve successfully registered for the <br />
 // //         <span className="font-semibold text-[#2e376d]">
-// //           Biomedical Engineering Conference — Artificial Intelligence, Machine Learning and Robotics Conference
+// //           Health Innovation Summit Conference — Artificial Intelligence, Machine Learning and Robotics Conference
 // //         </span>
 // //       </p>
 
@@ -41,7 +41,7 @@
 
 // //       {/* Footer Text */}
 // //       <footer className="mt-10 text-sm text-gray-600">
-// //         © 2026 All rights reserved. Biomedical Engineering Conference <br />
+// //         © 2026 All rights reserved. Health Innovation Summit Conference <br />
 // //         Artificial Intelligence, Machine Learning and Robotics Conference
 // //       </footer>
 // //     </div>
@@ -71,7 +71,7 @@
 //       <p className="text-lg text-gray-700 mb-4">
 //         🎉 Congratulations! You’ve successfully registered for the <br />
 //         <span className="font-semibold text-[#2e376d]">
-//           Biomedical Engineering Conference — Artificial Intelligence, Machine Learning and Robotics Conference
+//           Health Innovation Summit Conference — Artificial Intelligence, Machine Learning and Robotics Conference
 //         </span>
 //       </p>
 
@@ -81,7 +81,7 @@
 //           📅 July 28–30, 2026
 //         </p>
 //         <p className="text-gray-700 mt-1">
-//           📍 Crowne Plaza - St. Peter’s Rome, Italy
+//           📍 Seoul, South Korea
 //         </p>
 //         <p className="text-gray-600 text-sm mt-2">
 //           (Conference Dates: 28th, 29th & 30th July 2026)
@@ -108,7 +108,7 @@
 
 //       {/* Footer Text */}
 //       <footer className="mt-10 text-sm text-gray-600 leading-relaxed">
-//         © 2026 All rights reserved. Biomedical Engineering Conference <br />
+//         © 2026 All rights reserved. Health Innovation Summit Conference <br />
 //         Artificial Intelligence, Machine Learning and Robotics Conference
 //       </footer>
 //     </div>
@@ -165,7 +165,7 @@ const ThankyouPage: React.FC = () => {
         <p className="text-lg text-gray-700 mb-4">
           🎉 Congratulations! You’ve successfully registered for the <br />
           <span className="font-semibold text-[#2e376d]">
-            Biomedical Engineering Conference — Artificial Intelligence, Machine Learning and Robotics Conference
+            Health Innovation Summit Conference — Artificial Intelligence, Machine Learning and Robotics Conference
           </span>
         </p>
       ) : (
@@ -184,7 +184,7 @@ const ThankyouPage: React.FC = () => {
             📅 July 28–30, 2026
           </p>
           <p className="text-gray-700 mt-1">
-            📍 Crowne Plaza - St. Peter’s Rome, Italy
+            📍 Seoul, South Korea
           </p>
           <p className="text-gray-600 text-sm mt-2">
             (Conference Dates: 28th, 29th & 30th July 2026)
@@ -220,7 +220,7 @@ const ThankyouPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="mt-10 text-sm text-gray-600 leading-relaxed">
-        © 2026 All rights reserved. Biomedical Engineering Conference <br />
+        © 2026 All rights reserved. Health Innovation Summit Conference <br />
         Artificial Intelligence, Machine Learning and Robotics Conference
       </footer>
     </div>

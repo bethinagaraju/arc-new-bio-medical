@@ -17,36 +17,36 @@
 //           {/* Left text */}
 //           <div className="flex-1 text-center md:text-left">
 //             <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: "'Manrope', sans-serif" }}>
-//               Ready to join ICBME 2026?
+//               Ready to join ICHIS 2026?
 //             </h2>
 //             <p className="text-indigo-100 text-sm md:text-base max-w-2xl">
-//               Secure your spot today or submit your research — two quick actions to become part of the global Biomedical Engineering community.
+//               Secure your spot today or submit your research — two quick actions to become part of the global Health Innovation Summit community.
 //             </p>
 //           </div>
 
 //           {/* Buttons */}
 //           <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4">
-//             <Link to="/register" className="w-full sm:w-auto" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
+//             <Link to="/register" className="w-full sm:w-auto" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference">
 //               <motion.button
 //                 whileHover={{ scale: 1.02 }}
 //                 whileTap={{ scale: 0.98 }}
 //                 className="flex items-center gap-3 justify-center px-5 py-3 font-semibold bg-white text-indigo-800 shadow hover:shadow-md transition-all w-full sm:w-auto"
-//                 title="Register for ICBME 2026 Conference"
-//                 aria-label="Register for ICBME 2026 Conference"
+//                 title="Register for ICHIS 2026 Conference"
+//                 aria-label="Register for ICHIS 2026 Conference"
 //               >
-//                 <UserPlus className="w-5 h-5 text-[#0B5ED7]" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference" />
+//                 <UserPlus className="w-5 h-5 text-[#0B5ED7]" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference" />
 //                 <span>Register</span>
-//                 <ArrowRight className="w-4 h-4 text-[#0B5ED7] ml-1" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference" />
+//                 <ArrowRight className="w-4 h-4 text-[#0B5ED7] ml-1" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference" />
 //               </motion.button>
 //             </Link>
 
-//             <Link to="/AbstractSubmission" className="w-full sm:w-auto" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
+//             <Link to="/AbstractSubmission" className="w-full sm:w-auto" title="Submit Abstract for ICHIS 2026 Conference" aria-label="Submit Abstract for ICHIS 2026 Conference">
 //               <motion.button
 //                 whileHover={{ scale: 1.02 }}
 //                 whileTap={{ scale: 0.98 }}
 //                 className="flex items-center gap-3 justify-center px-5 py-3 font-semibold bg-transparent border border-white text-white hover:bg-white/10 transition-all w-full sm:w-auto"
-//                 title="Submit Abstract for ICBME 2026 Conference"
-//                 aria-label="Submit Abstract for ICBME 2026 Conference"
+//                 title="Submit Abstract for ICHIS 2026 Conference"
+//                 aria-label="Submit Abstract for ICHIS 2026 Conference"
 //               >
 //                 <FileText className="w-5 h-5 text-white/90" />
 //                 <span>Abstract Submission</span>
@@ -88,11 +88,11 @@ const CTARegisterAbstract: React.FC = () => {
               className="text-2xl md:text-3xl font-bold mb-2"
               style={{ fontFamily: "'Manrope', sans-serif" }}
             >
-              Ready to join ICBME 2026?
+              Ready to join ICHIS 2026?
             </h2>
             <p className="text-[#ECFDF5] text-sm md:text-base max-w-2xl">
               Secure your spot today or submit your research — two quick actions
-              to become part of the global Biomedical Engineering community.
+              to become part of the global Health Innovation Summit community.
             </p>
           </div>
 
@@ -103,8 +103,8 @@ const CTARegisterAbstract: React.FC = () => {
             <Link
               to="/register"
               className="w-full sm:w-auto"
-              title="Register for ICBME 2026 Conference"
-              aria-label="Register for ICBME 2026 Conference"
+              title="Register for ICHIS 2026 Conference"
+              aria-label="Register for ICHIS 2026 Conference"
             >
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -127,8 +127,8 @@ const CTARegisterAbstract: React.FC = () => {
             <Link
               to="/AbstractSubmission"
               className="w-full sm:w-auto"
-              title="Submit Abstract for ICBME 2026 Conference"
-              aria-label="Submit Abstract for ICBME 2026 Conference"
+              title="Submit Abstract for ICHIS 2026 Conference"
+              aria-label="Submit Abstract for ICHIS 2026 Conference"
             >
               <motion.button
                 whileHover={{ scale: 1.03 }}

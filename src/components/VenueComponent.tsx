@@ -156,7 +156,7 @@
 // // // // //       </div>
 // // // // //       {/* <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Address</h4> */}
 // // // // //       <p className="text-gray-800 text-sm font-medium">
-// // // // //         Crowne Plaza Rome, Italy
+// // // // //         Crowne Plaza Seoul, South Korea
 // // // // //       </p>
 // // // // //     </div>
 // // // // //   </div>
@@ -258,7 +258,7 @@
 // // // //               Official Venue
 // // // //             </span>
 // // // //             <h3 className="text-3xl font-bold text-indigo-900">
-// // // //               Crowne Plaza Rome – St. Peter’s, Rome, Italy
+// // // //               Crowne Plaza Rome – St. Peter’s, Seoul, South Korea
 // // // //             </h3>
 // // // //           </div>
           
@@ -283,7 +283,7 @@
 // // // //               <MapPin className="w-6 h-6 text-indigo-600" />
 // // // //             </div>
 // // // //             <p className="text-gray-800 text-sm font-medium">
-// // // //               Crowne Plaza Rome, Italy
+// // // //               Crowne Plaza Seoul, South Korea
 // // // //             </p>
 // // // //           </div>
 
@@ -384,7 +384,7 @@
 // // //               Official Venue
 // // //             </span>
 // // //             <h3 className="text-3xl font-bold text-indigo-900">
-// // //               Crowne Plaza Rome – St. Peter’s, Rome, Italy
+// // //               Crowne Plaza Rome – St. Peter’s, Seoul, South Korea
 // // //             </h3>
 // // //           </div>
           
@@ -409,7 +409,7 @@
 // // //               <MapPin className="w-6 h-6 text-indigo-600" />
 // // //             </div>
 // // //             <p className="text-gray-800 text-sm font-medium">
-// // //               Crowne Plaza Rome, Italy
+// // //               Crowne Plaza Seoul, South Korea
 // // //             </p>
 // // //           </div>
 
@@ -508,7 +508,7 @@
 // //             <div className="mb-10">
 // //               <h3 className="text-2xl font-semibold text-[#047857] leading-snug">
 // //                 Crowne Plaza Rome – <br />
-// //                 St. Peter’s, Rome, Italy
+// //                 St. Peter’s, Seoul, South Korea
 // //               </h3>
 // //             </div>
 
@@ -599,7 +599,7 @@
 //             <div className="mb-12">
 //               <h3 className="text-2xl md:text-3xl font-semibold text-[#047857] leading-snug">
 //                 Crowne Plaza Rome – <br />
-//                 St. Peter’s, Rome, Italy
+//                 St. Peter’s, Seoul, South Korea
 //               </h3>
 //             </div>
 
@@ -766,7 +766,7 @@ function VenueComponent() {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1927616323837!2d12.423528374610969!3d41.88871136475198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5fe8b4bf70cd%3A0x586cc964285c08da!2sCrowne%20Plaza%20Rome%20-%20St.%20Peter's%20by%20IHG!5e0!3m2!1sen!2sin!4v1765214827132!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.91416343895!2d126.8093238484843!3d37.565033716303226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2sin!4v1771917237434!5m2!1sen!2sin"
               className="w-full h-[140px] md:h-[160px]"
               style={{ border: 0 }}
             ></iframe>

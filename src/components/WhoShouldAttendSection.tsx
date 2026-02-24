@@ -186,7 +186,7 @@
 // //     {
 // //       title: "Faculty & Professors",
 // //       description:
-// //         "Educators and academic leaders guiding future research directions, shaping course development, and driving innovation in Biomedical Engineering.",
+// //         "Educators and academic leaders guiding future research directions, shaping course development, and driving innovation in Health Innovation Summit.",
 // //       icon: GraduationCap,
 // //     },
 // //     {
@@ -295,7 +295,7 @@
 //     {
 //       title: "Faculty & Professors",
 //       description:
-//         "Educators and academic leaders guiding future research directions, shaping course development, and driving innovation in Biomedical Engineering.",
+//         "Educators and academic leaders guiding future research directions, shaping course development, and driving innovation in Health Innovation Summit.",
 //       icon: GraduationCap,
 //     },
 //     {
@@ -403,7 +403,7 @@ const WhoShouldAttendSection: React.FC = () => {
     {
       title: "Expert Keynotes & Plenary Talks",
       description:
-        "Insights from leading researchers and clinicians on breakthroughs in biomedical engineering, medical devices, and AI-assisted medicine.",
+        "Insights from leading researchers and clinicians on breakthroughs in Health Innovation Summit, medical devices, and AI-assisted medicine.",
       icon: GraduationCap,
     },
     {
@@ -427,7 +427,7 @@ const WhoShouldAttendSection: React.FC = () => {
     {
       title: "Research Presentations",
       description:
-        "Oral and poster presentations by global researchers showcasing emerging work in biomedical engineering and healthcare technology.",
+        "Oral and poster presentations by global researchers showcasing emerging work in Health Innovation Summit and healthcare technology.",
       icon: Rocket,
     },
     {
@@ -448,7 +448,7 @@ const WhoShouldAttendSection: React.FC = () => {
             What to Expect at the Summit
           </h2>
           <p className="text-slate-600 text-lg max-w-2xl">
-            A comprehensive program designed to advance biomedical engineering,
+            A comprehensive program designed to advance Health Innovation Summit,
             healthcare innovation, and interdisciplinary collaboration.
           </p>
         </div>

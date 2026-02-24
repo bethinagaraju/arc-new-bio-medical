@@ -2050,7 +2050,7 @@
 // // // // // // // // //           <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-slate-600">
 // // // // // // // // //             <span className="flex items-center gap-1.5"><Calendar size={16} className="text-indigo-600"/>July 28–30, 2026</span>
 // // // // // // // // //             <span className="hidden sm:inline text-slate-300">|</span>
-// // // // // // // // //             <span className="flex items-center gap-1.5"><MapPin size={16} className="text-indigo-600"/>Crowne Plaza - St. Peter’s Rome, Italy</span>
+// // // // // // // // //             <span className="flex items-center gap-1.5"><MapPin size={16} className="text-indigo-600"/>Seoul, South Korea</span>
 // // // // // // // // //           </div>
 // // // // // // // // //         </div>
 
@@ -2443,7 +2443,7 @@
 // // // // // // // //               <Calendar size={14} /> July 28–30, 2026
 // // // // // // // //             </span>
 // // // // // // // //             <span className="flex items-center gap-1">
-// // // // // // // //               <MapPin size={14} /> Rome, Italy
+// // // // // // // //               <MapPin size={14} /> Seoul, South Korea
 // // // // // // // //             </span>
 // // // // // // // //           </div>
 // // // // // // // //         </div>
@@ -2742,7 +2742,7 @@
 // // // // // // //               <Calendar size={14} /> July 28–30, 2026
 // // // // // // //             </span>
 // // // // // // //             <span className="flex items-center gap-1">
-// // // // // // //               <MapPin size={14} /> Rome, Italy
+// // // // // // //               <MapPin size={14} /> Seoul, South Korea
 // // // // // // //             </span>
 // // // // // // //           </div>
 // // // // // // //         </div> */}
@@ -2765,7 +2765,7 @@
 // // // // // // //     </div>
 // // // // // // //     <div>
 // // // // // // //       <p className="font-semibold text-slate-800">Location</p>
-// // // // // // //       <p className="text-slate-600">Crowne Plaza, Rome, Italy</p>
+// // // // // // //       <p className="text-slate-600">Crowne Plaza, Seoul, South Korea</p>
 // // // // // // //     </div>
 // // // // // // //     <div>
 // // // // // // //       <p className="font-semibold text-slate-800">Registration Deadline</p>
@@ -4382,7 +4382,7 @@
 // // //           </div>
 // // //           <div>
 // // //             <p className="font-semibold text-sm text-slate-900">Location</p>
-// // //             <p className="text-slate-600 text-sm">Crowne Plaza - St. Peter’s Rome, Italy</p>
+// // //             <p className="text-slate-600 text-sm">Seoul, South Korea</p>
 // // //           </div>
 // // //           <div>
 // // //             <p className="font-semibold text-sm text-slate-900">Registration Deadline</p>
@@ -5076,7 +5076,7 @@
 // //                                 </div>
 // //                                 <div className="info-item">
 // //                                     <label>Location</label>
-// //                                     <p>Crowne Plaza - St. Peter’s Rome, Italy</p>
+// //                                     <p>Seoul, South Korea</p>
 // //                                 </div>
 // //                                 <div className="info-item">
 // //                                     <label>Registration Deadline</label>
@@ -5946,7 +5946,7 @@
 //                                 </div>
 //                                 <div className="info-item">
 //                                     <label>Location</label>
-//                                     <p>Crowne Plaza - St. Peter’s Rome, Italy</p>
+//                                     <p>Seoul, South Korea</p>
 //                                 </div>
 //                                 <div className="info-item">
 //                                     <label>Registration Deadline</label>
@@ -6957,7 +6957,7 @@ const RegistrationPage: React.FC = () => {
                         </h2>
                         <div className="w-24 h-1 bg-black mx-auto mb-2"></div>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                            Register for the ICBME 2026
+                            Register for the ICHIS 2026
                         </p>
                     </div>
 

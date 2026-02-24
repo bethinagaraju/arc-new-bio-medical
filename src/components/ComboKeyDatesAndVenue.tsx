@@ -67,7 +67,7 @@ const ComboKeyDatesAndVenue: React.FC = () => {
             Important Dates
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto mt-3 text-sm sm:text-base">
-            Mark your calendar for the key milestones of ICBME 2026
+            Mark your calendar for the key milestones of ICHIS 2026
           </p>
         </div>
 

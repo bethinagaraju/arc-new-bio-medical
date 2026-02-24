@@ -11,7 +11,7 @@
 // // // //         <div className="flex h-full items-center divide-x divide-gray-200">
 // // // //           {/* Logo */}
 // // // //           <div className="h-full flex items-center">
-// // // //             <Link to="/" title="Go to ICBME 2026 Home Page" aria-label="ICBME 2026 Home Page">
+// // // //             <Link to="/" title="Go to ICHIS 2026 Home Page" aria-label="ICHIS 2026 Home Page">
 // // // //               <img
 // // // //                 src="aimllogo.jpg"
 // // // //                 alt="Artificial Intelligence, Machine Learning and Robotics Conference Logo"
@@ -32,7 +32,7 @@
 // // // //             <div className="flex items-center space-x-2 sm:space-x-3">
 // // // //               <MapPin className="text-indigo-900" size={16} />
 // // // //               <span className="font-bold tracking-tight sm:text-sm leading-snug">
-// // // //                 Crowne Plaza - St. Peter’s Rome, Italy
+// // // //                 Seoul, South Korea
 // // // //               </span>
 // // // //             </div>
             
@@ -52,23 +52,23 @@
 
 // // // //         {/* Right Section (desktop buttons) */}
 // // // //         <div className="hidden md:flex items-center gap-4 ml-12">
-// // // //           <Link to="/register" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
+// // // //           <Link to="/register" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference">
 // // // //             <button 
 // // // //               style={{ backgroundImage: "linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)" }} 
 // // // //               className="w-[120px] text-white font-bold py-2 hover:bg-[#425a92] transition-colors duration-300"
-// // // //               title="Register for ICBME 2026 Conference"
-// // // //               aria-label="Register for ICBME 2026 Conference"
+// // // //               title="Register for ICHIS 2026 Conference"
+// // // //               aria-label="Register for ICHIS 2026 Conference"
 // // // //             >
 // // // //               REGISTER
 // // // //             </button>
 // // // //           </Link>
 
-// // // //           <Link to="/AbstractSubmission" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
+// // // //           <Link to="/AbstractSubmission" title="Submit Abstract for ICHIS 2026 Conference" aria-label="Submit Abstract for ICHIS 2026 Conference">
 // // // //             <button 
 // // // //               style={{ backgroundImage: "linear-gradient(90deg, rgba(0,47,48,1) 0%, rgba(0,0,48,1) 100%)" }} 
 // // // //               className="w-[232px] text-white font-bold py-2 hover:bg-[#011136] transition-colors duration-300"
-// // // //               title="Submit Abstract for ICBME 2026 Conference"
-// // // //               aria-label="Submit Abstract for ICBME 2026 Conference"
+// // // //               title="Submit Abstract for ICHIS 2026 Conference"
+// // // //               aria-label="Submit Abstract for ICHIS 2026 Conference"
 // // // //             >
 // // // //               ABSTRACT SUBMISSION
 // // // //             </button>
@@ -114,23 +114,23 @@
 
 // // //         {/* LEFT — Logo & Event Info */}
 // // //         <div className="flex items-center gap-4">
-// // //           <Link to="/" aria-label="ICBME 2026 Home">
+// // //           <Link to="/" aria-label="ICHIS 2026 Home">
 // // //             <img
 // // //               src="aimllogo.jpg"
-// // //               alt="ICBME 2026 Logo"
+// // //               alt="ICHIS 2026 Logo"
 // // //               className="h-[70px] w-auto object-contain"
 // // //             />
 // // //           </Link>
 
 // // //           <div className="hidden sm:block text-left">
 // // //             <h1 className="text-sm font-bold text-[#0B5ED7] leading-tight">
-// // //               ICBME 2026
+// // //               ICHIS 2026
 // // //             </h1>
 // // //             <p className="text-xs text-gray-600">
 // // //               28–30 July 2026
 // // //             </p>
 // // //             <p className="text-xs text-gray-600">
-// // //               Rome, Italy
+// // //               Seoul, South Korea
 // // //             </p>
 // // //           </div>
 // // //         </div>
@@ -209,11 +209,11 @@
 
 // //         {/* --- LEFT: LOGO & INFO --- */}
 // //         <div className="flex items-center gap-3 md:gap-4 shrink-0">
-// //           <Link to="/" aria-label="ICBME 2026 Home">
+// //           <Link to="/" aria-label="ICHIS 2026 Home">
 // //             {/* Logo Image */}
 // //             <img
 // //               src="aimllogo.jpg"
-// //               alt="ICBME 2026 Logo"
+// //               alt="ICHIS 2026 Logo"
 // //               className="h-12 md:h-16 w-auto object-contain"
 // //             />
 // //           </Link>
@@ -221,11 +221,11 @@
 // //           {/* Text Info - Mimicking the Orange Title & Grey Details */}
 // //           <div className="flex flex-col justify-center leading-tight">
 // //             <h1 className="text-lg md:text-2xl font-bold text-[#F58220] uppercase tracking-tight">
-// //               ICBME 2026
+// //               ICHIS 2026
 // //             </h1>
 // //             <div className="flex flex-col text-[10px] md:text-[11px] font-semibold text-gray-500 mt-1 space-y-0.5">
 // //               <span>28 – 30 JULY 2026</span>
-// //               <span>CROWNE PLAZA, ROME, ITALY</span>
+// //               <span>CROWNE PLAZA, Seoul, South Korea</span>
 // //             </div>
 // //           </div>
 // //         </div>
@@ -236,7 +236,7 @@
 // //           <Link to="/exhibition" className="hover:text-[#F58220] transition-colors">EXHIBITION</Link>
 // //           <Link to="/conference" className="hover:text-[#F58220] transition-colors">CONFERENCE</Link>
 // //           <Link to="/visit" className="hover:text-[#F58220] transition-colors">VISIT</Link>
-// //           <Link to="/energy-club" className="hover:text-[#F58220] transition-colors">ICBME CLUB</Link>
+// //           <Link to="/energy-club" className="hover:text-[#F58220] transition-colors">ICHIS CLUB</Link>
 // //           <Link to="/media" className="hover:text-[#F58220] transition-colors">MEDIA CENTER</Link>
 // //           <Link to="/travel" className="hover:text-[#F58220] transition-colors">TRAVEL</Link>
 // //           <Link to="/faqs" className="hover:text-[#F58220] transition-colors">FAQS</Link>
@@ -314,21 +314,21 @@
 
 //         {/* ================= LEFT: LOGO & INFO ================= */}
 //         <div className="flex items-center gap-3 shrink-0">
-//           <Link to="/" aria-label="ICBME 2026 Home" onClick={() => window.scrollTo(0,0)}>
+//           <Link to="/" aria-label="ICHIS 2026 Home" onClick={() => window.scrollTo(0,0)}>
 //             <img
 //               src="aimllogo.jpg"
-//               alt="ICBME 2026 Logo"
+//               alt="ICHIS 2026 Logo"
 //               className="h-12 md:h-16 w-auto object-contain"
 //             />
 //           </Link>
 
 //           <div className="flex flex-col justify-center leading-tight">
 //             <h1 className="text-lg md:text-2xl font-bold text-[#F58220] uppercase tracking-tight">
-//               ICBME 2026
+//               ICHIS 2026
 //             </h1>
 //             <div className="flex flex-col text-[10px] md:text-[11px] font-semibold text-gray-500 mt-1 space-y-0.5">
 //               <span>28 – 30 JULY 2026</span>
-//               <span>CROWNE PLAZA, ROME, ITALY</span>
+//               <span>CROWNE PLAZA, Seoul, South Korea</span>
 //             </div>
 //           </div>
 //         </div>
@@ -521,6 +521,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useConference } from "../contexts/ConferenceContext";
 
 interface Props {
   menuOpen: boolean;
@@ -533,6 +534,12 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
   const [callsOpen, setCallsOpen] = useState(false);
   const [conferenceOpen, setConferenceOpen] = useState(false);
   const [programOpen, setProgramOpen] = useState(false);
+
+  // Get conference data from context
+  const { data } = useConference();
+
+  // Derive displayable conference dates
+  const conferenceDates = data?.importantDates?.find(d => d.dateType === "Conference Dates")?.date || "28 – 30 July 2026";
 
   useEffect(() => {
     const handleResize = () => {
@@ -553,18 +560,18 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
           <Link to="/" onClick={() => window.scrollTo(0, 0)}>
             <img
               src="/aimllogo.jpg"
-              alt="ICBME 2026 Logo"
+              alt="ICHIS 2026 Logo"
               className="h-12 md:h-16 w-auto object-contain"
             />
           </Link>
 
           <div className="leading-tight">
             <h1 className="text-lg md:text-2xl font-extrabold text-[#004E5A] uppercase">
-              ICBME 2026
+              ICHIS 2026
             </h1>
-            <div className="text-[10px] md:text-[11px] font-semibold mt-1">
-              <span>28 – 30 July 2026</span><br />
-              <span>Rome, Italy</span>
+              <div className="text-[10px] md:text-[11px] font-semibold mt-1">
+              <span>{conferenceDates}</span><br />
+              <span>Seoul, South Korea</span>
             </div>
           </div>
         </div>
@@ -617,7 +624,7 @@ const TopNavbar: React.FC<Props> = ({ menuOpen, setMenuOpen }) => {
               <div  className="absolute top-[120%] left-0 w-56 bg-white shadow-xl border-t-4 border-[#047857] rounded-md text-sm">
                 <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/about" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">About Conference</Link>
                 <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/committee" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Committee</Link>
-                <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/past-conferences" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Past Conferences</Link>
+                {/* <Link style={{fontFamily:'"IBM Plex Sans", sans-serif'}} to="/past-conferences" className="block px-4 py-2.5 hover:bg-[#ECFDF5]">Past Conferences</Link> */}
               </div>
             )}
           </div>

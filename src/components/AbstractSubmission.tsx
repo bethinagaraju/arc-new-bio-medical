@@ -146,7 +146,7 @@
 //           Abstract Submission
 //         </h2>
 //         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-//           Submit your research abstract for the Biomedical Engineering Conference 2026.
+//           Submit your research abstract for the Health Innovation Summit Conference 2026.
 //         </p>
 
 //         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">
@@ -480,8 +480,15 @@ const AbstractSubmission: React.FC = () => {
     );
 
     if (response.ok) {
-      const data = await response.json();
-      console.log("✅ Server Response:", data);
+      // Some backends return plain text instead of JSON. Read as text and try to parse JSON.
+      const text = await response.text();
+      let parsed: any = null;
+      try {
+        parsed = JSON.parse(text);
+        console.log("✅ Server Response (parsed JSON):", parsed);
+      } catch (e) {
+        console.log("✅ Server Response (text):", text);
+      }
 
       setShowSuccess(true);
       setFormData({
@@ -519,7 +526,7 @@ const AbstractSubmission: React.FC = () => {
           Abstract Submission
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Submit your research abstract for the Biomedical engineering Conference 2026.
+          Submit your research abstract for the Health Innovation Summit Conference 2026.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">

@@ -33,7 +33,7 @@ const VenueAndContactSection: React.FC = () => {
       </h2>
 
           <p className="text-[#64748B] max-w-2xl mx-auto text-lg">
-            Conference venue details and direct communication with the ICBME 2026 organizing committee.
+            Conference venue details and direct communication with the ICHIS 2026 organizing committee.
           </p>
         </div>
 
@@ -79,8 +79,8 @@ const VenueAndContactSection: React.FC = () => {
               <Link
                 to="/venue-travel"
                 className="inline-flex items-center gap-2 text-[#047857] font-semibold hover:text-[#065F46] transition"
-                title="View detailed venue and travel information for ICBME 2026"
-                aria-label="View detailed venue and travel information for ICBME 2026"
+                title="View detailed venue and travel information for ICHIS 2026"
+                aria-label="View detailed venue and travel information for ICHIS 2026"
               >
                 View Venue & Travel Details
                 <ArrowRight size={18} />
@@ -101,7 +101,7 @@ const VenueAndContactSection: React.FC = () => {
 
               <p className="text-white/90 leading-relaxed mb-8">
                 For inquiries related to registration, submissions, sponsorship,
-                or participation, please reach out to the ICBME 2026 organizing team.
+                or participation, please reach out to the ICHIS 2026 organizing team.
               </p>
             </div>
 
@@ -110,8 +110,8 @@ const VenueAndContactSection: React.FC = () => {
               className="inline-flex items-center justify-center bg-[#84CC16]
               text-[#1E293B] font-bold py-3 px-8
               hover:bg-[#65A30D] transition"
-              title="Contact ICBME 2026 Conference Organizers"
-              aria-label="Contact ICBME 2026 Conference Organizers"
+              title="Contact ICHIS 2026 Conference Organizers"
+              aria-label="Contact ICHIS 2026 Conference Organizers"
             >
               Contact Us
             </Link>

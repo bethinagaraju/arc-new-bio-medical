@@ -9,7 +9,7 @@ const EventOverview = () => {
       id: 1,
       imageUrl: "ilias-photo.png",
       
-      quote: "RoboticsWorldSummit.com for the World Summit and Expo on Robotics, AI, and Machine Learning (ROBOTICS-2026), I am excited to participate in this prestigious event, which brings together global leaders to address the latest advancements and challenges in Biomedical Engineering. I believe this conference offers a unique platform for knowledge sharing, collaboration, and driving innovation in the field of AI and robotics.",
+      quote: "RoboticsWorldSummit.com for the World Summit and Expo on Robotics, AI, and Machine Learning (ROBOTICS-2026), I am excited to participate in this prestigious event, which brings together global leaders to address the latest advancements and challenges in Health Innovation Summit. I believe this conference offers a unique platform for knowledge sharing, collaboration, and driving innovation in the field of AI and robotics.",
       name: "DR. ROGER ACHKAR",
       title: "General Manager\nPath Robotics",
       companyLogoUrl: "Untitled-path.png",

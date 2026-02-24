@@ -17,10 +17,10 @@
 //       {/* Page Header */}
 //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 //         <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-//           CALL FOR SPEAKERS – ICBME 2026
+//           CALL FOR SPEAKERS – ICHIS 2026
 //         </h2>
 //         <p className="mt-2 text-gray-500 text-lg">
-//           Submit your research and join the global conversation on Biomedical Engineering.
+//           Submit your research and join the global conversation on Health Innovation Summit.
 //         </p>
 //       </div>
 
@@ -31,7 +31,7 @@
 //           <h3 className="text-2xl font-bold text-gray-900">About the Call</h3>
 //         </div>
 //         <p className="text-gray-700 leading-relaxed">
-//           ICBME 2026 invites distinguished academicians, industry experts, and researchers to deliver keynote, invited, or technical talks at the conference.
+//           ICHIS 2026 invites distinguished academicians, industry experts, and researchers to deliver keynote, invited, or technical talks at the conference.
 //         </p>
 //       </div>
 
@@ -176,7 +176,7 @@ const CallForSpeakers: React.FC = () => {
       <div className="bg-white px-6 pt-12 pb-8">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#004E5A] tracking-tight">
-            CALL FOR SPEAKERS – ICBME 2026
+            CALL FOR SPEAKERS – ICHIS 2026
           </h1>
 
             <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
@@ -200,9 +200,9 @@ const CallForSpeakers: React.FC = () => {
           </div>
 
             <p className="text-[16.5px] text-slate-600 leading-relaxed max-w-3xl">
-            ICBME 2026 invites distinguished academicians, industry experts,
+            ICHIS 2026 invites distinguished academicians, industry experts,
             and researchers to deliver keynote, invited, or technical talks
-            and contribute to advancing global Biomedical Engineering research.
+            and contribute to advancing global Health Innovation Summit research.
             </p>
         </div>
 

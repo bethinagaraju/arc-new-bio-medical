@@ -10,7 +10,7 @@
 // // // // // //             Our Mission & Vision
 // // // // // //           </h2>
 // // // // // //           <p className="text-gray-600 max-w-2xl mx-auto mt-3">
-// // // // // //             Advancing research and collaboration at the intersection of Biomedical Engineering to build safer, fairer, and more impactful technologies for society.
+// // // // // //             Advancing research and collaboration at the intersection of Health Innovation Summit to build safer, fairer, and more impactful technologies for society.
 // // // // // //           </p>
 // // // // // //         </div>
 
@@ -106,7 +106,7 @@
 // // // // //   {
 // // // // //     title: "Collaboration",
 // // // // //     icon: Users,
-// // // // //     desc: "We believe true innovation happens when diverse minds connect. ICBME brings together academia, industry, and research communities to foster interdisciplinary exchange, teamwork, and long-term partnerships.",
+// // // // //     desc: "We believe true innovation happens when diverse minds connect. ICHIS brings together academia, industry, and research communities to foster interdisciplinary exchange, teamwork, and long-term partnerships.",
 // // // // //     tags: ["Teamwork", "Networking", "Community"],
 // // // // //   },
 // // // // //   {
@@ -132,7 +132,7 @@
 // // // // //           </h2>
 // // // // //           <div className="h-1 w-20 mx-auto bg-indigo-600 rounded-full"></div>
 // // // // //           <p className="text-slate-600 max-w-2xl mx-auto mt-4 text-lg">
-// // // // //             Advancing the future of Biomedical Engineering to create a safer, smarter, and more equitable world.
+// // // // //             Advancing the future of Health Innovation Summit to create a safer, smarter, and more equitable world.
 // // // // //           </p>
 // // // // //         </div>
 
@@ -223,14 +223,14 @@
 // // // //       title: "Collaboration",
 // // // //       icon: Users,
 // // // //       desc:
-// // // //         "We believe real innovation emerges through shared knowledge. ICBME connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
+// // // //         "We believe real innovation emerges through shared knowledge. ICHIS connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
 // // // //       tags: ["Teamwork", "Networking", "Community"],
 // // // //     },
 // // // //     {
 // // // //       title: "Global Reach",
 // // // //       icon: Earth,
 // // // //       desc:
-// // // //         "ICBME welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
+// // // //         "ICHIS welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
 // // // //       tags: ["Accessibility", "Diversity", "Knowledge Sharing"],
 // // // //     },
 // // // //   ];
@@ -319,14 +319,14 @@
 // // //       title: "Collaboration",
 // // //       icon: Users,
 // // //       desc:
-// // //         "We believe real innovation emerges through shared knowledge. ICBME connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
+// // //         "We believe real innovation emerges through shared knowledge. ICHIS connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
 // // //       tags: ["Teamwork", "Networking", "Community"],
 // // //     },
 // // //     {
 // // //       title: "Global Reach",
 // // //       icon: Earth,
 // // //       desc:
-// // //         "ICBME welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
+// // //         "ICHIS welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
 // // //       tags: ["Accessibility", "Diversity", "Knowledge Sharing"],
 // // //     },
 // // //   ];
@@ -371,13 +371,13 @@
 // //       title: "Collaboration",
 // //       icon: Users,
 // //       desc:
-// //         "We believe real innovation emerges through shared knowledge. ICBME connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
+// //         "We believe real innovation emerges through shared knowledge. ICHIS connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
 // //     },
 // //     {
 // //       title: "Global Reach",
 // //       icon: Earth,
 // //       desc:
-// //         "ICBME welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
+// //         "ICHIS welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
 // //     },
 // //   ];
 
@@ -427,7 +427,7 @@
 //       title: "Mission",
 //       icon: Target,
 //       desc:
-//         "To provide a professional platform for sharing research, fostering collaboration, and encouraging innovation in Biomedical Engineering.",
+//         "To provide a professional platform for sharing research, fostering collaboration, and encouraging innovation in Health Innovation Summit.",
 //     },
 //     {
 //       title: "Vision",

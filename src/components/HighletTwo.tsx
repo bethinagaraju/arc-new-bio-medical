@@ -10,8 +10,8 @@ function HighletTwo() {
         <div className="w-full h-auto md:h-[50%]">
           <img
             // src="Gemini_Generated_Image_j5zwdpj5zwdpj5zw.png"
-            src="ICBME-2025-official-group-photo.jpeg"
-            alt="ICBME 2025 Official Group Photo"
+            src="ICHIS-2025-official-group-photo.jpeg"
+            alt="ICHIS 2025 Official Group Photo"
             className="w-full h-full object-cover lazyload"
           />
         </div>
@@ -20,16 +20,16 @@ function HighletTwo() {
           <div className="w-full md:w-1/2 h-auto">
             <img
               // src="Gemini_Generated_Image_4od9wb4od9wb4od9.png"
-               src="ICBME-2025-virtual-presentation-session.png"
-              alt="ICBME 2025 Virtual Presentation Session"
+               src="ICHIS-2025-virtual-presentation-session.png"
+              alt="ICHIS 2025 Virtual Presentation Session"
               className="w-full h-full object-cover lazyload"
             />
           </div>
 
           <div className="w-full md:w-1/2 h-auto">
             <img
-              src="ICBME-2025-poster-award-presentation.jpeg"
-              alt="ICBME 2025 Poster Award Presentation"
+              src="ICHIS-2025-poster-award-presentation.jpeg"
+              alt="ICHIS 2025 Poster Award Presentation"
               className="w-full h-full object-cover lazyload"
             />
           </div>
@@ -42,14 +42,14 @@ function HighletTwo() {
         <div className="h-auto md:h-[35vh]">
           <img
             src="venue.png"
-            alt="ICBME 2025 Venue"
+            alt="ICHIS 2025 Venue"
             className="w-full h-full object-cover lazyload"
           />
         </div>
         <div className="h-auto md:h-[38vh]">
           <img
-            src="ICBME-2025-keynote-presentation.jpg"
-            alt="ICBME 2025 Keynote Presentation"
+            src="ICHIS-2025-keynote-presentation.jpg"
+            alt="ICHIS 2025 Keynote Presentation"
             className="w-full h-full object-cover lazyload"
           />
         </div>

@@ -34,7 +34,7 @@
 //         style={{ fontFamily: "'Manrope', sans-serif", color: "#2e376c" }}
 //         className="text-center text-xl sm:text-2xl md:text-3xl font-bold mb-4"
 //       >
-//         ICBME 2025 EDITION
+//         ICHIS 2025 EDITION
 //       </h1>
 
 //       {/* ================= MOBILE VIEW ================= */}
@@ -138,12 +138,12 @@ const Highletsec: React.FC = () => {
         style={{ fontFamily: "'Manrope', sans-serif", color: "#2e376c" }}
         className="text-center text-xl sm:text-2xl md:text-3xl font-bold mb-6"
       >
-        ICBME 2025 EDITION
+        ICHIS 2025 EDITION
       </h1> */}
 
 
         <h2 className="text-3xl font-bold text-[#047857] text-center mb-2">
-            ICBME 2025 EDITION
+            ICHIS 2025 EDITION
         </h2>
 
       {/* ================= MOBILE VIEW ================= */}

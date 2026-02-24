@@ -8,42 +8,42 @@
 // // // //   const speakers = [
 // // // //     {
 // // // //       image: "yanda-li.jpg",
-// // // //       alt: "Prof. Yanda Li – Keynote Speaker at ICBME 2026 | Tsinghua University, China",
+// // // //       alt: "Prof. Yanda Li – Keynote Speaker at ICHIS 2026 | Tsinghua University, China",
 // // // //       name: "Prof. Yanda Li",
 // // // //       title: "Tsinghua University, China",
 // // // //       type: "Keynote",
 // // // //     },
 // // // //     {
 // // // //       image: "Felisa-Baynes-Ross.jpeg",
-// // // //       alt: "Prof. Felisa Baynes-Ross – Speaker at ICBME 2026 | Yale University, USA",
+// // // //       alt: "Prof. Felisa Baynes-Ross – Speaker at ICHIS 2026 | Yale University, USA",
 // // // //       name: "Prof. Felisa Baynes-Ross",
 // // // //       title: "Yale University, USA",
 // // // //       type: "Keynote",
 // // // //     },
 // // // //     {
 // // // //       image: "Athanasios-Paschalis.jpeg",
-// // // //       alt: "Prof. Athanasios Paschalis – Speaker at ICBME 2026 | Imperial College London, UK",
+// // // //       alt: "Prof. Athanasios Paschalis – Speaker at ICHIS 2026 | Imperial College London, UK",
 // // // //       name: "Prof. Athanasios Paschalis",
 // // // //       title: "Imperial College London, UK",
 // // // //       type: "Keynote",
 // // // //     },
 // // // //     {
 // // // //       image: "michael-cafarella.webp",
-// // // //       alt: "Dr. Michael Cafarella – Speaker at ICBME 2026 | MIT, USA",
+// // // //       alt: "Dr. Michael Cafarella – Speaker at ICHIS 2026 | MIT, USA",
 // // // //       name: "Dr. Michael Cafarella",
 // // // //       title: "Massachusetts Institute of Technology, USA",
 // // // //       type: "Speaker",
 // // // //     },
 // // // //     {
 // // // //       image: "liu-yurong.jpeg",
-// // // //       alt: "Yurong Liu – Speaker at ICBME 2026 | Southeast University, China",
+// // // //       alt: "Yurong Liu – Speaker at ICHIS 2026 | Southeast University, China",
 // // // //       name: "Yurong Liu",
 // // // //       title: "Southeast University, China",
 // // // //       type: "Speaker",
 // // // //     },
 // // // //     {
 // // // //       image: "charles-romain.jpeg",
-// // // //       alt: "Dr. Charles Romain – Speaker at ICBME 2026 | Imperial College London, UK",
+// // // //       alt: "Dr. Charles Romain – Speaker at ICHIS 2026 | Imperial College London, UK",
 // // // //       name: "Dr. Charles Romain",
 // // // //       title: "Imperial College London, UK",
 // // // //       type: "Speaker",
@@ -58,7 +58,7 @@
 // // // //       {/* Heading */}
 // // // //       <div className="max-w-6xl mx-auto text-center mb-10">
 // // // //         <h2 className="text-3xl md:text-4xl font-extrabold text-[#047857]">
-// // // //           ICBME 2026 Speakers
+// // // //           ICHIS 2026 Speakers
 // // // //         </h2>
 // // // //         <p className="mt-2 text-[#64748B]">
 // // // //           Distinguished keynote and invited speakers from leading global institutions
@@ -111,8 +111,8 @@
 // // // //           href="/speakers"
 // // // //           className="inline-block bg-[#84CC16] hover:bg-[#65A30D]
 // // // //           text-[#1E293B] font-bold py-3 px-10 transition rounded-md shadow-md"
-// // // //           title="View all speakers at ICBME 2026 Conference"
-// // // //           aria-label="View all speakers at ICBME 2026 Conference"
+// // // //           title="View all speakers at ICHIS 2026 Conference"
+// // // //           aria-label="View all speakers at ICHIS 2026 Conference"
 // // // //         >
 // // // //           View All Speakers
 // // // //         </a>
@@ -170,7 +170,7 @@
 // // //       {/* Heading */}
 // // //       <div className="max-w-6xl mx-auto text-center mb-10">
 // // //         <h2 className="text-3xl md:text-4xl font-extrabold text-[#047857]">
-// // //           ICBME 2026 Speakers
+// // //           ICHIS 2026 Speakers
 // // //         </h2>
 // // //         <p className="mt-2 text-[#64748B]">
 // // //           Distinguished keynote and invited speakers from leading global institutions
@@ -284,7 +284,7 @@
 // //       {/* Heading */}
 // //       <div className="max-w-6xl mx-auto text-center mb-12">
 // //         <h2 className="text-3xl md:text-4xl font-extrabold text-[#047857]">
-// //           ICBME 2026 Speakers
+// //           ICHIS 2026 Speakers
 // //         </h2>
 // //         <p className="mt-3 text-[#64748B] max-w-2xl mx-auto">
 // //           Distinguished keynote and invited speakers from leading global
@@ -409,7 +409,7 @@
 //       {/* Heading */}
 //       <div className="max-w-7xl mx-auto text-center mb-12">
 //         <h2 className="text-3xl md:text-4xl font-extrabold text-[#047857]">
-//           ICBME 2026 Speakers
+//           ICHIS 2026 Speakers
 //         </h2>
 //         <p className="mt-3 text-[#64748B] max-w-2xl mx-auto">
 //           Distinguished keynote and invited speakers from leading global
@@ -544,7 +544,7 @@ function Mixcomponents() {
       {/* Heading */}
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#022C22]">
-          ICBME 2026 Speakers
+          ICHIS 2026 Speakers
         </h2>
         <p className="mt-3 text-[#64748B] max-w-2xl mx-auto">
           Distinguished keynote and invited speakers from leading global
@@ -553,11 +553,11 @@ function Mixcomponents() {
       </div>
 
       {/* Speaker Cards */}
-      <div
+      {/* <div
         className="
           max-w-7xl mx-auto
           grid gap-6
-          grid-cols-1
+          grid-cols-2
           sm:grid-cols-2
           md:grid-cols-3
           lg:grid-cols-5
@@ -575,7 +575,57 @@ function Mixcomponents() {
             slug={speaker.slug}
           />
         ))}
-      </div>
+      </div> */}
+
+
+      {/* <div
+  className="
+    max-w-7xl mx-auto px-4
+    grid gap-4 sm:gap-6
+    grid-cols-2
+    md:grid-cols-3
+    lg:grid-cols-4
+    xl:grid-cols-5
+    justify-items-center
+  "
+>
+  {speakers.map((speaker) => (
+    <SpeakerNewCard
+      key={speaker.id}
+      speakerImageUrl={speaker.imagePath}
+      speakerName={speaker.name}
+      speakerType={speaker.speakerType}
+      universityName={speaker.university}
+      universityLogo=""
+      slug={speaker.slug}
+    />
+  ))}
+</div> */}
+
+
+<div
+  className="
+    max-w-7xl mx-auto px-4
+    grid gap-6
+    grid-cols-2
+    md:grid-cols-3
+    lg:grid-cols-4
+    xl:grid-cols-5
+  "
+>
+  {speakers.map((speaker) => (
+    <div key={speaker.id} className="w-full overflow-hidden">
+      <SpeakerNewCard
+        speakerImageUrl={speaker.imagePath}
+        speakerName={speaker.name}
+        speakerType={speaker.speakerType}
+        universityName={speaker.university}
+        universityLogo=""
+        slug={speaker.slug}
+      />
+    </div>
+  ))}
+</div>
 
       {/* CTA */}
       <div className="text-center mt-12">

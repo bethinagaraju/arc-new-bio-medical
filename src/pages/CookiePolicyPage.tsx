@@ -9,11 +9,11 @@
 // //       <Header />
 // //       <section className="py-16 px-4 md:px-16 max-w-4xl mx-auto">
 // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Cookie Policy</h1>
-// //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Cookie Policy for Biomedical Engineering Conference</h2>
+// //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Cookie Policy for Health Innovation Summit Conference</h2>
 // //         <p className="text-lg mb-6 text-gray-700">
-// //           World Conference on Biomedical Engineering
+// //           World Conference on Health Innovation Summit
 // //           <br />
-// //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
+// //           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Seoul, South Korea
 // //         </p>
 
 // //         <div className="space-y-6 text-gray-800">
@@ -91,13 +91,13 @@
 //         {/* <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Cookie Policy</h1> */}
 
 //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
-//           Cookie Policy for Biomedical Engineering International Conference
+//           Cookie Policy for Health Innovation Summit International Conference
 //         </h2>
 
 //         <p className="text-base mb-6 text-gray-700">
-//           World Conference on Biomedical Engineering  
+//           World Conference on Health Innovation Summit  
 //           <br />
-//           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
+//           July 28–30, 2026 | Crowne Plaza – St. Peter’s, Seoul, South Korea
 //         </p>
 
 //         <div className="space-y-8 text-gray-800 leading-relaxed">
@@ -315,10 +315,10 @@ const CookiePolicyPage: React.FC = () => {
             Cookie Policy
           </h1>
           <p className="text-lg text-gray-700 font-medium mt-2">
-            World Conference on Biomedical Engineering
+            World Conference on Health Innovation Summit
           </p>
           <p className="text-sm text-gray-500 mt-1">
-            July 28–30, 2026 | Crowne Plaza – St. Peter’s, Rome, Italy
+            July 28–30, 2026 | Crowne Plaza – St. Peter’s, Seoul, South Korea
           </p>
           <p className="text-xs text-gray-400 mt-4">
             Last Updated: October 16, 2025
@@ -484,7 +484,7 @@ const CookiePolicyPage: React.FC = () => {
                   <strong>Data Controller</strong><br />
                   ROBOTICS-2026 Organizing Committee<br />
                   Crowne Plaza – St. Peter’s<br />
-                  Rome, Italy<br />
+                  Seoul, South Korea<br />
                   E: secretary@roboticsaisummit.com
                 </address>
                 <p className="mt-2 text-xs text-gray-500">

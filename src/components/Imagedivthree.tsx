@@ -11,7 +11,7 @@ function Imagedivthree() {
     {
       imageUrl: 'WhatsApp Image 2025-10-11 at 12.55.28_b46879a8.jpg', // Replace with an image of the venue or tech theme
       title: 'ABOUT',
-      description: 'Learn about ROBOTICS-2026, a global hub for Biomedical Engineering advancements. Join us July 28–30, 2026, in Rome to connect with pioneers shaping intelligent technologies.',
+      description: 'Learn about ROBOTICS-2026, a global hub for Health Innovation Summit advancements. Join us July 28–30, 2026, in Rome to connect with pioneers shaping intelligent technologies.',
       buttonText: 'Discover More',
       linkUrl: '/#about-section',
     },
@@ -32,7 +32,7 @@ function Imagedivthree() {
     {
       imageUrl: 'Untitled102.jpeg', // Replace with registration form graphic
       title: 'REGISTRATION',
-      description: 'Secure your exclusive access to ROBOTICS-2026, the premier Biomedical Engineering conference, July 28–30, 2026, in Rome. Register now!',
+      description: 'Secure your exclusive access to ROBOTICS-2026, the premier Health Innovation Summit conference, July 28–30, 2026, in Rome. Register now!',
       buttonText: 'Register Now',
       linkUrl: '/register',
     },

@@ -10,7 +10,7 @@
 // // //       {/* Registration Section */}
 // // //       <div className="space-y-3">
 // // //         <h3 className="text-xl font-semibold text-gray-800">Registration</h3>
-// // //         <p>Conference Registrations starts @08:00 AM on October 22, 2026 in Crowne Plaza - St. Peter’s Rome, Italy.</p>
+// // //         <p>Conference Registrations starts @08:00 AM on October 22, 2026 in Seoul, South Korea.</p>
 // // //         <p>During the conference, the registration desk will be opened from 8 AM onwards.</p>
 // // //         <p>
 // // //           At the registration desk you will receive your conference kit which includes name tag, program booklet.
@@ -111,7 +111,7 @@
 // //       <div className="space-y-4">
 // //         <h3 className="text-xl font-semibold text-gray-800">Registration</h3>
 // //         <ul className="list-disc pl-6 space-y-2 text-gray-700">
-// //           <li>Registrations start at 08:00 AM on October 22, 2026 in Crowne Plaza - St. Peter’s Rome, Italy.</li>
+// //           <li>Registrations start at 08:00 AM on October 22, 2026 in Seoul, South Korea.</li>
 // //           <li>The registration desk will remain open from 8 AM during the conference.</li>
 // //           <li>You will receive a conference kit with your name tag and program booklet.</li>
 // //           <li>On-site coordinators will be available to assist you at all times.</li>
@@ -224,8 +224,8 @@
 //         <ul className="space-y-2 text-gray-700">
 //           <li><strong>Date:</strong> July 28, 2026</li>
 //           <li><strong>Time:</strong> 8:00 AM</li>
-//           <li><strong>Location:</strong> Rome, Italy</li>
-//           <li><strong>Venue:</strong> Crowne Plaza-St. Peter's Rome, Italy</li>
+//           <li><strong>Location:</strong> Seoul, South Korea</li>
+//           <li><strong>Venue:</strong> Crowne Plaza-St. Peter's Seoul, South Korea</li>
 //         </ul>
 //       </div>
 
@@ -241,7 +241,7 @@
 //           </div>
 //           <ul className="space-y-1 ml-2 md:ml-12">
 //             {[
-//               "Registrations start at 08:00 AM on July 28, 2026 in Crowne Plaza - St. Peter’s Rome, Italy.",
+//               "Registrations start at 08:00 AM on July 28, 2026 in Seoul, South Korea.",
 //               "The registration desk will remain open from 8 AM during the conference.",
 //               "You will receive a conference kit with your name tag and program booklet.",
 //               "On-site coordinators will be available to assist you at all times.",
@@ -429,7 +429,7 @@ const ConferenceGuidelines: React.FC = () => {
         <ul className="space-y-1 text-gray-700 text-sm md:text-base">
           <li><strong>Date:</strong> {data?.importantDates?.find(d => d.dateType === 'Conference Start Date')?.date}</li>
           <li><strong>Time:</strong> 08:00 AM</li>
-          <li><strong>Location:</strong> Rome, Italy</li>
+          <li><strong>Location:</strong> Seoul, South Korea</li>
           <li><strong>Venue:</strong> {data?.venues[0]?.venue}</li>
         </ul>
         )}

@@ -7,7 +7,7 @@ const OrganizerOverview: React.FC = () => {
     {
       name: "Dr. Elena Rossi",
       role: "Conference Chair",
-      affiliation: "University of Rome, Italy",
+      affiliation: "University of Seoul, South Korea",
       bio: "Leading expert in AI ethics and human-robot interaction with 15+ years in robotics research.",
       icon: Award
     },
@@ -35,7 +35,7 @@ const OrganizerOverview: React.FC = () => {
             Meet Our Organizers
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mt-3">
-            Our dedicated team of experts brings together decades of experience in AI, ML, and robotics to ensure ICBME 2026 delivers unparalleled value and innovation.
+            Our dedicated team of experts brings together decades of experience in AI, ML, and robotics to ensure ICHIS 2026 delivers unparalleled value and innovation.
           </p>
         </div>
 

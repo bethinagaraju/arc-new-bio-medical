@@ -228,8 +228,8 @@
 //                   <Link
 //                     to="/register"
 //                     className="underline hover:text-blue-600 transition"
-//                     title="Register for ICBME 2026 Conference - Early Bird Registration"
-//                     aria-label="Register for ICBME 2026 Conference - Early Bird Registration"
+//                     title="Register for ICHIS 2026 Conference - Early Bird Registration"
+//                     aria-label="Register for ICHIS 2026 Conference - Early Bird Registration"
 //                   >
 //                     {text}
 //                   </Link>
@@ -237,8 +237,8 @@
 //                   <Link
 //                     to="/AbstractSubmission"
 //                     className="underline hover:text-blue-600 transition"
-//                     title="Submit Abstract for ICBME 2026 Conference - Abstract Submission"
-//                     aria-label="Submit Abstract for ICBME 2026 Conference - Abstract Submission"
+//                     title="Submit Abstract for ICHIS 2026 Conference - Abstract Submission"
+//                     aria-label="Submit Abstract for ICHIS 2026 Conference - Abstract Submission"
 //                   >
 //                     {text}
 //                   </Link>
@@ -359,8 +359,8 @@ export default function AnnouncementBar() {
                   <Link
                     to="/register"
                     className="underline hover:text-blue-600 transition"
-                    title="Register for ICBME 2026 Conference - Early Bird Registration"
-                    aria-label="Register for ICBME 2026 Conference - Early Bird Registration"
+                    title="Register for ICHIS 2026 Conference - Early Bird Registration"
+                    aria-label="Register for ICHIS 2026 Conference - Early Bird Registration"
                   >
                     {text}
                   </Link>
@@ -368,8 +368,8 @@ export default function AnnouncementBar() {
                   <Link
                     to="/AbstractSubmission"
                     className="underline hover:text-blue-600 transition"
-                    title="Submit Abstract for ICBME 2026 Conference - Abstract Submission"
-                    aria-label="Submit Abstract for ICBME 2026 Conference - Abstract Submission"
+                    title="Submit Abstract for ICHIS 2026 Conference - Abstract Submission"
+                    aria-label="Submit Abstract for ICHIS 2026 Conference - Abstract Submission"
                   >
                     {text}
                   </Link>

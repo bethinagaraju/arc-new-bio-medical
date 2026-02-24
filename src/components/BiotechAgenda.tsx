@@ -29,7 +29,7 @@
 // // //     {
 // // //       time: '09:00 - 10:00',
 // // //       title: 'Keynote: Engineering the Future of Medicine',
-// // //       description: 'How biomedical engineering is bridging the gap between clinical challenges and technological solutions.',
+// // //       description: 'How Health Innovation Summit is bridging the gap between clinical challenges and technological solutions.',
 // // //       speaker: 'Dr. Aris Thorne, Director at the Institute for Medical Engineering',
 // // //     },
 // // //     {
@@ -103,7 +103,7 @@
 // // //     {
 // // //       time: '14:30 - 16:00',
 // // //       title: 'Closing Remarks & Future Outlook',
-// // //       description: 'A summary of key takeaways and a look at the future of biomedical engineering.',
+// // //       description: 'A summary of key takeaways and a look at the future of Health Innovation Summit.',
 // // //       speaker: 'Conference Chair',
 // // //     },
 // // //   ],
@@ -156,7 +156,7 @@
 // // //       </h1>
 // // //           <br/>
 // // //           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-// // //             Explore our two-day agenda packed with insightful keynotes, expert panels, and networking opportunities in Biomedical Engineering.
+// // //             Explore our two-day agenda packed with insightful keynotes, expert panels, and networking opportunities in Health Innovation Summit.
 // // //           </p>
 
 // // //           {/* Day Toggle Buttons */}
@@ -243,7 +243,7 @@
 // //     {
 // //       time: '09:00 - 10:00',
 // //       title: 'Keynote: Engineering the Future of Medicine',
-// //       description: 'How biomedical engineering is bridging the gap between clinical challenges and technological solutions.',
+// //       description: 'How Health Innovation Summit is bridging the gap between clinical challenges and technological solutions.',
 // //       speaker: 'Dr. Aris Thorne, Director at the Institute for Medical Engineering',
 // //     },
 // //     {
@@ -317,7 +317,7 @@
 // //     {
 // //       time: '14:30 - 16:00',
 // //       title: 'Closing Remarks & Future Outlook',
-// //       description: 'A summary of key takeaways and a look at the future of biomedical engineering.',
+// //       description: 'A summary of key takeaways and a look at the future of Health Innovation Summit.',
 // //       speaker: 'Conference Chair',
 // //     },
 // //   ],
@@ -725,7 +725,7 @@
 //             Sessions & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Tracks</span>
 //           </h1>
 //           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-//             Discover the comprehensive program of ICBME 2026 featuring cutting-edge research and innovative sessions.
+//             Discover the comprehensive program of ICHIS 2026 featuring cutting-edge research and innovative sessions.
 //           </p>
 //         </div>
 //       </div>
@@ -776,7 +776,7 @@
 //             Explore <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Session Types</span>
 //           </h2>
 //           <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-//             ICBME 2026 features a dynamic blend of formats designed to maximize knowledge transfer and networking in AI & Robotics.
+//             ICHIS 2026 features a dynamic blend of formats designed to maximize knowledge transfer and networking in AI & Robotics.
 //           </p>
 //         </div>
 
@@ -1086,7 +1086,7 @@ const BiotechAgenda: React.FC = () => {
             Sessions & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Tracks</span>
           </h1>
           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-            Discover the comprehensive program of ICBME 2026 featuring cutting-edge research and innovative sessions.
+            Discover the comprehensive program of ICHIS 2026 featuring cutting-edge research and innovative sessions.
           </p>
         </div>
       </div> */}

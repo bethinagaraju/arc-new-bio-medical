@@ -212,7 +212,7 @@
 
 //   {
 //     image: "yanda-li.jpg",
-//     alt: "Prof. Yanda Li – Keynote Speaker at ICBME 2026 | Tsinghua University, China",
+//     alt: "Prof. Yanda Li – Keynote Speaker at ICHIS 2026 | Tsinghua University, China",
 //     name: "Prof. Yanda Li",
 //     title: "Tsinghua University, China",
 //     company: "",
@@ -221,7 +221,7 @@
 
 //       {
 //     image: "Felisa-Baynes-Ross.jpeg",
-//     alt: "Prof. Felisa Baynes-Ross – Speaker at ICBME 2026 | Yale University, USA",
+//     alt: "Prof. Felisa Baynes-Ross – Speaker at ICHIS 2026 | Yale University, USA",
 //     name: "Prof. Felisa Baynes-Ross",
 //     title: "Yale University, USA",
 //     company: "",
@@ -229,7 +229,7 @@
 //   },
 //   {
 //     image: "Athanasios-Paschalis.jpeg",
-//     alt: "Prof. Athanasios Paschalis – Speaker at ICBME 2026 | Imperial College London, UK",
+//     alt: "Prof. Athanasios Paschalis – Speaker at ICHIS 2026 | Imperial College London, UK",
 //     name: "Prof. Athanasios Paschalis",
 //     title: "Professor, Imperial College London, UK",
 //     company: "",
@@ -238,7 +238,7 @@
 
 //   {
 //     image: "michael-cafarella.webp",
-//     alt: "Dr. Michael Cafarella – Speaker at ICBME 2026 | Massachusetts Institute of Technology, USA",
+//     alt: "Dr. Michael Cafarella – Speaker at ICHIS 2026 | Massachusetts Institute of Technology, USA",
 //     name: "Dr. Michael Cafarella",
 //     title: "Massachusetts Institute of Technology, USA",
 //     company: "",
@@ -250,7 +250,7 @@
 
 //   // {
 //   //   image: "jan-rosell.jpeg",
-//   //   alt: "Dr. Jan Rosell – Speaker at ICBME 2026 | Shanghai Jiao Tong University, China",
+//   //   alt: "Dr. Jan Rosell – Speaker at ICHIS 2026 | Shanghai Jiao Tong University, China",
 //   //   name: "Dr. f. Jan Rosell",
 //   //   title: "Shanghai Jiao Tong University, China",
 //   //   company: "",
@@ -259,7 +259,7 @@
 
 //   {
 //     image: "liu-yurong.jpeg",
-//     alt: "Yurong Liu – Speaker at ICBME 2026 | Southeast University, China",
+//     alt: "Yurong Liu – Speaker at ICHIS 2026 | Southeast University, China",
 //     name: "LIU, Yurong",
 //     title: "Southeast University, China",
 //     company: "",
@@ -269,7 +269,7 @@
 
 //   {
 //     image: "charles-romain.jpeg",
-//     alt: "Dr. Charles Romain – Speaker at ICBME 2026 | Imperial College London, UK",
+//     alt: "Dr. Charles Romain – Speaker at ICHIS 2026 | Imperial College London, UK",
 //     name: "Dr. Charles Romain",
 //     title: "Imperial College London, UK",
 //     company: "",
@@ -280,7 +280,7 @@
 
 //   {
 //     image: "James-Berger.jpeg",
-//     alt: "Dr. James Berger – Keynote Speaker at ICBME 2026 | Yale University, USA",
+//     alt: "Dr. James Berger – Keynote Speaker at ICHIS 2026 | Yale University, USA",
 //     name: "Dr. James Berger",
 //     title: "Yale University, USA",
 //     company: "",
@@ -290,7 +290,7 @@
 
 //     {
 //     image: "James-Berger.jpeg",
-//     alt: "Dr. James Berger – Keynote Speaker at ICBME 2026 | Yale University, USA",
+//     alt: "Dr. James Berger – Keynote Speaker at ICHIS 2026 | Yale University, USA",
 //     name: "Dr. James Berger",
 //     title: "Yale University, USA",
 //     company: "",
@@ -333,12 +333,12 @@
 // //         {/* Left: Speakers */}
 // //         <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-10 text-center">
 // //           {/* <h1 className="text-3xl font-bold text-gray-800 mb-8 col-span-full">
-// //             ICBME 2026 SPEAKERS
+// //             ICHIS 2026 SPEAKERS
 // //           </h1> */}
 
 // //             <h2 className="text-3xl font-bold text-[#00488B] mb-6 col-span-full">
-// //             {/* ABOUT ICBME 2026  HYBRID EVENT */}
-// //             ICBME 2026 SPEAKERS
+// //             {/* ABOUT ICHIS 2026  HYBRID EVENT */}
+// //             ICHIS 2026 SPEAKERS
 // //           </h2>
 // //           {speakers.map((speaker, i) => (
 // //             <div key={i} className="text-center">
@@ -408,7 +408,7 @@
 //           {/* ================= LEFT: SPEAKERS ================= */}
 //           <div className="lg:col-span-2">
 //             <h2 className="text-3xl font-bold text-[#047857] mb-8">
-//               ICBME 2026 Speakers
+//               ICHIS 2026 Speakers
 //             </h2>
 
 //             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -563,7 +563,7 @@ function SpeakersPage() {
           {/* ================= LEFT: SPEAKERS ================= */}
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold text-[#004E5A] mb-8 text-center" style={{ fontFamily: "'Manrope', sans-serif" }}>
-              ICBME 2026 SPEAKERS
+              ICHIS 2026 SPEAKERS
             </h2>
 
             <div

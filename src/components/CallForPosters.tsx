@@ -17,10 +17,10 @@
 //       {/* Page Header */}
 //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 //         <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-//           CALL FOR POSTERS – ICBME 2026
+//           CALL FOR POSTERS – ICHIS 2026
 //         </h2>
 //         <p className="mt-2 text-gray-500 text-lg">
-//           Submit your research and join the global conversation on Biomedical Engineering.
+//           Submit your research and join the global conversation on Health Innovation Summit.
 //         </p>
 //       </div>
 
@@ -141,8 +141,8 @@
 //         <Link
 //           to="/register"
 //           className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors"
-//           title="Register for the ICBME 2026 Conference in Rome"
-//           aria-label="Register for the ICBME 2026 Conference in Rome"
+//           title="Register for the ICHIS 2026 Conference in Rome"
+//           aria-label="Register for the ICHIS 2026 Conference in Rome"
 //         >
 //           Register Now <ArrowRight className="w-4 h-4" />
 //         </Link>
@@ -150,8 +150,8 @@
 //         <Link
 //           to="/AbstractSubmission"
 //           className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors"
-//           title="Submit your poster abstract for ICBME 2026 Conference"
-//           aria-label="Submit your poster abstract for ICBME 2026 Conference"
+//           title="Submit your poster abstract for ICHIS 2026 Conference"
+//           aria-label="Submit your poster abstract for ICHIS 2026 Conference"
 //         >
 //           Submit Poster Abstract
 //         </Link>
@@ -183,11 +183,11 @@ const CallForPosters: React.FC = () => {
       <div className="bg-white px-6 pt-12 pb-8">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-extrabold text-[#004E5A] tracking-tight">
-            CALL FOR POSTERS – ICBME 2026
+            CALL FOR POSTERS – ICHIS 2026
           </h1>
 
           <p className="mt-2 text-[17px] text-slate-600 max-w-3xl">
-            Submit your research and join the global conversation on Biomedical Engineering.
+            Submit your research and join the global conversation on Health Innovation Summit.
           </p>
 
           <div className="mt-5 h-[2px] w-full bg-[#0F766E]" />

@@ -67,7 +67,7 @@
 // // // //         <div className="text-center max-w-3xl mx-auto mb-16">
 // // // //           <h2 className="text-4xl font-bold text-gray-900 mb-4">Conference Highlights</h2>
 // // // //           <p className="text-gray-600 text-lg">
-// // // //             Discover what makes ICBME 2026 an unparalleled experience in Biomedical Engineering.
+// // // //             Discover what makes ICHIS 2026 an unparalleled experience in Health Innovation Summit.
 // // // //           </p>
 // // // //         </div>
 
@@ -146,7 +146,7 @@
 // // //         <div className="text-center max-w-3xl mx-auto mb-16">
 // // //           <h2 className="text-5xl font-bold text-gray-900 mb-6">Conference Highlights</h2>
 // // //           <p className="text-gray-600 text-xl leading-relaxed">
-// // //             Experience the most anticipated global gathering in Biomedical Engineering.
+// // //             Experience the most anticipated global gathering in Health Innovation Summit.
 // // //           </p>
 // // //         </div>
 
@@ -290,7 +290,7 @@
 // //         <div className="text-center max-w-3xl mx-auto mb-16">
 // //           <h2 className="text-5xl font-bold text-gray-900 mb-6">Conference Highlights</h2>
 // //           <p className="text-gray-600 text-xl leading-relaxed">
-// //             Experience the most anticipated global gathering in Biomedical Engineering.
+// //             Experience the most anticipated global gathering in Health Innovation Summit.
 // //           </p>
 // //         </div>
 

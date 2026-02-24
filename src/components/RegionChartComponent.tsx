@@ -160,7 +160,7 @@
 // //       </h1> */}
 
 // //       <h2 className="text-3xl font-bold text-[#0B5ED7] mb-6 text-center">
-// //             WHO'S PARTICIPATING IN ICBME 2026 CONFERENCE
+// //             WHO'S PARTICIPATING IN ICHIS 2026 CONFERENCE
 // //       </h2>
       
 // //       {/* Top Row */}
@@ -361,7 +361,7 @@
 //     <section className="max-w-7xl mx-auto py-6 px-3 space-y-10">
 
 //       <h2 className="text-3xl font-bold text-[#0B5ED7] text-center">
-//         WHO'S PARTICIPATING IN ICBME 2026 CONFERENCE
+//         WHO'S PARTICIPATING IN ICHIS 2026 CONFERENCE
 //       </h2>
 
 //       {/* Top Row */}
@@ -699,7 +699,7 @@ function Dashboard() {
     <section className="max-w-7xl mx-auto py-6 px-3 space-y-10">
 
       <h2 className="text-3xl font-bold text-[#047857] text-center">
-        WHO’S PARTICIPATING IN ICBME 2026 CONFERENCE
+        WHO’S PARTICIPATING IN ICHIS 2026 CONFERENCE
       </h2>
 
       {/* Top Row */}

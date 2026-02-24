@@ -11,7 +11,7 @@
 // // // // //       {/* Background Video */}
 // // // // //       <video
 // // // // //         className="absolute inset-0 w-full h-full object-cover"
-// // // // //         src="/ICBME-banner-video.mp4"
+// // // // //         src="/ICHIS-banner-video.mp4"
 // // // // //         autoPlay
 // // // // //         loop
 // // // // //         muted
@@ -29,39 +29,39 @@
 // // // // //               style={{ fontFamily: 'Manrope, sans-serif' }}
 // // // // //             >
 // // // // //               {/* Artificial Intelligence, Machine Learning and Robotics Conference */}
-// // // // //               3rd Global Conference on Biomedical Engineering – July 2026, Rome, Italy.
+// // // // //               3rd Global Conference on Health Innovation Summit – July 2026, Seoul, South Korea.
 // // // // //             </h1>
 
 // // // // //             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-5 text-gray-800">
-// // // // //               July 28–30, 2026 | Crowne Plaza – St. Peter's Rome, Italy
+// // // // //               July 28–30, 2026 | Crowne Plaza – St. Peter's Seoul, South Korea
 // // // // //             </p>
 
 // // // // //             <div className="flex flex-row items-center lg:items-start justify-center lg:justify-center gap-3 sm:gap-4 w-full">
 
 
-// // // // //               <Link to="/register" title="Register for ICBME 2026 Conference" aria-label="Register for ICBME 2026 Conference">
+// // // // //               <Link to="/register" title="Register for ICHIS 2026 Conference" aria-label="Register for ICHIS 2026 Conference">
 // // // // //                 <button
 // // // // //                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
 // // // // //                   style={{
 // // // // //                     backgroundImage:
 // // // // //                       'linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)',
 // // // // //                   }}
-// // // // //                   title="Register for ICBME 2026 Conference"
-// // // // //                   aria-label="Register for ICBME 2026 Conference"
+// // // // //                   title="Register for ICHIS 2026 Conference"
+// // // // //                   aria-label="Register for ICHIS 2026 Conference"
 // // // // //                 >
 // // // // //                   REGISTER
 // // // // //                 </button>
 // // // // //               </Link>
 
-// // // // //               <Link to="/register" title="Submit Abstract for ICBME 2026 Conference" aria-label="Submit Abstract for ICBME 2026 Conference">
+// // // // //               <Link to="/register" title="Submit Abstract for ICHIS 2026 Conference" aria-label="Submit Abstract for ICHIS 2026 Conference">
 // // // // //                 <button
 // // // // //                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
 // // // // //                   style={{
 // // // // //                     backgroundImage:
 // // // // //                       'linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)',
 // // // // //                   }}
-// // // // //                   title="Submit Abstract for ICBME 2026 Conference"
-// // // // //                   aria-label="Submit Abstract for ICBME 2026 Conference"
+// // // // //                   title="Submit Abstract for ICHIS 2026 Conference"
+// // // // //                   aria-label="Submit Abstract for ICHIS 2026 Conference"
 // // // // //                 >
 // // // // //                   SUBMISSION
 // // // // //                 </button>
@@ -105,7 +105,7 @@
 // // // //       {/* Background Video */}
 // // // //       <video
 // // // //         className="absolute inset-0 w-full h-full object-cover"
-// // // //         src="/ICBME-banner-video.mp4"
+// // // //         src="/ICHIS-banner-video.mp4"
 // // // //         autoPlay
 // // // //         loop
 // // // //         muted
@@ -128,11 +128,11 @@
 // // // //             </h1>
 
 // // // //             <p className="mt-6 text-lg sm:text-xl text-white/90 font-medium">
-// // // //               3rd Global Conference on Biomedical Engineering
+// // // //               3rd Global Conference on Health Innovation Summit
 // // // //             </p>
 
 // // // //             <p className="mt-2 text-base sm:text-lg text-white/80">
-// // // //               July 28–30, 2026 | Rome, Italy
+// // // //               July 28–30, 2026 | Seoul, South Korea
 // // // //             </p>
 
 // // // //             {/* CTA Buttons */}
@@ -195,7 +195,7 @@
 // // //       {/* Background Video */}
 // // //       <video
 // // //         className="absolute inset-0 w-full h-full object-cover"
-// // //         src="/ICBME-banner-video.mp4"
+// // //         src="/ICHIS-banner-video.mp4"
 // // //         autoPlay
 // // //         loop
 // // //         muted
@@ -265,7 +265,7 @@
 // //       {/* Background Video */}
 // //       <video
 // //         className="absolute inset-0 w-full h-full object-cover"
-// //         src="/ICBME-banner-video.mp4"
+// //         src="/ICHIS-banner-video.mp4"
 // //         autoPlay
 // //         loop
 // //         muted
@@ -376,7 +376,7 @@
 //           <h1 className="uppercase font-extrabold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
 //             3rd Global Conference on <br />
 //             Biomedical Technology – <br />
-//             July 2026, Rome, Italy.
+//             July 2026, Seoul, South Korea.
 //           </h1>
 
 //           {/* Buttons */}
@@ -471,7 +471,6 @@ const HeroSection: React.FC = () => {
           <h1 className="uppercase font-extrabold leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             2nd International Conference<br />
             On Health Innovation Summit 2026. Seoul, South Korea.<br />
-            
           </h1>
 
           {/* Buttons */}

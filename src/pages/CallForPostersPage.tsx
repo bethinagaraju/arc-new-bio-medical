@@ -9,18 +9,18 @@ const CallForPostersPage: React.FC = () => {
     <>
     <Helmet>
   {/* ✅ 1. TITLE: Specific to "Posters" + Keywords */}
-  <title>Call for Posters | Biomedical Engineering Conference 2026 Rome</title>
+  <title>Call for Posters | Health Innovation Summit Conference 2026 Rome</title>
 
   {/* ✅ 2. DESCRIPTION: Targets students and early-stage researchers */}
   <meta 
     name="description" 
-    content="Submit your research poster for ICBME 2026 in Rome, July 28-30. Ideal for early-stage research, student projects, and visual presentations in Biomedical Engineering." 
+    content="Submit your research poster for ICHIS 2026 in Rome, July 28-30. Ideal for early-stage research, student projects, and visual presentations in Health Innovation Summit." 
   />
 
   {/* ✅ 3. KEYWORDS: Specific to visual/poster sessions */}
   <meta 
     name="keywords" 
-    content="Call for Posters, Poster Presentation, Research Poster, AI Student Competition, Visual Presentation, Rome Conference 2026, ICBME Posters, PhD Research Showcase" 
+    content="Call for Posters, Poster Presentation, Research Poster, AI Student Competition, Visual Presentation, Rome Conference 2026, ICHIS Posters, PhD Research Showcase" 
   />
 
   {/* ✅ 4. CANONICAL: Must point to /call-for-posters */}
@@ -29,20 +29,20 @@ const CallForPostersPage: React.FC = () => {
   {/* 5. Open Graph / Facebook */}
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://roboticsaisummit.com/call-for-posters" />
-  <meta property="og:title" content="Call for Posters - Biomedical Engineering Conference 2026" />
-  <meta property="og:description" content="Present your research visually at ICBME 2026 in Rome. We invite posters on Biomedical Engineering." />
+  <meta property="og:title" content="Call for Posters - Health Innovation Summit Conference 2026" />
+  <meta property="og:description" content="Present your research visually at ICHIS 2026 in Rome. We invite posters on Health Innovation Summit." />
   <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
-  <meta property="og:site_name" content="ICBME 2026" />
+  <meta property="og:site_name" content="ICHIS 2026" />
 
   {/* 6. Twitter Cards */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Call for Posters | ICBME 2026 Rome" />
-  <meta name="twitter:description" content="Submit your poster abstract for the premier Biomedical Engineering conference. Open to students and researchers." />
+  <meta name="twitter:title" content="Call for Posters | ICHIS 2026 Rome" />
+  <meta name="twitter:description" content="Submit your poster abstract for the premier Health Innovation Summit conference. Open to students and researchers." />
   <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
   
   {/* 7. Robots Tag (Essential) */}
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="author" content="ICBME Organizing Committee" />
+  <meta name="author" content="ICHIS Organizing Committee" />
   <meta name="publisher" content="Robotics & AI Summit" />
 </Helmet>
 

@@ -54,7 +54,7 @@
 // // //     {
 // // //       icon: <Cpu />,
 // // //       title: "Cutting-Edge Research",
-// // //       description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering through peer-reviewed presentations."
+// // //       description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit through peer-reviewed presentations."
 // // //     },
 // // //     {
 // // //       icon: <Globe />,
@@ -118,10 +118,10 @@
 // // //         {/* Header Section */}
 // // //         <div className="text-center mb-16">
 // // //           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg tracking-tight">
-// // //             Why Attend ICBME 2026?
+// // //             Why Attend ICHIS 2026?
 // // //           </h2>
 // // //           <p className="text-lg text-blue-200/70 max-w-2xl mx-auto font-light">
-// // //             A global platform advancing Biomedical Engineering.
+// // //             A global platform advancing Health Innovation Summit.
 // // //           </p>
 // // //         </div>
 
@@ -222,7 +222,7 @@
 
 // // const WhyAttendNew: React.FC = () => {
 // //   const features = [
-// //     { icon: <Cpu />, title: "Cutting-Edge Research", description: "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering through peer-reviewed presentations." },
+// //     { icon: <Cpu />, title: "Cutting-Edge Research", description: "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit through peer-reviewed presentations." },
 // //     { icon: <Globe />, title: "Global Networking", description: "Connect with researchers, faculty members, students, and industry professionals from around the world in a collaborative academic environment." },
 // //     { icon: <Mic2 />, title: "World-Class Speakers", description: "Gain insights from experienced researchers, technical speakers, and industry practitioners sharing real-world applications and research perspectives." },
 // //     { icon: <FileText />, title: "Publication Opportunities", description: "Present your research, case study, or academic work through oral or poster presentations and receive official conference recognition." },
@@ -247,11 +247,11 @@
 // //             font-bold text-white 
 // //             mb-3 sm:mb-4
 // //           ">
-// //             Why Attend ICBME 2026?
+// //             Why Attend ICHIS 2026?
 // //           </h2> */}
 
 // //           <h2 className="text-3xl font-bold text-[#ffffff] mb-8 text-center">
-// //            WHY ATTEND ICBME 2026 ?
+// //            WHY ATTEND ICHIS 2026 ?
 // //           </h2>
 
 // //           <p className="
@@ -259,7 +259,7 @@
 // //             text-blue-200/70 
 // //             max-w-2xl mx-auto
 // //           ">
-// //             A global platform advancing Biomedical Engineering.
+// //             A global platform advancing Health Innovation Summit.
 // //           </p>
 // //         </div>
 
@@ -309,7 +309,7 @@
 //     icon: <Cpu />,
 //     title: "Cutting-Edge Research",
 //     description:
-//       "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering.",
+//       "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit.",
 //   },
 //   {
 //     icon: <Globe />,
@@ -351,7 +351,7 @@
 //         {/* Header */}
 //         <div className="text-center mb-16">
 //           <h2 className="text-3xl md:text-4xl font-bold text-[#0B5ED7] mb-4">
-//             Why Attend ICBME 2026?
+//             Why Attend ICHIS 2026?
 //           </h2>
 //           <p className="text-[#1F2937]/70 max-w-2xl mx-auto text-lg">
 //             A premier international platform advancing Artificial Intelligence,
@@ -422,7 +422,7 @@ const features: Feature[] = [
     icon: <Cpu />,
     title: "Cutting-Edge Research",
     description:
-      "Explore recent advances, emerging ideas, and practical innovations across Biomedical Engineering.",
+      "Explore recent advances, emerging ideas, and practical innovations across Health Innovation Summit.",
   },
   {
     icon: <Globe />,
@@ -464,10 +464,10 @@ const WhyAttendNew: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#047857] mb-4">
-            Why Attend ICBME 2026?
+            Why Attend ICHIS 2026?
           </h2>
           <p className="text-[#64748B] max-w-2xl mx-auto text-lg">
-            A premier international platform advancing Biomedical Engineering
+            A premier international platform advancing Health Innovation Summit
           </p>
         </div>
 
