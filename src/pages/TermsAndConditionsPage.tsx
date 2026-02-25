@@ -9,7 +9,7 @@
 // // //       <Header />
 // // //       <section className="py-16 px-4 md:px-16 max-w-4xl mx-auto">
 // // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Terms and Conditions</h1>
-// // //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Terms and Conditions - Health Innovation Summit Conference</h2>
+// // //         <h2 className="text-2xl font-semibold mb-4 text-#004E5A]">Terms and Conditions - Health Innovation Summit Conference</h2>
 // // //         <p className="text-lg mb-6 text-gray-700">
 // // //           World Conference on Health Innovation Summit
 // // //           <br />
@@ -20,7 +20,7 @@
 // // //           <div>
 // // //             <h3 className="text-xl font-semibold mb-2">1. Acceptance of Terms</h3>
 // // //             <p>
-// // //               By registering for, attending, or submitting content to the World Conference on Health Innovation Summit (ROBOTICS-2026), you agree to be bound by these Terms and Conditions. These terms apply to all participants, including attendees, speakers, sponsors, and exhibitors.
+// // //               By registering for, attending, or submitting content to the World Conference on Health Innovation Summit (HISIC-2026), you agree to be bound by these Terms and Conditions. These terms apply to all participants, including attendees, speakers, sponsors, and exhibitors.
 // // //             </p>
 // // //           </div>
 
@@ -94,7 +94,7 @@
 // //       <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto text-sm">
 // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Terms and Conditions</h1>
 
-// //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
+// //         <h2 className="text-2xl font-semibold mb-4 text-#004E5A]">
 // //           Terms and Conditions – Health Innovation Summit Conference
 // //         </h2>
 
@@ -111,7 +111,7 @@
 // //             <h3 className="text-xl font-semibold mb-2">1. Acceptance of Terms</h3>
 // //             <p>
 // //               By registering for, attending, or submitting content to the World Conference on Artificial Intelligence,
-// //               Machine Learning, and Robotics (ROBOTICS-2026), you agree to comply with these Terms and Conditions.
+// //               Machine Learning, and Robotics (HISIC-2026), you agree to comply with these Terms and Conditions.
 // //               These rules apply to all participants, including attendees, speakers, authors, organizers, sponsors,
 // //               exhibitors, and volunteers.
 // //             </p>
@@ -280,7 +280,7 @@
 //       <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto text-xs leading-relaxed">
 //         {/* <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Terms and Conditions</h1> */}
 
-//         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
+//         <h2 className="text-2xl font-semibold mb-4 text-#004E5A]">
 //           Terms and Conditions – Health Innovation Summit Conference
 //         </h2>
 
@@ -297,7 +297,7 @@
 //             <h3 className="text-xl font-semibold mb-3"><span className="list-disc">•</span> Acceptance of Terms </h3>
 //             <p className="mb-3">
 //               By accessing, registering for, or participating in the World Conference on Artificial Intelligence,
-//               Machine Learning, and Robotics (ROBOTICS-2026), you confirm that you have read, understood, and agree to be
+//               Machine Learning, and Robotics (HISIC-2026), you confirm that you have read, understood, and agree to be
 //               legally bound by these Terms and Conditions. These terms apply to all individuals and groups associated
 //               with the conference, including attendees, authors, speakers, exhibitors, sponsors, vendors, volunteers,
 //               organizing committee members, and media representatives.
@@ -728,7 +728,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
         {/* Page Header */}
         <div className="mb-10 border-b border-gray-200 pb-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#2e376d] mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#004E5A] mb-2">
             Terms & Conditions
           </h1>
           <p className="text-lg text-gray-700 font-medium mt-2">
@@ -746,11 +746,11 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 1. Acceptance */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Acceptance of Terms
             </h3>
             <p className="mb-4">
-              By accessing, registering for, or participating in the World Conference on Health Innovation Summit (ROBOTICS-2026), you confirm that you have read, understood, and agree to be legally bound by these Terms and Conditions. These terms apply to all individuals and groups associated with the conference, including attendees, authors, speakers, exhibitors, sponsors, vendors, volunteers, organizing committee members, and media representatives.
+              By accessing, registering for, or participating in the World Conference on Health Innovation Summit (HISIC-2026), you confirm that you have read, understood, and agree to be legally bound by these Terms and Conditions. These terms apply to all individuals and groups associated with the conference, including attendees, authors, speakers, exhibitors, sponsors, vendors, volunteers, organizing committee members, and media representatives.
             </p>
             <p className="mb-4">
               If you disagree with any part of these Terms, you must discontinue your participation immediately. Your continued participation in any capacity constitutes unconditional acceptance of these terms. The organizers reserve the right to update, modify, or replace these Terms at any time without prior notice.
@@ -762,7 +762,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 2. Registration & Payment */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Registration and Payment
             </h3>
             <p className="mb-4">
@@ -785,7 +785,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 3. Abstract Submission */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Abstract Submission & Presentation
             </h3>
             <p className="mb-4">
@@ -805,7 +805,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 4. Code of Conduct */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Code of Conduct
             </h3>
             <p className="mb-4">
@@ -821,7 +821,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 5. Liability & Insurance */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Liability and Insurance
             </h3>
             <p className="mb-4">
@@ -834,7 +834,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 6. Privacy */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Privacy and Data Usage
             </h3>
             <p className="mb-4">
@@ -847,7 +847,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 7. Event Changes */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Event Changes & Cancellations
             </h3>
             <p className="mb-4">
@@ -860,7 +860,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 8. IP Rights */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Intellectual Property Rights
             </h3>
             <p className="mb-4">
@@ -873,7 +873,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 9. Sponsorship */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Sponsorship and Exhibitor Policies
             </h3>
             <p className="mb-4">
@@ -886,7 +886,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 10. Travel & Visa */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Travel and Visa Responsibility
             </h3>
             <p className="mb-4">
@@ -899,7 +899,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 11. Photography */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               Photography & Media Consent
             </h3>
             <p className="mb-4">
@@ -909,7 +909,7 @@ const TermsAndConditionsPage: React.FC = () => {
 
           {/* 12. Refund Policy (Table) */}
           {/* <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-#004E5A] mb-4 border-l-4 border-#004E5A] pl-3">
               12. Refund Policy
             </h3>
             <p className="mb-4">
@@ -953,7 +953,7 @@ const TermsAndConditionsPage: React.FC = () => {
           {/* Contact */}
           <section className="border-t border-gray-200 pt-10">
             <div className="bg-[#f8f9fa] p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-[#2e376d] mb-2">Contact Information</h3>
+              <h3 className="text-lg font-bold text-#004E5A] mb-2">Contact Information</h3>
               <p className="mb-4">
                 For questions regarding these Terms and Conditions, please contact the organizing committee.
               </p>

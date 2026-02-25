@@ -105,7 +105,7 @@
 
 // //           {/* Quick Links */}
 // //           <div className="lg:col-span-9">
-// //             <h3 className="flex items-center gap-2 text-[#2e376d] font-bold text-xl mb-6">
+// //             <h3 className="flex items-center gap-2 text-#004E5A] font-bold text-xl mb-6">
 // //               <FaLink /> Quick Links
 // //             </h3>
 
@@ -161,7 +161,7 @@
 
 // //           {/* Contact */}
 // //           {/* <div>
-// //             <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
+// //             <h3 className="flex items-center gap-2 text-#004E5A] font-semibold text-lg mb-4">
 // //               <FaAt /> Contact Us
 // //             </h3>
 // //             <p className="text-gray-700">
@@ -177,7 +177,7 @@
 
 // //           {/* Contact */}
 // // <div className="lg:col-span-3">
-// //   <h3 className="flex items-center gap-2 text-[#2e376d] font-bold text-xl mb-6">
+// //   <h3 className="flex items-center gap-2 text-#004E5A] font-bold text-xl mb-6">
 // //     <FaAt className="text-xl" /> Contact Us
 // //   </h3>
 

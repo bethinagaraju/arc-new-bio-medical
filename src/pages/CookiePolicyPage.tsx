@@ -9,7 +9,7 @@
 // //       <Header />
 // //       <section className="py-16 px-4 md:px-16 max-w-4xl mx-auto">
 // //         <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Cookie Policy</h1>
-// //         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">Cookie Policy for Health Innovation Summit Conference</h2>
+// //         <h2 className="text-2xl font-semibold mb-4 text-#004E5A]">Cookie Policy for Health Innovation Summit Conference</h2>
 // //         <p className="text-lg mb-6 text-gray-700">
 // //           World Conference on Health Innovation Summit
 // //           <br />
@@ -90,7 +90,7 @@
 //       <section className="py-16 px-4 md:px-16 max-w-7xl mx-auto text-sm">
 //         {/* <h1 className="text-4xl font-bold text-center mb-8 text-[#002d45]">Cookie Policy</h1> */}
 
-//         <h2 className="text-2xl font-semibold mb-4 text-[#2e376d]">
+//         <h2 className="text-2xl font-semibold mb-4 text-#004E5A]">
 //           Cookie Policy for Health Innovation Summit International Conference
 //         </h2>
 
@@ -311,7 +311,7 @@ const CookiePolicyPage: React.FC = () => {
         
         {/* Page Header */}
         <div className="mb-10 border-b border-gray-200 pb-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#2e376d] mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#004E5A] mb-2">
             Cookie Policy
           </h1>
           <p className="text-lg text-gray-700 font-medium mt-2">
@@ -339,7 +339,7 @@ const CookiePolicyPage: React.FC = () => {
 
           {/* 1. What are cookies */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-3 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-3 border-l-4 border-[#004E5A] pl-3">
               What are cookies and how do they work?
             </h3>
             <p>
@@ -349,7 +349,7 @@ const CookiePolicyPage: React.FC = () => {
 
           {/* 2. Similar Technologies */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-3 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-3 border-l-4 border-[#004E5A] pl-3">
               Do you use other technologies which are similar to cookies?
             </h3>
             <p className="mb-3">
@@ -365,7 +365,7 @@ const CookiePolicyPage: React.FC = () => {
 
           {/* 3. Usage of Cookies (The 4 Groups) */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-4 border-l-4 border-[#004E5A] pl-3">
               What do you use cookies for?
             </h3>
             <p className="mb-4">
@@ -443,7 +443,7 @@ const CookiePolicyPage: React.FC = () => {
 
           {/* 4. Choices */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-3 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#004E5A] mb-3 border-l-4 border-[#004E5A] pl-3">
               Your Cookie & Ad Choices
             </h3>
             <div className="space-y-4">
@@ -473,7 +473,7 @@ const CookiePolicyPage: React.FC = () => {
           <section className="border-t border-gray-200 pt-8">
             <div className="grid md:grid-cols-2 gap-10">
               <div>
-                <h3 className="text-lg font-bold text-[#2e376d] mb-3">Contacting us</h3>
+                <h3 className="text-lg font-bold text-[#004E5A] mb-3">Contacting us</h3>
                 <p className="mb-2">
                   If you have any queries or comments about this Privacy & Cookies Policy, please contact us at <a href="mailto:secretary@roboticsaisummit.com" className="text-blue-600 font-semibold">secretary@roboticsaisummit.com</a>.
                 </p>
@@ -482,7 +482,7 @@ const CookiePolicyPage: React.FC = () => {
                 </p>
                 <address className="not-italic bg-[#f8f9fa] p-4 rounded border border-gray-200 text-gray-600 text-xs md:text-sm">
                   <strong>Data Controller</strong><br />
-                  ROBOTICS-2026 Organizing Committee<br />
+                  HISIC-2026 Organizing Committee<br />
                   Crowne Plaza – St. Peter’s<br />
                   Seoul, South Korea<br />
                   E: secretary@roboticsaisummit.com
@@ -493,7 +493,7 @@ const CookiePolicyPage: React.FC = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold text-[#2e376d] mb-3">Complaints & Changes</h3>
+                <h3 className="text-lg font-bold text-[#004E5A] mb-3">Complaints & Changes</h3>
                 <p className="mb-4">
                   If you are concerned that we have breached a privacy law, please send an email to the address above. We aim to respond in a reasonable time (normally 30 days). Our Data Protection Officer will manage your complaint and will give you additional information about how it will be handled.
                 </p>

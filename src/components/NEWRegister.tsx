@@ -6714,7 +6714,7 @@ const RegistrationPage: React.FC = () => {
     // Form Data Logic
     const [formData, setFormData] = useState<FormData>({
         planId: "",
-        conferenceCode: "AI-ROBO-2026",
+        conferenceCode: "biomedical",
         title: "",
         fullName: "",
         email: "",

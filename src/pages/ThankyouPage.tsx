@@ -16,7 +16,7 @@
 // //       {/* Subtitle */}
 // //       <p className="text-lg text-gray-700 mb-6">
 // //         🎉 Congratulations! You’ve successfully registered for the <br />
-// //         <span className="font-semibold text-[#2e376d]">
+// //         <span className="font-semibold text-#004E5A]">
 // //           Health Innovation Summit Conference — Artificial Intelligence, Machine Learning and Robotics Conference
 // //         </span>
 // //       </p>
@@ -25,7 +25,7 @@
 // //       <div className="flex flex-col sm:flex-row gap-4 mt-6">
 // //         <Link
 // //           to="/"
-// //           className="bg-[#2e376d] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3f558d] transition-all duration-300"
+// //           className="bg-#004E5A] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3f558d] transition-all duration-300"
 // //         >
 // //           Back to Home
 // //         </Link>
@@ -33,7 +33,7 @@
 // //           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AI+ML+%26+Robotics+Conference+2026&dates=20260728T090000Z/20260730T170000Z&details=International+Conference+on+AI,+ML+and+Robotics+in+Rome,+Italy&location=Crowne+Plaza+-+St.+Peter's+Rome,+Italy"
 // //           target="_blank"
 // //           rel="noopener noreferrer"
-// //           className="border border-[#2e376d] text-[#2e376d] px-6 py-3 rounded-lg hover:bg-[#2e376d] hover:text-white transition-all duration-300"
+// //           className="border border-#004E5A] text-#004E5A] px-6 py-3 rounded-lg hover:bg-#004E5A] hover:text-white transition-all duration-300"
 // //         >
 // //           Add to Calendar
 // //         </a>
@@ -70,14 +70,14 @@
 //       {/* Subtitle */}
 //       <p className="text-lg text-gray-700 mb-4">
 //         🎉 Congratulations! You’ve successfully registered for the <br />
-//         <span className="font-semibold text-[#2e376d]">
+//         <span className="font-semibold text-#004E5A]">
 //           Health Innovation Summit Conference — Artificial Intelligence, Machine Learning and Robotics Conference
 //         </span>
 //       </p>
 
 //       {/* Event Details */}
 //       <div className="bg-white shadow-md rounded-lg p-5 mt-3 mb-6 border border-gray-200 max-w-md">
-//         <p className="text-[#2e376d] font-semibold text-lg">
+//         <p className="text-#004E5A] font-semibold text-lg">
 //           📅 July 28–30, 2026
 //         </p>
 //         <p className="text-gray-700 mt-1">
@@ -92,7 +92,7 @@
 //       <div className="flex flex-col sm:flex-row gap-4 mt-4">
 //         <Link
 //           to="/"
-//           className="bg-[#2e376d] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3f558d] transition-all duration-300"
+//           className="bg-#004E5A] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3f558d] transition-all duration-300"
 //         >
 //           Back to Home
 //         </Link>
@@ -100,7 +100,7 @@
 //           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AI+ML+%26+Robotics+Conference+2026&dates=20260728T090000Z/20260730T170000Z&details=International+Conference+on+AI,+ML+and+Robotics+in+Rome,+Italy&location=Crowne+Plaza+-+St.+Peter's+Rome,+Italy"
 //           target="_blank"
 //           rel="noopener noreferrer"
-//           className="border border-[#2e376d] text-[#2e376d] px-6 py-3 rounded-lg hover:bg-[#2e376d] hover:text-white transition-all duration-300"
+//           className="border border-#004E5A] text-#004E5A] px-6 py-3 rounded-lg hover:bg-#004E5A] hover:text-white transition-all duration-300"
 //         >
 //           Add to Calendar
 //         </a>
@@ -164,14 +164,14 @@ const ThankyouPage: React.FC = () => {
       {isSuccess ? (
         <p className="text-lg text-gray-700 mb-4">
           🎉 Congratulations! You’ve successfully registered for the <br />
-          <span className="font-semibold text-[#2e376d]">
+          <span className="font-semibold text-#004E5A]">
             Health Innovation Summit Conference — Artificial Intelligence, Machine Learning and Robotics Conference
           </span>
         </p>
       ) : (
         <p className="text-lg text-gray-700 mb-4">
           ⚠️ Your payment status is{" "}
-          <span className="font-semibold uppercase text-[#2e376d]">
+          <span className="font-semibold uppercase text-#004E5A]">
             {finalStatus}
           </span>
         </p>
@@ -180,7 +180,7 @@ const ThankyouPage: React.FC = () => {
       {/* Event Details (only on success) */}
       {isSuccess && (
         <div className="bg-white shadow-md rounded-lg p-5 mt-3 mb-6 border border-gray-200 max-w-md">
-          <p className="text-[#2e376d] font-semibold text-lg">
+          <p className="text-#004E5A] font-semibold text-lg">
             📅 July 28–30, 2026
           </p>
           <p className="text-gray-700 mt-1">
@@ -196,7 +196,7 @@ const ThankyouPage: React.FC = () => {
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
         <Link
           to="/"
-          className="bg-[#2e376d] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3f558d] transition-all duration-300"
+          className="bg-#004E5A] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3f558d] transition-all duration-300"
         >
           Back to Home
         </Link>
@@ -204,7 +204,7 @@ const ThankyouPage: React.FC = () => {
         {!isSuccess && (
           <Link
             to="/register"
-            className="border border-[#2e376d] text-[#2e376d] px-6 py-3 rounded-lg hover:bg-[#2e376d] hover:text-white transition-all duration-300"
+            className="border border-#004E5A] text-#004E5A] px-6 py-3 rounded-lg hover:bg-#004E5A] hover:text-white transition-all duration-300"
           >
             Try Again
           </Link>
